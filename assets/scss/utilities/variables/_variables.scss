@@ -1,0 +1,62 @@
+//paths
+$fonts-folder: "../fonts";
+$images-folder: '../img/';
+
+//fonts
+$font-primary: "Roboto", serif;
+$font-secondary: "Robotolight", serif;
+$font-tertiary: "Robotomedium", serif;
+$font-quadratic: "Robotoblack", serif;
+$font-icons: "icomoon-restaurant";
+
+//Color Usage
+$color-primary: #f99f07;
+$color-secondary: #1e3143;
+$color-tertiary: #818ea7;
+$color-highlight: #39a4cd;
+$color-warning: #e44c23;
+
+//Text Base Colors
+$color-text-primary: #86939e;
+$color-text-secondary: #5e6977;
+$color-text-tertiary: #7dc855;
+$color-text-light: #fff;
+$color-text-dark: #43484d;
+
+$color-bg-primary: #f2f2f2;
+$color-bg-secondary: #f0f3f6;
+$color-bg-light: #fff;
+$color-bg-custom: #39a4cd;
+
+
+//Font Icon Base Colors
+$color-icon-primary: #bdc6cf;
+
+// Border Colors
+$color-br-primary: #e1e8ee;
+
+//Text
+$base-font-size: 16px;
+
+//Border Radiuses
+$br-default: 4px;
+$br-md: 10px;
+$br-lg: 30px;
+$br-rounded: 50%;
+$br-none: 0;
+
+// Transitions
+$trns-duration: .3s;
+$trns-duration-lg: 1s;
+$trns-delay: 50ms;
+
+//container
+$cont-width: 1138px;
+$cont-padding: 0px;
+
+//Resolutions
+$screen-lg: 1280px;
+$screen-md: 1024px;
+$screen-sm: 768px;
+$screen-xs: 480px;
+$screen-xxs: 360px;

@@ -1,0 +1,23 @@
+.primary-field {
+    padding: 10px;
+    border: 2px solid $color-br-primary;
+    border-radius: $br-default;
+
+    &::placeholder {
+        font-size: 0.875em;
+        color: $color-text-primary;
+        @extend .text-capitalize;
+    }
+}
+
+.primary-select {
+    width: 165px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: $br-default;
+    background: url("../../assets/img/header/arrow-down.png") no-repeat right;
+    -webkit-appearance: none;
+    background-position-x: 150px;
+    color: $color-text-secondary;
+    cursor: pointer
+}

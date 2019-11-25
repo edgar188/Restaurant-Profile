@@ -1,0 +1,97 @@
+header {
+    padding: 25px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    @extend .clear-after;
+    & i {
+        color: $color-icon-primary;
+        font-size: 1.5em;
+    }
+}
+
+.header-content-wrapper {
+    float: left;
+    @include position(auto, auto, auto, auto, relative);
+    &.calendar {
+        margin-left: 125px;
+    }
+    &.nav {
+        @include position(auto, auto, auto, 25px);
+    }
+    &.select {
+        @include position(auto, 120px);
+    }
+}
+
+.icon-nav {
+    cursor: pointer
+}
+
+.icon-calendar {
+    @include position(auto, auto, auto, auto, relative);
+}
+
+.icon-calendar::after {
+    content: url('../../assets/img/header/ellipse.png');
+    @include position(auto, auto, 10px, 13px);
+}
+
+.header-mark {
+    @include position();
+    font-family: 'Robotomedium';
+    font-size: 0.75em;
+    color: $color-text-tertiary;
+    &.calendar {
+        @include position(-4px, -2px);
+    }
+    &.stars {
+        @include position(-4px, 2px);
+    }
+}
+
+.icon-star {
+    @include position(auto, auto, auto, auto, relative);
+    cursor: pointer;
+}
+
+.last-star::after {
+    content: url('../../assets/img/header/ellipse.png');
+    @include position(auto, auto, 10px, 10px);
+}
+
+.header-search {
+    padding: 10px;
+    border: 2px solid $color-br-primary;
+    border-radius: $br-default;
+}
+
+.icon-search {
+    @include position(0, 0, 0);
+    padding: 7px;
+    border-left: 1px solid $color-br-primary;
+}
+
+.header-content-wrapper.logo {
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
+.header-avatar {
+    @include position(-8px, null, null, $left: 185px);
+}
+
+.header-hidden {
+    @include position(0);
+    z-index: 10;
+    width: 95%;
+    display: none;
+}
+
+.header-hidden-text {
+    @extend .text-xxs-center;
+    padding: 10px;
+    background-color: $color-bg-custom;
+    color: $color-text-light;
+    user-select: none;
+}
