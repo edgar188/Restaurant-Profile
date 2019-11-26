@@ -30,16 +30,15 @@
     border-radius: 5px;
 }
 
-.slider-item::after {
+.slider-item::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.1;
-    background: darkblue;
-
+    opacity: 0.45;
+    background: #5e6977;
 }
 
 .slider-item .owl-nav button.owl-prev.disabled {
@@ -104,17 +103,25 @@
     color: #fff;
     position: absolute;
     z-index: 10;
-    min-height: 80px;
+    min-height: 120px;
     top: 90%;
     right: 0;
     border-radius: 12px;
-    min-width: 280px;
+    min-width: 262px;
 }
 
 .popup-top-content {
     position: relative;
     padding: 10px;
+    font-size: 18px;
     border-bottom: 1px solid #fff;
+
+    h2 {
+        font-family: 'Robotomedium';
+        font-size: 14px;
+    }
+
+
 }
 
 .popup-avatar {
@@ -126,4 +133,5 @@
 .popup-bottom-content {
     position: relative;
     padding: 10px;
+    font-size: 14px;
 }
