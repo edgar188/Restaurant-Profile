@@ -137,7 +137,7 @@ body {
 }
 
 .icon-add-to-fav:before {
-  content: "";
+  content: "";
 }
 
 .icon-arrow-down:before {
@@ -146,6 +146,10 @@ body {
 
 .icon-nav:before {
   content: "";
+}
+
+.icon-comment:before {
+  content: "";
 }
 
 header {
