@@ -3,7 +3,8 @@ header {
     width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    @extend .clear-after;
+    display: flex;
+    align-items: center;
     & i {
         color: $color-icon-primary;
         font-size: 1.5em;
@@ -11,7 +12,6 @@ header {
 }
 
 .header-content-wrapper {
-    float: left;
     @include position(auto, auto, auto, auto, relative);
     &.calendar {
         margin-left: 125px;
@@ -22,10 +22,20 @@ header {
     &.select {
         @include position(auto, 120px);
     }
+
+    .icon-star {
+        @include position(auto, auto, auto, auto, relative);
+        cursor: pointer;
+    }
+
+    .last-star::after {
+        content: url('../../assets/img/header/ellipse.png');
+        @include position(auto, auto, 10px, 10px);
+    }
 }
 
 .icon-nav {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .icon-calendar {
@@ -50,16 +60,6 @@ header {
     }
 }
 
-.icon-star {
-    @include position(auto, auto, auto, auto, relative);
-    cursor: pointer;
-}
-
-.last-star::after {
-    content: url('../../assets/img/header/ellipse.png');
-    @include position(auto, auto, 10px, 10px);
-}
-
 .header-search {
     padding: 10px;
     border: 2px solid $color-br-primary;
@@ -74,24 +74,8 @@ header {
 
 .header-content-wrapper.logo {
     margin-left: 50px;
-    margin-top: -10px;
 }
 
 .header-avatar {
     @include position(-8px, null, null, $left: 185px);
-}
-
-.header-hidden {
-    @include position(0);
-    z-index: 10;
-    width: 95%;
-    display: none;
-}
-
-.header-hidden-text {
-    @extend .text-xxs-center;
-    padding: 10px;
-    background-color: $color-bg-custom;
-    color: $color-text-light;
-    user-select: none;
 }

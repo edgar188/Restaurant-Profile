@@ -1,142 +1,210 @@
 .intro {
     background-color: $color-bg-primary;
+    padding-bottom: 50px;
 }
 
 .intro-pagination {
     font-size: 0.875em;
     padding: 20px 0;
-    @extend .text-capitalize;
+    text-transform: capitalize;
+}
+
+.intro-pagination-list {
+    display: flex;
 }
 
 .intro-pagination-link:hover {
     color: $color-text-tertiary;
 }
 
+.link-divider {
+    margin: 0 5px;
+}
+
 .slider {
-    position: relative;
-    box-shadow: 0 0 8px rgba(0.5,0.5,0.5,0.5);
+   @include position(auto, auto, auto, auto, relative);
+    // box-shadow: 0 0 8px rgba(0.5,0.5,0.5,0.5);
 }
 
 .slider-item {
-    position: relative;
-    text-align: center;
-    background-image: url(../img/intro/slider-picture.jpg);
-    background-color: $color-bg-primary;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    @include position(auto, auto, auto, auto, relative);
+    @include bg-img(null, no-repeat, cover, $color-bg-primary, top);
     height: 450px;
-    box-shadow: inset 0 0 0 100vw rgba(105, 105, 105, 0.8);
     border: none;
-    border-radius: 5px;
+    border-radius: $br-default;
+    text-align: center;
 }
 
 .slider-item::before {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+    @include position(0, auto, auto, 0);
     width: 100%;
     height: 100%;
-    opacity: 0.45;
-    background: #5e6977;
+    opacity: 0.8;
+    background: $color-bg-slider;
 }
 
 .slider-item .owl-nav button.owl-prev.disabled {
-    position: absolute;
-    top: 50%;
-    left: 0;
+    @include position(50%, auto, auto, 0);
     transform: translateY(-50%);
 }
 
-.owl-carousel .owl-nav button.owl-next {
-    position: absolute;
-    top: 45%;
-    right: 0;
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    @include position(45%, 0);
     transform: translateY(-45%);
-    width: 50px;
+    color: $color-text-light;
+    opacity: 1;
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-    position: absolute;
-    top: 45%;
-    left: 0;
-    transform: translateY(-45%);
-    width: 50px;
+    @include position(45%, auto, auto, 0);
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: $color-text-tertiary;
 }
 
 .owl-carousel .owl-nav button.owl-prev span,
 .owl-carousel .owl-nav button.owl-next span {
-    font-size: 50px;
+    font-size: 3em;
+    padding: 10px;
 }
 
 .owl-theme .owl-dots {
-    position: absolute;
-    top: 90%;
-    left: 48%;
+    @include position(90%, auto, auto, 48%);
 }
 
 .slider-content {
-    position: absolute;
-    top: 28%;
-    left: 12%;
+    @include position(28%, auto, auto, 12%);
     text-align: center;
 }
 
 .slider-top-text {
-    color: #86939e;
+    color: $color-text-primary;
     margin-bottom: 20px;
 }
 
 .slider-bottom-text {
-    font-size: 18px;
-    color: #fff;
+    font-size: 1.125em;
+    color: $color-text-light;
     margin-top: 40px;
 }
 
 .slider-central-text {
-    font-size: 72px;
-    color: #fff;
+    font-size: 4.5em;
+    color: $color-text-light;
 }
 
 .popup {
-    background: #838cc7;
-    color: #fff;
-    position: absolute;
+    @include position(362px, 0);
+    background: $color-bg-popup;
+    color: $color-text-light;
     z-index: 10;
-    top: 83%;
-    right: 0;
-    border-radius: 12px;
+    border-radius: $br-md;
     min-width: 262px;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 .popup-top-content {
-    position: relative;
+    @include position(auto, auto, auto, auto, relative);
     padding: 25px 20px 17px 20px;
-    border-bottom: 1px solid #9ca3d2;
-
-    h2 {
-        font-family: 'Robotomedium';
-    }
-
-    span {
+    border-bottom: 1px solid $color-br-secondary;
+    .number {
         margin-right: 5px;
     }
 }
 
+.popup-head {
+    font-family: 'Robotomedium';
+    margin-bottom: 10px;
+    font-size: 1.125em;
+}
+
 .popup-avatar {
-    position: absolute;
-    top: 20px;
-    right: 15px;
+    @include position(30px, 10px);
 }
 
 .popup-bottom-content {
-    position: relative;
+    @include position(auto, auto, auto, auto, relative);
     padding: 15px 20px;
     font-family: 'Robotomedium';
-
     span {
         margin-left: 5px;
     }
 }
+
+// -------------------------- Mention ----------------------------
+
+.mention-top-wrapper {
+    display: flex;
+    align-items: center;
+    & > * {
+        margin-right: 10px;
+    }
+}
+
+.mention-bottom-wrapper {
+    display: flex;
+    margin-top: 20px;
+    h3 {
+        font-size: 1.125em;
+        margin-bottom: 20px;
+    }
+}
+
+.mention-bottom-desc {
+    p {
+        line-height: 25px;
+    }
+}
+
+.mention-head {
+    font-size: 1.625em;
+    font-family: 'Robotolight';
+    color: $color-text-dark;
+}
+
+.mention-stars-wrapper {
+    color: #afa072;
+    font-size: 1.2em;
+}
+
+.mention-top-wrapper .btn-left {
+    margin-left: 5px;
+    background-color: #53bbb3;
+}
+
+.mention-top-wrapper .btn-right {
+    background-color: #e74a4a;
+}
+
+.mention-bottom-details {
+    width: 28%;
+}
+
+.mention-bottom-desc {
+    width: 68%;
+    margin-left: 4%;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.mention-list-item {
+    display: flex;
+    padding: 5px 0;
+}
+
+.text-left {
+    width: 28%;
+    margin-right: 4%;
+}
+
+.text-right {
+    width: 68%;
+}
+
