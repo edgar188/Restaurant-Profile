@@ -20,16 +20,7 @@ button {
     font-family: 'Robotomedium';
     padding: 20px 30px;
     border: none;
-    text-transform: capitalize;
-    color: #fff;
-    background-color: #2f8cda;
-}
-
-.button-tertiary-disabled {
-    font-size: 0.875em;
-    font-family: 'Robotomedium';
-    padding: 20px 30px;
-    border: none;
+    border-radius: $br-default;
     text-transform: capitalize;
     color: #fff;
     background-color: #2f8cda;

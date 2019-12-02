@@ -148,23 +148,12 @@
 .mention-bottom-wrapper {
     display: flex;
     margin-top: 20px;
-    h3 {
-        font-size: 1.125em;
-        margin-bottom: 20px;
-        color: #5e6977;
-    }
 }
 
 .mention-bottom-desc {
     p {
         line-height: 25px;
     }
-}
-
-.mention-head {
-    font-size: 1.625em;
-    font-family: 'Robotolight';
-    color: $color-text-dark;
 }
 
 .mention-stars-wrapper {
@@ -174,11 +163,11 @@
 
 .mention-top-wrapper .btn-left {
     margin-left: 5px;
-    background-color: #53bbb3;
+    background-color: $color-bg-btn-1;
 }
 
 .mention-top-wrapper .btn-right {
-    background-color: #e74a4a;
+    background-color: $color-bg-btn-2;
 }
 
 .mention-bottom-details {

@@ -473,20 +473,9 @@ header i {
   display: flex;
   margin-top: 20px;
 }
-.mention-bottom-wrapper h3 {
-  font-size: 1.125em;
-  margin-bottom: 20px;
-  color: #5e6977;
-}
 
 .mention-bottom-desc p {
   line-height: 25px;
-}
-
-.mention-head {
-  font-size: 1.625em;
-  font-family: "Robotolight";
-  color: #43484d;
 }
 
 .mention-stars-wrapper {
@@ -1653,16 +1642,7 @@ button:hover {
   font-family: "Robotomedium";
   padding: 20px 30px;
   border: none;
-  text-transform: capitalize;
-  color: #fff;
-  background-color: #2f8cda;
-}
-
-.button-tertiary-disabled {
-  font-size: 0.875em;
-  font-family: "Robotomedium";
-  padding: 20px 30px;
-  border: none;
+  border-radius: 4px;
   text-transform: capitalize;
   color: #fff;
   background-color: #2f8cda;
