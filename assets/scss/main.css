@@ -617,6 +617,14 @@ header i {
   transform: translate(-50%, -50%);
 }
 
+.button-book.disabled {
+  background-color: #d9d9d9;
+  cursor: default;
+}
+.button-book.disabled:hover {
+  opacity: 1;
+}
+
 @media (min-width: 360px) {
   .cols-xxs-12 {
     flex-wrap: wrap;
@@ -1636,6 +1644,16 @@ button:hover {
   border-radius: 30px;
   text-transform: capitalize;
   color: #fff;
+}
+
+.button-book {
+  font-size: 0.875em;
+  font-family: "Robotomedium";
+  padding: 20px 30px;
+  border: none;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #2f8cda;
 }
 
 .primary-field {
