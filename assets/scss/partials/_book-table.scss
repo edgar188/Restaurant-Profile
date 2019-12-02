@@ -1,19 +1,26 @@
 // ------------------------- Table-top -------------------------------
 
+.book-table {
+    background-color: #F2F2F2;
+}
+
+.container.book-table {
+    background-color: #fff;
+}
+
 .book-table-top {
     display: flex;
     align-items: center;
     padding: 20px 0;
+    border-bottom: 1px solid #e1e8ee;
 }
 
 .book-top-head-wrapper {
     width: 33%;
 }
 
-.book-top-head {
-    font-size: 1.625em;
-    font-family: "Robotolight";
-    color: #43484d;
+.section-head.book-table-head {
+    padding-left: 30px;
 }
 
 .book-top-select-wrapper {
@@ -56,6 +63,7 @@
 
 .table-lists {
     display: flex;
+    padding: 0 30px;
 }
 
 .people-items > li {
@@ -76,6 +84,9 @@
     width: 44px;
     background-color: #f0f4f7;
     position: relative;
+    margin-top: 30px;
+    margin-bottom: 3px;
+    border-radius: 10px;
 }
 
 /* tbody {
@@ -86,11 +97,20 @@
 .table-data-list {
     overflow: hidden;
     width: 100%;
+    padding: 5px;
 }
 
 .table-clock {
     padding: 30px 20px;
     color: #43484d;
+}
+
+.table-data-list tr {
+    border-bottom: 1px solid #e1e8ee;
+}
+
+.table-data-list tr:last-of-type {
+    border-bottom: none;
 }
 
 .table-data-list td {
