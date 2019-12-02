@@ -1,0 +1,98 @@
+// ------------------------- Table-top -------------------------------
+
+.book-table-top {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.book-top-head-wrapper {
+    width: 33%;
+}
+
+.book-top-head {
+    font-size: 1.625em;
+    font-family: "Robotolight";
+    color: #43484d;
+}
+
+.book-top-select-wrapper {
+    width: 33.3%;
+    text-align: center;
+
+    label {
+        margin-right: 10px;
+    }
+}
+
+.primary-select.book-select-left {
+    background-color: #f0f4f7;
+    padding-left: 30px;
+    padding-right: 60px;
+    background-position-x: 170px;
+}
+
+.primary-select.book-select-right {
+    background-color: #f0f4f7;
+    padding-left: 30px;
+    padding-right: 60px;
+    background-position-x: 120px;
+}
+
+// ------------------- Table-main-----------------------
+.people-list {
+    width: 125px;
+}
+
+.date-list {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.table-lists {
+    display: flex;
+}
+
+.people-items>li {
+    padding: 20px 0;
+    transform: translateY(50%);
+    margin-bottom: 8px;
+}
+
+.arrow-data-slider {
+    width: 44px;
+    background-color: #f0f4f7;
+    position: relative;
+}
+
+/* tbody {
+    display: block;
+    width: 100%;
+} */
+
+.table-data-list {
+    overflow: hidden;
+    width: 100%;
+}
+
+.table-clock {
+    padding: 30px 20px;
+    color: #43484d;
+}
+
+.table-data-list td {
+    padding: 4px;
+}
+
+.table-data-list td>button {
+    padding: 20px 30px;
+    display: block;
+}
+
+.centered-axis-xy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

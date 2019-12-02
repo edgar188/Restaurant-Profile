@@ -11,12 +11,12 @@
 }
 
 .primary-select {
-    padding: 5px 40px 5px 10px;
+    padding: 15px 30px 15px 5px;
     border: none;
     border-radius: $br-default;
     background: url("../../assets/img/header/arrow-down.png") no-repeat right;
     -webkit-appearance: none;
-    background-position-x: 150px;
+    // background-position-x: 150px;
     color: $color-text-secondary;
-    cursor: pointer
+    cursor: pointer;
 }
