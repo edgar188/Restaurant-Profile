@@ -18,7 +18,7 @@
 
 .book-top-select-wrapper {
     width: 33.3%;
-    text-align: center;
+    text-align: left;
 
     label {
         margin-right: 10px;
@@ -41,24 +41,36 @@
 
 // ------------------- Table-main-----------------------
 .people-list {
-    width: 125px;
+    max-width: 165px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .date-list {
     display: flex;
-    flex: 1;
+    // flex: 1;
     overflow: hidden;
+    margin-left: auto;
 }
 
 .table-lists {
     display: flex;
 }
 
-.people-items>li {
-    padding: 20px 0;
-    transform: translateY(50%);
-    margin-bottom: 8px;
+.people-items > li {
+    transform: translateY(12%);
+    padding: 4px 0;
 }
+
+.people-items li div {
+    padding: 20px 0;
+}
+
+.people-items li:first-of-type div{
+    visibility: hidden;
+}
+
 
 .arrow-data-slider {
     width: 44px;
@@ -83,6 +95,10 @@
 
 .table-data-list td {
     padding: 4px;
+}
+
+.table-data-list td:last-of-type {
+    padding-right: 0;
 }
 
 .centered-axis-xy {

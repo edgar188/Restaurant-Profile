@@ -16,9 +16,12 @@ button {
 }
 
 .button-tertiary {
+    @include ofl-ellipsis;
     font-size: 0.875em;
     font-family: 'Robotomedium';
-    padding: 20px 30px;
+    width: 100%;
+    max-width: 90px;
+    padding: 20px 0px;
     border: none;
     border-radius: $br-default;
     text-transform: capitalize;

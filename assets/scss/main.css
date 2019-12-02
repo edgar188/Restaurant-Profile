@@ -464,6 +464,7 @@ header i {
 .mention-top-wrapper {
   display: flex;
   align-items: center;
+  padding: 20px 0;
 }
 .mention-top-wrapper > * {
   margin-right: 10px;
@@ -474,7 +475,18 @@ header i {
   margin-top: 20px;
 }
 
-.mention-bottom-desc p {
+.mention-bottom-desc {
+  width: 68%;
+  margin-left: 4%;
+}
+
+.mention-bottom-details-title,
+.mention-bottom-desc-title {
+  color: #5e6977;
+  margin-bottom: 25px;
+}
+
+.mention-bottom-desc-text {
   line-height: 25px;
 }
 
@@ -494,15 +506,6 @@ header i {
 
 .mention-bottom-details {
   width: 28%;
-}
-
-.mention-bottom-desc {
-  width: 68%;
-  margin-left: 4%;
-}
-.mention-bottom-desc ul {
-  display: flex;
-  flex-direction: column;
 }
 
 .mention-list-item {
@@ -537,7 +540,7 @@ header i {
 
 .book-top-select-wrapper {
   width: 33.3%;
-  text-align: center;
+  text-align: left;
 }
 .book-top-select-wrapper label {
   margin-right: 10px;
@@ -558,13 +561,16 @@ header i {
 }
 
 .people-list {
-  width: 125px;
+  max-width: 165px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .date-list {
   display: flex;
-  flex: 1;
   overflow: hidden;
+  margin-left: auto;
 }
 
 .table-lists {
@@ -572,9 +578,16 @@ header i {
 }
 
 .people-items > li {
+  transform: translateY(12%);
+  padding: 4px 0;
+}
+
+.people-items li div {
   padding: 20px 0;
-  transform: translateY(50%);
-  margin-bottom: 8px;
+}
+
+.people-items li:first-of-type div {
+  visibility: hidden;
 }
 
 .arrow-data-slider {
@@ -599,6 +612,10 @@ header i {
 
 .table-data-list td {
   padding: 4px;
+}
+
+.table-data-list td:last-of-type {
+  padding-right: 0;
 }
 
 .centered-axis-xy {
@@ -1638,9 +1655,14 @@ button:hover {
 }
 
 .button-tertiary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 0.875em;
   font-family: "Robotomedium";
-  padding: 20px 30px;
+  width: 100%;
+  max-width: 90px;
+  padding: 20px 0px;
   border: none;
   border-radius: 4px;
   text-transform: capitalize;

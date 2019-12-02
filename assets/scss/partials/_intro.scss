@@ -140,6 +140,7 @@
 .mention-top-wrapper {
     display: flex;
     align-items: center;
+    padding: 20px 0;
     & > * {
         margin-right: 10px;
     }
@@ -151,13 +152,23 @@
 }
 
 .mention-bottom-desc {
-    p {
-        line-height: 25px;
-    }
+    width: 68%;
+    margin-left: 4%;
+}
+
+.mention-bottom-details-title,
+.mention-bottom-desc-title {
+    color: $color-text-secondary;
+    margin-bottom: 25px;
+}
+
+
+.mention-bottom-desc-text {
+    line-height: 25px;
 }
 
 .mention-stars-wrapper {
-    color: #afa072;
+    color: $color-icon-secondary;
     font-size: 1.2em;
 }
 
@@ -172,16 +183,6 @@
 
 .mention-bottom-details {
     width: 28%;
-}
-
-.mention-bottom-desc {
-    width: 68%;
-    margin-left: 4%;
-
-    ul {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 .mention-list-item {
