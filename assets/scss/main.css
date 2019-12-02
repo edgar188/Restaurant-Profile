@@ -111,6 +111,12 @@ body {
   margin-right: auto;
 }
 
+.section-head {
+  font-size: 1.625em;
+  font-family: "Robotolight";
+  color: #43484d;
+}
+
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon-restaurant" !important;
@@ -470,6 +476,7 @@ header i {
 .mention-bottom-wrapper h3 {
   font-size: 1.125em;
   margin-bottom: 20px;
+  color: #5e6977;
 }
 
 .mention-bottom-desc p {
@@ -605,11 +612,6 @@ header i {
   padding: 4px;
 }
 
-.table-data-list td > button {
-  padding: 20px 30px;
-  display: block;
-}
-
 .centered-axis-xy {
   position: absolute;
   left: 50%;
@@ -617,11 +619,11 @@ header i {
   transform: translate(-50%, -50%);
 }
 
-.button-book.disabled {
+.button-tertiary.disabled {
   background-color: #d9d9d9;
   cursor: default;
 }
-.button-book.disabled:hover {
+.button-tertiary.disabled:hover {
   opacity: 1;
 }
 
@@ -1646,7 +1648,17 @@ button:hover {
   color: #fff;
 }
 
-.button-book {
+.button-tertiary {
+  font-size: 0.875em;
+  font-family: "Robotomedium";
+  padding: 20px 30px;
+  border: none;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #2f8cda;
+}
+
+.button-tertiary-disabled {
   font-size: 0.875em;
   font-family: "Robotomedium";
   padding: 20px 30px;
