@@ -1,11 +1,11 @@
-// ------------------------- Table-top -------------------------------
-
 .book-table {
     background-color: #F2F2F2;
 }
 
 .container.book-table {
     background-color: #fff;
+    border: none;
+    border-radius: 10px;
 }
 
 .book-table-top {
@@ -48,51 +48,63 @@
 
 // ------------------- Table-main-----------------------
 .people-list {
-    max-width: 165px;
+    width: 165px;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .date-list {
     display: flex;
-    // flex: 1;
     overflow: hidden;
-    margin-left: auto;
 }
 
 .table-lists {
     display: flex;
-    padding: 0 30px;
 }
 
 .people-items > li {
-    transform: translateY(12%);
-    padding: 4px 0;
+    padding: 23px 0;
+    border-bottom: 1px solid #e1e8ee;
+}
+
+.people-items li:first-of-type {
+    padding: 33px 0;
+}
+
+.people-items li:last-of-type {
+    border-bottom: none;
 }
 
 .people-items li div {
-    padding: 20px 0;
+    padding: 0px 0px 0px 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
 }
 
 .people-items li:first-of-type div{
     visibility: hidden;
 }
 
-
 .arrow-data-slider {
     width: 44px;
     background-color: #f0f4f7;
     position: relative;
-    margin-top: 30px;
-    margin-bottom: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #2f8cda;
+        color: #fff;
+        transition: all 0.3s;
+    }
 }
 
-/* tbody {
-    display: block;
-    width: 100%;
-} */
+.arrow-data-slider:first-of-type {
+    margin-right: 5px;
+    margin-left: 10px;
+}
 
 .table-data-list {
     overflow: hidden;
