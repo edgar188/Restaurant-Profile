@@ -152,6 +152,14 @@ body {
   content: "";
 }
 
+.icon-arrow-left:before {
+  content: "";
+}
+
+.icon-arrow-right:before {
+  content: "";
+}
+
 header {
   padding: 25px;
   width: 1440px;
@@ -263,7 +271,6 @@ header i {
 
 .header-avatar {
   position: absolute;
-  top: -8px;
   left: 185px;
 }
 
