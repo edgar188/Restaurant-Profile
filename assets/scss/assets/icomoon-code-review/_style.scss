@@ -63,4 +63,9 @@
     }
 }
 
+.icon-picture-shape {
+    &:before {
+        content: $icon-picture-shape;
+    }
+}
   

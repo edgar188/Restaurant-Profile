@@ -166,6 +166,10 @@ body {
   content: "";
 }
 
+.icon-picture-shape:before {
+  content: "";
+}
+
 header {
   padding: 25px;
   width: 1440px;
