@@ -32,6 +32,8 @@ $color-bg-popup: #838cc7;
 $color-bg-custom: #39a4cd;
 $color-bg-btn-1: #53bbb3;
 $color-bg-btn-2: #e74a4a;
+$color-bg-btn-3: #2F8CDA;
+$color-bg-btn-disabled: #d9d9d9;
 
 //Font Icon Base Colors
 $color-icon-primary: #bdc6cf;
@@ -53,6 +55,7 @@ $br-none: 0;
 
 // Transitions
 $trns-duration: .3s;
+$trns-duration-md: 0.5s;
 $trns-duration-lg: 1s;
 $trns-delay: 50ms;
 

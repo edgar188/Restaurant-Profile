@@ -1,18 +1,19 @@
 .book-table {
-    background-color: #F2F2F2;
+    background-color: $color-bg-primary;
+    padding-bottom: 40px;
 }
 
-.container.book-table {
-    background-color: #fff;
+.container.book-table-cont {
+    background-color: $color-bg-light;
     border: none;
-    border-radius: 10px;
+    border-radius: $br-md;
 }
 
 .book-table-top {
     display: flex;
     align-items: center;
     padding: 20px 0;
-    border-bottom: 1px solid #e1e8ee;
+    border-bottom: 1px solid $color-br-primary;
 }
 
 .book-top-head-wrapper {
@@ -26,124 +27,134 @@
 .book-top-select-wrapper {
     width: 33.3%;
     text-align: left;
+}
 
-    label {
-        margin-right: 10px;
-    }
+.book-top-label {
+     margin-right: 10px;
 }
 
 .primary-select.book-select-left {
-    background-color: #f0f4f7;
+    background-color: $color-bg-primary;
     padding-left: 30px;
     padding-right: 60px;
     background-position-x: 170px;
 }
 
 .primary-select.book-select-right {
-    background-color: #f0f4f7;
+    background-color: $color-bg-primary;
     padding-left: 30px;
     padding-right: 60px;
     background-position-x: 120px;
 }
 
-// ------------------- Table-main-----------------------
+// ---------------------------------- Table-main-----------------------------------
 .people-list {
-    width: 165px;
+    width: 160px;
     white-space: nowrap;
 }
 
 .date-list {
     display: flex;
     overflow: hidden;
+    padding: 0 10px;
+    flex: 1;
 }
 
 .table-lists {
     display: flex;
 }
 
-.people-items > li {
+.people-item {
     padding: 23px 0;
-    border-bottom: 1px solid #e1e8ee;
-}
-
-.people-items li:first-of-type {
-    padding: 33px 0;
-}
-
-.people-items li:last-of-type {
-    border-bottom: none;
-}
-
-.people-items li div {
-    padding: 0px 0px 0px 30px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    word-break: break-all;
-}
-
-.people-items li:first-of-type div{
-    visibility: hidden;
-}
-
-.arrow-data-slider {
-    width: 44px;
-    background-color: #f0f4f7;
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-
-    &:hover {
-        background-color: #2f8cda;
-        color: #fff;
-        transition: all 0.3s;
+    border-bottom: 1px solid $color-br-primary;
+    &:first-of-type {
+        padding: 33px 0;
+        .people-item-text {
+            visibility: hidden;
+        }
+    }
+    &:last-of-type {
+        border-bottom: none;
     }
 }
 
-.arrow-data-slider:first-of-type {
-    margin-right: 5px;
-    margin-left: 10px;
+.people-item-text {
+    padding-left: 30px;
+    @include ofl-ellipsis;
+}
+
+
+.arrow-data-slider {
+    width: 44px;
+    background-color: $color-bg-secondary;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: $br-md;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-bg-custom;
+        color: $color-text-light;
+        transition: all $trns-delay;
+    }
+
+    .icon-arrow-left,
+    .icon-arrow-right {
+        @extend .centered-axis-xy;
+    }
 }
 
 .table-data-list {
     overflow: hidden;
     width: 100%;
     padding: 5px;
+    -webkit-user-select: none;
+}
+
+.table {
+    transition: margin $trns-duration-md;
 }
 
 .table-clock {
     padding: 30px 20px;
-    color: #43484d;
+    color: $color-text-dark;
 }
 
-.table-data-list tr {
-    border-bottom: 1px solid #e1e8ee;
+.table-row {
+    border-bottom: 1px solid $color-br-primary;
 }
 
-.table-data-list tr:last-of-type {
+.table-row:last-of-type {
     border-bottom: none;
 }
 
-.table-data-list td {
+.table-data {
     padding: 4px;
+    position: relative;
 }
 
-.table-data-list td:last-of-type {
+.table-data:last-of-type {
     padding-right: 0;
 }
 
-.centered-axis-xy {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .button-tertiary.disabled {
-    background-color: #d9d9d9;
+    background-color: $color-bg-btn-disabled;
     cursor: default;
     &:hover {
         opacity: 1;
     }
+}
+
+.sale-text {
+    @include position(4px, 4px);
+    color: $color-text-light;
+    background: $color-bg-btn-2;
+    padding: 2px 5px 6px 5px;
+    font-size: 0.8em;
+    border: none;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }

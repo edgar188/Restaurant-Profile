@@ -12,19 +12,18 @@ button {
     border: none;
     border-radius: $br-lg;
     text-transform: capitalize;
-    color: #fff;
+    color: $color-text-light;
 }
 
 .button-tertiary {
     @include ofl-ellipsis;
     font-size: 0.875em;
     font-family: 'Robotomedium';
-    width: 100%;
-    max-width: 90px;
+    width: 90px;
     padding: 20px 5px;
     border: none;
     border-radius: $br-default;
     text-transform: capitalize;
-    color: #fff;
-    background-color: #2f8cda;
+    color: $color-text-light;
+    background-color: $color-bg-btn-3;
 }
