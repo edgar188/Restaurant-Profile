@@ -1,0 +1,26 @@
+.info-rev {
+    background-color: $color-bg-primary;
+    padding-bottom: 45px;
+}
+
+.info-rev-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-rev-left-wrapper {
+    width: 66%;
+    max-width: 750px;
+    background-color: salmon;
+    height: 500px;
+}
+
+.info-rev-right-wrapper {
+    max-width: 370px;
+    text-align: right;
+}
+
+.dinners-wrapper {
+    margin-top: 34px;
+    background-color: $color-bg-light;
+}

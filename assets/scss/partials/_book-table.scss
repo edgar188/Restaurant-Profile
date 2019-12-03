@@ -1,6 +1,6 @@
 .book-table {
     background-color: $color-bg-primary;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
 }
 
 .container.book-table-cont {
@@ -150,11 +150,12 @@
     @include position(4px, 4px);
     color: $color-text-light;
     background: $color-bg-btn-2;
-    padding: 2px 5px 6px 5px;
-    font-size: 0.8em;
+    padding: 4px 7px 7px 7px;
+    font-size: 0.625em;
     border: none;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
+
 }
