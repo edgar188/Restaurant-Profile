@@ -5,7 +5,6 @@
 
 .info-rev-cont {
     display: flex;
-    justify-content: space-between;
 }
 
 .info-rev-left-wrapper {
@@ -13,14 +12,64 @@
     max-width: 750px;
     background-color: salmon;
     height: 500px;
+    margin-right: 2%;
 }
 
 .info-rev-right-wrapper {
     max-width: 370px;
     text-align: right;
+    width: 33%;
 }
 
-.dinners-wrapper {
+.map {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: $box-shadow-primary;
+}
+
+.diners-wrapper {
     margin-top: 34px;
     background-color: $color-bg-light;
+    padding: 20px 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: $box-shadow-primary;
 }
+
+.diners-head {
+    text-align: left;
+    padding: 0 0 20px 20px;
+    color: #5e6977;
+    font-size: 18px;
+    .icon-picture-shape {
+        font-size: 24px;
+        padding-right: 10px;
+        padding-top: 0px;
+        float: left;
+    }
+}
+
+
+.diners-photos-link {
+    &:hover {
+        opacity: 0.5;
+    }    
+}
+
+.diners-photo {
+        max-width: 33%;
+        max-height: 125px;
+    }
+
+.diners-photos-load {
+    display: block;
+    padding-top: 15px;
+    text-align: center;
+    color: #358ed7;
+    font-family: "Robotomedium";
+    &:hover {
+        opacity: 0.5;
+    }  
+}
+

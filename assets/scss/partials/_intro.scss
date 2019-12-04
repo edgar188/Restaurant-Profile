@@ -22,8 +22,8 @@
 }
 
 .slider {
-   @include position(auto, auto, auto, auto, relative);
-    // box-shadow: 0 0 8px rgba(0.5,0.5,0.5,0.5);
+    @include position(auto, auto, auto, auto, relative);
+    box-shadow: $box-shadow-primary;
 }
 
 .slider-item {
@@ -77,7 +77,7 @@
 }
 
 .slider-content {
-    @include position(28%, auto, auto, 12%);
+    @include position(30%, auto, auto, 12%);
     text-align: center;
 }
 

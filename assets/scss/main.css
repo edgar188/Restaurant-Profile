@@ -313,6 +313,7 @@ header i {
   right: auto;
   bottom: auto;
   left: auto;
+  box-shadow: 0 0 8px rgba(1, 1, 1, 0.2);
 }
 
 .slider-item {
@@ -392,7 +393,7 @@ header i {
 
 .slider-content {
   position: absolute;
-  top: 28%;
+  top: 30%;
   right: auto;
   bottom: auto;
   left: 12%;
@@ -535,6 +536,7 @@ header i {
   background-color: #fff;
   border: none;
   border-radius: 10px;
+  box-shadow: 0 0 8px rgba(1, 1, 1, 0.2);
 }
 
 .book-table-top {
@@ -689,7 +691,6 @@ header i {
 
 .info-rev-cont {
   display: flex;
-  justify-content: space-between;
 }
 
 .info-rev-left-wrapper {
@@ -697,16 +698,62 @@ header i {
   max-width: 750px;
   background-color: salmon;
   height: 500px;
+  margin-right: 2%;
 }
 
 .info-rev-right-wrapper {
   max-width: 370px;
   text-align: right;
+  width: 33%;
 }
 
-.dinners-wrapper {
+.map {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(1, 1, 1, 0.2);
+}
+
+.diners-wrapper {
   margin-top: 34px;
   background-color: #fff;
+  padding: 20px 0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(1, 1, 1, 0.2);
+}
+
+.diners-head {
+  text-align: left;
+  padding: 0 0 20px 20px;
+  color: #5e6977;
+  font-size: 18px;
+}
+.diners-head .icon-picture-shape {
+  font-size: 24px;
+  padding-right: 10px;
+  padding-top: 0px;
+  float: left;
+}
+
+.diners-photos-link:hover {
+  opacity: 0.5;
+}
+
+.diners-photo {
+  max-width: 33%;
+  max-height: 125px;
+}
+
+.diners-photos-load {
+  display: block;
+  padding-top: 15px;
+  text-align: center;
+  color: #358ed7;
+  font-family: "Robotomedium";
+}
+.diners-photos-load:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 360px) {
