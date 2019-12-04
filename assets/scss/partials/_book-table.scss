@@ -148,10 +148,10 @@
 }
 
 .sale-text {
-    @include position(4px, 4px);
+    @include position(3px, 4px);
     color: $color-text-light;
     background: $color-bg-btn-2;
-    padding: 4px 7px 7px 7px;
+    padding: 4px 8px 7px 8px;
     font-size: 0.625em;
     border: none;
     border-top-left-radius: 5%;

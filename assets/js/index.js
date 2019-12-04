@@ -41,4 +41,22 @@ function onTableSlide(direction) {
     }
 }
 
+function onInfoBtnClick(target, blockName) {
+    var infoButtons = document.getElementsByClassName("button-primary info");
+    for(var btn of infoButtons) {
+        btn.className = "button-primary info";
+        if(target.className.indexOf("active-state") === -1 && target.innerText === btn.innerText) {
+            target.className += " active-state";
+        }
+    }
+
+    var blocks = document.getElementById("info-block-wrapper").children;
+    for(var block of blocks) {
+        block.style.display = "none"
+        if(block.dataset.block === blockName) {
+            
+            block.style.display = "block"
+        }
+    }
+}
 

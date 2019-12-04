@@ -335,10 +335,7 @@
                                             tables</button></td>
                                     <td class="table-data"><button class="button-tertiary">Book</button></td>
                                     <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data">
-                                        <button class="button-tertiary">Book</button>
-                                        <span class="sale-text">-20%</span>
-                                    </td>
+                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
                                 </tr>
                                 <tr class="table-row">
                                     <td class="table-data">
@@ -458,64 +455,194 @@
         </section>
         <!----------------------------- Info-Rev -------------------------------->
         <section class="info-rev">
-            <div class="container info-rev-cont">
-                <div class="info-rev-left-wrapper">
-                    <div class="info-wrapper">
-                        <h2 class="section-head">Restaurant Information</h2>
-                        <div class="sample-menu">
-
+            <div class="container">
+                <h2 class="section-head">Restaurant Information</h2>
+                <div class="info-rev-cont">
+                    <div class="info-rev-left-wrapper">
+                        <!------------------------- Res Information ---------------------->
+                        <div class="info-wrapper">
+                            <ul class="info-list">
+                                <li class="info-item">
+                                    <button class="button-primary info active-state" onclick="onInfoBtnClick(this, 'info-sample-menu')">Sample Menu</button>
+                                </li>
+                                <li class="info-item">
+                                    <button class="button-primary info" onclick="onInfoBtnClick(this, 'info-open-times')">Open Times</button>
+                                </li>
+                                <li class="info-item">
+                                    <button class="button-primary info" onclick="onInfoBtnClick(this, 'info-more-details')">More Detils</button>
+                                </li>
+                            </ul>
+                            <div id="info-block-wrapper">
+                                <div class="info-sample-menu"data-block="info-sample-menu">
+                                    <ul class="sample-list-top">
+                                        <li class="sample-item-top">
+                                            <a href="#" class="sample-item-link active">Entree</a>
+                                        </li>
+                                        <li class="sample-item-top">
+                                            <a href="#" class="sample-item-link">Main</a>
+                                        </li>
+                                        <li class="sample-item-top">
+                                            <a href="#" class="sample-item-link">Desert</a>
+                                        </li>
+                                        <li class="sample-item-top">
+                                            <a href="#" class="sample-item-link">Banquet & Specials</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sample-list-bot">
+                                        <li class="sample-item-bot-item">
+                                            <h3 class="sample-item-bot-title">Essence of Pork<span>$8.00</span></h3>
+                                            <p class="sample-item-bot-desc">textured egg yolk, asparagus, truffle</p>
+                                        </li>
+                                        <li class="sample-item-bot-item">
+                                            <h3 class="sample-item-bot-title">Hay Valley Lamb Ham<span>$18.00</span></h3>
+                                            <p class="sample-item-bot-desc">Bread, Piocalilly</p>
+                                        </li>
+                                        <li class="sample-item-bot-item">
+                                            <h3 class="sample-item-bot-title">Jar<span>$7.00</span></h3>
+                                            <p class="sample-item-bot-desc">Pickled Mushrooms</p>
+                                        </li>
+                                        <li class="sample-item-bot-item">
+                                            <h3 class="sample-item-bot-title">Scollops<span>$16.00</span></h3>
+                                            <p class="sample-item-bot-desc">Oyster Cream, bacon, ginger</p>
+                                        </li>
+                                        <li class="sample-item-bot-item">
+                                            <h3 class="sample-item-bot-title">Beef Short Rib (serves 4 -
+                                                6)<span>$85.00</span></h3>
+                                            <p class="sample-item-bot-desc">Cos Lettuce, russian dressing, chicken fat
+                                                potatoes, feta, mint, lemon</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="info-open-times"data-block="info-open-times">
+                                    <ul class="info-open-times-list">
+                                        <li class="info-open-times-item">
+                                            <span class="info-open-times-day">Monday</span>
+                                            <span class="info-open-times-time">Closed</span>
+                                        </li>
+                                        <li class="info-open-times-item">
+                                            <span class="info-open-times-day">Tuesday</span>
+                                            <span class="info-open-times-time">12pm to 3pm, 5:30 to 10pm</span>
+                                        </li>
+                                        <li class="info-open-times-item">
+                                            <span class="info-open-times-day">Monday</span>
+                                            <span class="info-open-times-time">12pm to 3pm, 5:30 to 10pm</span>
+                                        </li>
+                                        <li class="info-open-times-item">
+                                            <span class="info-open-times-day">Monday</span>
+                                            <span class="info-open-times-time">12pm to 3pm, 5:30 to 10pm</span>
+                                        </li>
+                                        <li class="info-open-times-item">
+                                            <span class="info-open-times-day">Monday</span>
+                                            <span class="info-open-times-time">12pm to 3pm, 5:30 to 10pm</span>
+                                        </li>
+                                        <li class="info-open-times-item">
+                                            <span class="info-open-times-day">Monday</span>
+                                            <span class="info-open-times-time">12pm to 3pm, 5:30 to 10pm</span>
+                                        </li>
+                                        <li class="info-open-times-item">
+                                            <span class="info-open-times-day">Monday</span>
+                                            <span class="info-open-times-time">Closed</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="info-more-details"data-block="info-more-details">
+                                    <ul class="info-more-details-list">
+                                        <li class="info-more-details-item">
+                                            <span class="info-more-details-title">Transport / Parking</span>
+                                            <span class="info-more-details-desc">Off Street Parking Wilson Parking on Pirie Street Close to tram stop 12 and bus stops</span>
+                                        </li>
+                                        <li class="info-more-details-item">
+                                            <span class="info-more-details-title">Dress code</span>
+                                            <span class="info-more-details-desc">Business Casual</span>
+                                        </li>
+                                        <li class="info-more-details-item">
+                                            <span class="info-more-details-title">Dining style</span>
+                                            <span class="info-more-details-desc">Smart Casual Dining</span>
+                                        </li>
+                                        <li class="info-more-details-item">
+                                            <span class="info-more-details-title">What's nearly</span>
+                                            <span class="info-more-details-desc">Adelaide Town Hall Rundle Mall shopping precinct Adelaide Central Markets</span>
+                                        </li>
+                                        <li class="info-more-details-item">
+                                            <span class="info-more-details-title">Restaurant vibe</span>
+                                            <span class="info-more-details-desc">
+                                                <button class="button-secondary">Romantic</button>
+                                                <button class="button-secondary">Business Lunch</button>
+                                                <button class="button-secondary">Great Cocktails</button>
+                                                <button class="button-secondary">City Centre</button>
+                                                <button class="button-secondary">Private dining room</button>
+                                                <button class="button-secondary">Function Rooms</button>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--------------------------- Res Reviews ------------------------------->
+                        <div class="rev-wrapper">
+                            <h2 class="section-head">Restaurant Reviews</h2>
+                            
                         </div>
                     </div>
-                    <div class="rev-wrapper">
-
-                    </div>
-                </div>
-                <div class="info-rev-right-wrapper">
-                    <div class="map-wrapper">
-                        <img src="./assets/img/info-reviews/map.png" alt="map" class="map"/>
-                    </div>
-                    <div class="diners-wrapper">
-                        <h3 class="diners-head"><i class="icon-picture-shape"></i>Diners Photos</h3>
-                        <div class="diners-photos">
-                            <a href="#" class="diners-photos-link">
-                                <img src="./assets/img/info-reviews/diners-img/Layer 12.png" alt="" class="diners-photo" />
-                            </a>
-                            <a href="#" class="diners-photos-link">
-                                <img src="./assets/img/info-reviews/diners-img/Layer 13.png" alt="" class="diners-photo" />
-                            </a>
-                            <a href="#" class="diners-photos-link">
-                                <img src="./assets/img/info-reviews/diners-img/Layer 14.png" alt="" class="diners-photo" />
-                            </a>
-                            <a href="#" class="diners-photos-link">
-                                <img src="./assets/img/info-reviews/diners-img/Layer 15.png" alt="" class="diners-photo" />
-                            </a>
-                            <a href="#" class="diners-photos-link">
-                                <img src="./assets/img/info-reviews/diners-img/Layer 16.png" alt="" class="diners-photo" />
-                            </a>
-                            <a href="#" class="diners-photos-link">
-                                <img src="./assets/img/info-reviews/diners-img/Layer 17.png" alt="" class="diners-photo" />
-                            </a>
-                            <a href="#" class="diners-photos-link">
-                                <img src="./assets/img/info-reviews/diners-img/Layer 18.png" alt="" class="diners-photo" />
-                            </a>
-                            <a href="#" class="diners-photos-link">
-                                <img src="./assets/img/info-reviews/diners-img/Layer 19.png" alt="" class="diners-photo" />
-                            </a>
-                            <a href="#" class="diners-photos-link">
-                                <img src="./assets/img/info-reviews/diners-img/Layer 20.png" alt="" class="diners-photo" />
-                            </a>
-                            <a href="#" class="diners-photos-link">
-                                <img src="./assets/img/info-reviews/diners-img/Layer 21.png" alt="" class="diners-photo" />
-                            </a>
-                            <a href="#" class="diners-photos-link">
-                                <img src="./assets/img/info-reviews/diners-img/Layer 22.png" alt="" class="diners-photo" />
-                            </a>
-                            <a href="#" class="diners-photos-link">
-                                <img src="./assets/img/info-reviews/diners-img/Layer 23.png" alt="" class="diners-photo" />
-                            </a>
-
+                    <div class="info-rev-right-wrapper">
+                        <div class="map-wrapper">
+                            <img src="./assets/img/info-reviews/map.png" alt="map" class="map" />
                         </div>
-                        <a href="#" class="diners-photos-load">load more</a>
+                        <div class="diners-wrapper">
+                            <h3 class="diners-head"><i class="icon-picture-shape"></i>Diners Photos</h3>
+                            <div class="diners-photos">
+                                <a href="#" class="diners-photos-link">
+                                    <img src="./assets/img/info-reviews/diners-img/Layer 12.png" alt=""
+                                        class="diners-photo" />
+                                </a>
+                                <a href="#" class="diners-photos-link">
+                                    <img src="./assets/img/info-reviews/diners-img/Layer 13.png" alt=""
+                                        class="diners-photo" />
+                                </a>
+                                <a href="#" class="diners-photos-link">
+                                    <img src="./assets/img/info-reviews/diners-img/Layer 14.png" alt=""
+                                        class="diners-photo" />
+                                </a>
+                                <a href="#" class="diners-photos-link">
+                                    <img src="./assets/img/info-reviews/diners-img/Layer 15.png" alt=""
+                                        class="diners-photo" />
+                                </a>
+                                <a href="#" class="diners-photos-link">
+                                    <img src="./assets/img/info-reviews/diners-img/Layer 16.png" alt=""
+                                        class="diners-photo" />
+                                </a>
+                                <a href="#" class="diners-photos-link">
+                                    <img src="./assets/img/info-reviews/diners-img/Layer 17.png" alt=""
+                                        class="diners-photo" />
+                                </a>
+                                <a href="#" class="diners-photos-link">
+                                    <img src="./assets/img/info-reviews/diners-img/Layer 18.png" alt=""
+                                        class="diners-photo" />
+                                </a>
+                                <a href="#" class="diners-photos-link">
+                                    <img src="./assets/img/info-reviews/diners-img/Layer 19.png" alt=""
+                                        class="diners-photo" />
+                                </a>
+                                <a href="#" class="diners-photos-link">
+                                    <img src="./assets/img/info-reviews/diners-img/Layer 20.png" alt=""
+                                        class="diners-photo" />
+                                </a>
+                                <a href="#" class="diners-photos-link">
+                                    <img src="./assets/img/info-reviews/diners-img/Layer 21.png" alt=""
+                                        class="diners-photo" />
+                                </a>
+                                <a href="#" class="diners-photos-link">
+                                    <img src="./assets/img/info-reviews/diners-img/Layer 22.png" alt=""
+                                        class="diners-photo" />
+                                </a>
+                                <a href="#" class="diners-photos-link">
+                                    <img src="./assets/img/info-reviews/diners-img/Layer 23.png" alt=""
+                                        class="diners-photo" />
+                                </a>
+
+                            </div>
+                            <a href="#" class="diners-photos-load">load more</a>
+                        </div>
                     </div>
                 </div>
             </div>

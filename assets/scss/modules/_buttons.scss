@@ -5,6 +5,15 @@ button {
     }
 }
 
+.button-primary {
+    padding: 11px 18px;
+    border: 2px solid #e1e8ee;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    color: $color-text-primary;
+}
+
 .button-secondary {
     font-size: 0.75em;
     font-family: 'Robotomedium';
