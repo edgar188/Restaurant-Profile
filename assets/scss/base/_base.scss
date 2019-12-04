@@ -31,3 +31,9 @@ body {
   font-family: "Robotolight";
   color: $color-text-dark;
 }
+
+.block-wrapper {
+  background-color: $color-bg-light;
+  border-radius: $br-md;
+  box-shadow: $box-shadow-primary;
+}

@@ -171,7 +171,7 @@
         </section>
         <!--------------------------- Book-table -------------------------------->
         <section class="book-table">
-            <div class="container book-table-cont">
+            <div class="container block-wrapper">
                 <div class="book-table-top">
                     <div class="book-top-head-wrapper">
                         <h2 class="section-head book-table-head">Book a table</h2>
@@ -460,20 +460,23 @@
                 <div class="info-rev-cont">
                     <div class="info-rev-left-wrapper">
                         <!------------------------- Res Information ---------------------->
-                        <div class="info-wrapper">
+                        <div class="block-wrapper info">
                             <ul class="info-list">
                                 <li class="info-item">
-                                    <button class="button-primary info active-state" onclick="onInfoBtnClick(this, 'info-sample-menu')">Sample Menu</button>
+                                    <button class="button-primary info active-state"
+                                        onclick="onInfoBtnClick(this, 'info-sample-menu')">Sample Menu</button>
                                 </li>
                                 <li class="info-item">
-                                    <button class="button-primary info" onclick="onInfoBtnClick(this, 'info-open-times')">Open Times</button>
+                                    <button class="button-primary info"
+                                        onclick="onInfoBtnClick(this, 'info-open-times')">Open Times</button>
                                 </li>
                                 <li class="info-item">
-                                    <button class="button-primary info" onclick="onInfoBtnClick(this, 'info-more-details')">More Detils</button>
+                                    <button class="button-primary info"
+                                        onclick="onInfoBtnClick(this, 'info-more-details')">More Detils</button>
                                 </li>
                             </ul>
-                            <div id="info-block-wrapper">
-                                <div class="info-sample-menu"data-block="info-sample-menu">
+                            <ul id="info-block-wrapper">
+                                <li class="info-sample-menu" data-block="info-sample-menu">
                                     <ul class="sample-list-top">
                                         <li class="sample-item-top">
                                             <a href="#" class="sample-item-link active">Entree</a>
@@ -494,7 +497,8 @@
                                             <p class="sample-item-bot-desc">textured egg yolk, asparagus, truffle</p>
                                         </li>
                                         <li class="sample-item-bot-item">
-                                            <h3 class="sample-item-bot-title">Hay Valley Lamb Ham<span>$18.00</span></h3>
+                                            <h3 class="sample-item-bot-title">Hay Valley Lamb Ham<span>$18.00</span>
+                                            </h3>
                                             <p class="sample-item-bot-desc">Bread, Piocalilly</p>
                                         </li>
                                         <li class="sample-item-bot-item">
@@ -512,8 +516,8 @@
                                                 potatoes, feta, mint, lemon</p>
                                         </li>
                                     </ul>
-                                </div>
-                                <div class="info-open-times"data-block="info-open-times">
+                                </li>
+                                <li class="info-open-times" data-block="info-open-times">
                                     <ul class="info-open-times-list">
                                         <li class="info-open-times-item">
                                             <span class="info-open-times-day">Monday</span>
@@ -544,12 +548,13 @@
                                             <span class="info-open-times-time">Closed</span>
                                         </li>
                                     </ul>
-                                </div>
-                                <div class="info-more-details"data-block="info-more-details">
+                                </li>
+                                <li class="info-more-details" data-block="info-more-details">
                                     <ul class="info-more-details-list">
                                         <li class="info-more-details-item">
                                             <span class="info-more-details-title">Transport / Parking</span>
-                                            <span class="info-more-details-desc">Off Street Parking Wilson Parking on Pirie Street Close to tram stop 12 and bus stops</span>
+                                            <span class="info-more-details-desc">Off Street Parking Wilson Parking on
+                                                Pirie Street Close to tram stop 12 and bus stops</span>
                                         </li>
                                         <li class="info-more-details-item">
                                             <span class="info-more-details-title">Dress code</span>
@@ -561,7 +566,8 @@
                                         </li>
                                         <li class="info-more-details-item">
                                             <span class="info-more-details-title">What's nearly</span>
-                                            <span class="info-more-details-desc">Adelaide Town Hall Rundle Mall shopping precinct Adelaide Central Markets</span>
+                                            <span class="info-more-details-desc">Adelaide Town Hall Rundle Mall shopping
+                                                precinct Adelaide Central Markets</span>
                                         </li>
                                         <li class="info-more-details-item">
                                             <span class="info-more-details-title">Restaurant vibe</span>
@@ -575,20 +581,89 @@
                                             </span>
                                         </li>
                                     </ul>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
                         <!--------------------------- Res Reviews ------------------------------->
-                        <div class="rev-wrapper">
-                            <h2 class="section-head">Restaurant Reviews</h2>
-                            
+                        <h2 class="section-head">Restaurant Reviews</h2>
+                        <div class="block-wrapper rev">
+                            <ul class="info-list">
+                                <li class="info-item">
+                                    <button class="button-primary rev active-state">Your Friend Reviews</button>
+                                </li>
+                                <li class="info-item">
+                                    <button class="button-primary rev"><i class="icon-picture-shape"></i>Friends Photos</button>
+                                </li>
+                                <li class="info-item">
+                                    <button class="button-primary rev">Other Dines Reviews</button>
+                                </li>
+                            </ul>
+                            <ul class="rev-list">
+                                <li class="rev-item">
+                                    <div class="rev-item-left">
+                                        <img src="./assets/img/info-reviews/rev-avatar-1.png" alt="avatar-1" />
+                                    </div>
+                                    <ul class="rev-item-right">
+                                        <li class="rev-item-right-info">
+                                            <span class="user">Sarah Graves</span>
+                                            <span class="date">16th March 2016</span>
+                                        </li>
+                                        <li class="rev-item-right-stars">
+                                            <i class="icon-star active"></i>
+                                            <i class="icon-star active"></i>
+                                            <i class="icon-star active"></i>
+                                            <i class="icon-star active"></i>
+                                            <i class="icon-star"></i>
+                                        </li>
+                                        <li class="rev-item-right-comment">"Asian Fusion" was the way the food was
+                                            introduced. Good variety and the
+                                            theme was spice. The mix worked well and the choices they suggested were
+                                            perfect.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="rev-item">
+                                    <div class="rev-item-left">
+                                        <img src="./assets/img/info-reviews/rev-avatar-2.png" alt="avatar-2" />
+                                    </div>
+                                    <ul class="rev-item-right">
+                                        <li class="rev-item-right-info">
+                                            <span class="user">Sarah Graves</span>
+                                            <span class="date">16th March 2016</span>
+                                        </li>
+                                        <li class="rev-item-right-stars">
+                                            <i class="icon-star active"></i>
+                                            <i class="icon-star active"></i>
+                                            <i class="icon-star active"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                        </li>
+                                        <li class="rev-item-right-comment">"Asian Fusion" was the way the food was
+                                            introduced. Good variety and the
+                                            theme was spice. The mix worked well and the choices they suggested were
+                                            perfect.
+                                        </li>
+                                        <ul class="rev-item-right active">
+                                            <li class="rev-item-right-info">
+                                                <span class="user">Sarah Graves</span>
+                                                <span class="date">16th March 2016</span>
+                                            </li>
+                                            <li class="rev-item-right-comment">"Asian Fusion" was the way the food was
+                                                introduced. Good variety and the
+                                                theme was spice. The mix worked well and the choices they suggested were
+                                                perfect.
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="info-rev-right-wrapper">
-                        <div class="map-wrapper">
-                            <img src="./assets/img/info-reviews/map.png" alt="map" class="map" />
+                        <div class="block-wrapper map">
+                            <img src="./assets/img/info-reviews/map.png" alt="map" class="map-img" />
                         </div>
-                        <div class="diners-wrapper">
+                        <div class="block-wrapper diners">
                             <h3 class="diners-head"><i class="icon-picture-shape"></i>Diners Photos</h3>
                             <div class="diners-photos">
                                 <a href="#" class="diners-photos-link">

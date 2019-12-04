@@ -20,14 +20,17 @@
     width: 33%;
 }
 
-.map {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: $box-shadow-primary;
+.block-wrapper.map {
+    background-color: $color-bg-primary;
 }
 
-.diners-wrapper {
+.map-img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 360px;
+}
+
+.block-wrapper.diners {
     margin-top: 34px;
     background-color: $color-bg-light;
     padding: 20px 0;
@@ -72,12 +75,10 @@
     }  
 }
 
+// ------------------------------- Left section Info --------------------------------
 
-// ------------------------------- Left section --------------------------------
-
-.info-wrapper {
-    background-color: #fff;
-    border-radius: 10px;
+.block-wrapper.info {
+    margin-bottom: 40px;
 }
 
 .info-list { 
@@ -211,4 +212,70 @@
 }
 
 // ---------------------------- Reviews ------------------------------
+
+.block-wrapper.rev {
+    margin-top: 20px
+}
+
+.rev-list {
+    font-size: 14px;
+}
+
+.rev-item {
+    border-bottom: 1px solid #e1e8ee;
+    padding: 20px;
+}
+
+.rev-item-left {
+    display: inline-block;
+    width: 10%;
+    vertical-align: top;
+}
+
+.rev-item-right {
+    display: inline-block;
+    width: 88%;
+}
+
+.rev-item-right.active {
+    background-color: $color-bg-primary;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: $br-md;
+}
+
+.rev-item-right-info  {
+    padding-bottom: 10px;
+    & .info-date {
+        margin-left: 20px;
+    }
+}
+
+.rev-item-right-comment {
+    padding-top: 10px;
+}
+
+.rev-item-right-info {
+    .user {
+        font-family: "Robotomedium";
+        color: $color-text-secondary;
+    }
+
+    .date {
+        margin-left: 10px;
+    }
+}
+
+.button-primary i {
+    margin-right: 10px;
+}
+
+.rev-item-right-stars {
+    font-size: 18px;
+}
+
+.icon-star.active {
+    color: #afa072;
+}
 

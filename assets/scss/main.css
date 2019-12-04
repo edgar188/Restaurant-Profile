@@ -117,6 +117,12 @@ body {
   color: #43484d;
 }
 
+.block-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(1, 1, 1, 0.2);
+}
+
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon-restaurant" !important;
@@ -532,13 +538,6 @@ header i {
   padding-bottom: 45px;
 }
 
-.container.book-table-cont {
-  background-color: #fff;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(1, 1, 1, 0.2);
-}
-
 .book-table-top {
   display: flex;
   align-items: center;
@@ -609,6 +608,7 @@ header i {
 
 .people-item-text {
   padding-left: 30px;
+  color: #43484d;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -706,14 +706,17 @@ header i {
   width: 33%;
 }
 
-.map {
-  width: 100%;
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(1, 1, 1, 0.2);
+.block-wrapper.map {
+  background-color: #f2f2f2;
 }
 
-.diners-wrapper {
+.map-img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 360px;
+}
+
+.block-wrapper.diners {
   margin-top: 34px;
   background-color: #fff;
   padding: 20px 0;
@@ -755,9 +758,8 @@ header i {
   opacity: 0.5;
 }
 
-.info-wrapper {
-  background-color: #fff;
-  border-radius: 10px;
+.block-wrapper.info {
+  margin-bottom: 40px;
 }
 
 .info-list {
@@ -892,6 +894,69 @@ header i {
 .info-more-details-desc .button-secondary {
   margin-bottom: 10px;
   background-color: #bdc6cf;
+}
+
+.block-wrapper.rev {
+  margin-top: 20px;
+}
+
+.rev-list {
+  font-size: 14px;
+}
+
+.rev-item {
+  border-bottom: 1px solid #e1e8ee;
+  padding: 20px;
+}
+
+.rev-item-left {
+  display: inline-block;
+  width: 10%;
+  vertical-align: top;
+}
+
+.rev-item-right {
+  display: inline-block;
+  width: 88%;
+}
+
+.rev-item-right.active {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.rev-item-right-info {
+  padding-bottom: 10px;
+}
+.rev-item-right-info .info-date {
+  margin-left: 20px;
+}
+
+.rev-item-right-comment {
+  padding-top: 10px;
+}
+
+.rev-item-right-info .user {
+  font-family: "Robotomedium";
+  color: #5e6977;
+}
+.rev-item-right-info .date {
+  margin-left: 10px;
+}
+
+.button-primary i {
+  margin-right: 10px;
+}
+
+.rev-item-right-stars {
+  font-size: 18px;
+}
+
+.icon-star.active {
+  color: #afa072;
 }
 
 @media (min-width: 360px) {

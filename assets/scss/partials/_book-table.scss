@@ -3,13 +3,6 @@
     padding-bottom: 45px;
 }
 
-.container.book-table-cont {
-    background-color: $color-bg-light;
-    border: none;
-    border-radius: $br-md;
-    box-shadow: $box-shadow-primary;
-}
-
 .book-table-top {
     display: flex;
     align-items: center;
@@ -81,6 +74,7 @@
 
 .people-item-text {
     padding-left: 30px;
+    color: $color-text-dark;
     @include ofl-ellipsis;
 }
 
