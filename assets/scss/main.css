@@ -176,6 +176,30 @@ body {
   content: "";
 }
 
+.icon-send:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-google-plus:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-rss:before {
+  content: "";
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
 header {
   padding: 25px;
   width: 1440px;
@@ -956,6 +980,11 @@ header i {
 
 .footer-top {
   background-color: #fff;
+  padding: 70px 0 20px 0;
+}
+
+.footer-bottom {
+  background-color: #43484d;
   padding: 70px 0 20px 0;
 }
 

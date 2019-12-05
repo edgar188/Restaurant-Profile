@@ -68,4 +68,43 @@
         content: $icon-picture-shape;
     }
 }
+
+.icon-send {
+    &:before {
+        content: $icon-send;
+    }
+}
+
+.icon-facebook {
+    &:before {
+        content: $icon-facebook;
+    }
+}
+
+.icon-google-plus {
+    &:before {
+        content: $icon-google-plus;
+    }
+}
+
+.icon-instagram {
+    &:before {
+        content: $icon-instagram;
+    }
+}
+
+.icon-rss {
+    &:before {
+        content: $icon-rss;
+    }
+}
+
+.icon-twitter {
+    &:before {
+        content: $icon-twitter;
+    }
+}
+
+
+
   
