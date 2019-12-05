@@ -900,7 +900,7 @@ header i {
 }
 
 .rev-list {
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 .rev-item {
@@ -928,14 +928,14 @@ header i {
 }
 
 .rev-item-right-info {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 .rev-item-right-info .info-date {
   margin-left: 20px;
 }
 
 .rev-item-right-comment {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .rev-item-right-info .user {
@@ -952,6 +952,11 @@ header i {
 
 .rev-item-right-stars {
   font-size: 1.125em;
+}
+
+.footer-top {
+  background-color: #fff;
+  padding: 70px 0 20px 0;
 }
 
 @media (min-width: 360px) {
