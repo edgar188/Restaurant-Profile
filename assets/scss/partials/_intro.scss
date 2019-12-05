@@ -13,12 +13,16 @@
     display: flex;
 }
 
+.intro-pagination-item {
+    margin-right: 10px;
+}
+
 .intro-pagination-link:hover {
-    color: $color-text-tertiary;
+    color: $color-text-highlight;
 }
 
 .link-divider {
-    margin: 0 5px;
+    padding: 0 5px;
 }
 
 .slider {

@@ -12,7 +12,7 @@
     width: 66%;
     max-width: 750px;
     margin-right: 2%;
-    line-height: 21px;
+    line-height: 1.3125em;
 }
 
 .info-rev-right-wrapper {
@@ -35,22 +35,21 @@
     margin-top: 34px;
     background-color: $color-bg-light;
     padding: 20px 0;
-    border: none;
-    border-radius: 10px;
+    border-radius: $br-md;
     box-shadow: $box-shadow-primary;
 }
 
 .diners-head {
+    @extend .clear-after;
     text-align: left;
     padding: 0 0 20px 20px;
-    color: #5e6977;
-    font-size: 18px;
-    @extend .clear-after;
+    color: $color-text-secondary;
+    font-size: 1.125em;
     .icon-picture-shape {
-        font-size: 24px;
+        float: left;
+        font-size: 1.5em;
         padding-right: 10px;
         padding-top: 0px;
-        float: left;
     }
 }
 
@@ -62,7 +61,7 @@
 
 .diners-photos-link {
     &:hover {
-        opacity: 0.5;
+        opacity: 0.8;
     }    
 }
 
@@ -75,27 +74,17 @@
     display: block;
     padding-top: 15px;
     text-align: center;
-    color: #358ed7;
+    color: $color-text-highlight;
     font-family: "Robotomedium";
     &:hover {
-        opacity: 0.5;
+        opacity: 0.8;
     }  
 }
 
-// ------------------------------- Left section Info --------------------------------
+// ------------------------------- Info left section --------------------------------
 
 .block-wrapper.info {
     margin-bottom: 40px;
-}
-
-.info-list { 
-    padding: 25px 0;
-    display: flex;
-    justify-content: center;
-}
-
-.info-item {
-    margin-right: 15px;
 }
 
 .info-item:last-of-type {
@@ -110,7 +99,7 @@
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    border-bottom: 1px solid #e1e8ee;
+    border-bottom: 1px solid $color-br-primary;
 }
 
 .sample-item-top {
@@ -121,9 +110,9 @@
     margin-left: 0;
 }
 
-.button-primary.active-state {
-    color: #358ed7;
-    border-color: #358ed7;
+.button-primary.active {
+    color: $color-text-highlight;
+    border-color: $color-br-highlight;
 }
 
 .sample-item-link {
@@ -131,19 +120,19 @@
 }
 
 .sample-item-link.active {
-    border-bottom: 2px solid #5e6977;
     padding: 0 20px 20px 20px;
+    border-bottom: 2px solid $color-br-tertiary;
     color: $color-text-secondary;
 }
 
 .sample-item-bot-item {
-    border-bottom: 1px solid #e1e8ee;
+    border-bottom: 1px solid $color-br-primary;
     padding: 20px;
 }
 
 .sample-item-bot-title {
     @include ofl-ellipsis;
-    color: #43484d;
+    color: $color-text-dark;
     span {
         float: right;
     }
@@ -151,9 +140,9 @@
 
 .sample-item-bot-desc {
     @include ofl-ellipsis;
-    color: #86939e;
     padding-top: 10px;
-    font-size: 14px;
+    font-size: 0.875em;
+    color: $color-text-primary;
 }
 
 .info-open-times {
@@ -162,8 +151,8 @@
 
 .info-open-times-item {
     padding: 20px;
-    font-size: 18px;
-    color: #43484d;
+    font-size: 1.125em;
+    color: $color-text-dark;
 }
 
 .info-open-times-day {
@@ -187,12 +176,10 @@
     display: none;
 }
 
-
 .info-more-details-item {
     padding: 20px;
-    font-size: 18px;
-    color: #43484d;
-
+    font-size: 1.125em;
+    color: $color-text-dark;
     &:last-of-type .info-more-details-desc {
         width: 70%;
     }
@@ -209,13 +196,13 @@
     display: inline-block;
     width: 30%;
     margin-left: 20px;
-    font-size: 14px;
-    color: #86939e;
+    font-size: 0.875em;
+    color: $color-text-primary;
 }
 
 .info-more-details-desc .button-secondary {
     margin-bottom: 10px;
-    background-color: #bdc6cf;
+    background-color: $color-bg-btn-4;
 }
 
 // ---------------------------- Reviews ------------------------------
@@ -229,7 +216,7 @@
 }
 
 .rev-item {
-    border-bottom: 1px solid #e1e8ee;
+    border-bottom: 1px solid $color-br-primary;
     padding: 20px;
 }
 
@@ -245,10 +232,10 @@
 }
 
 .rev-item-right.active {
-    background-color: $color-bg-primary;
     padding: 20px;
     margin-top: 20px;
     width: 100%;
+    background-color: $color-bg-primary;
     border-radius: $br-md;
 }
 
@@ -274,11 +261,13 @@
     }
 }
 
-.button-primary i {
-    margin-right: 10px;
+.button-primary {
+    i {
+        margin-right: 10px;
+    }
 }
 
 .rev-item-right-stars {
-    font-size: 18px;
+    font-size: 1.125em;
 }
 

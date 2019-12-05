@@ -7,11 +7,13 @@ button {
 
 .button-primary {
     padding: 11px 18px;
-    border: 2px solid #e1e8ee;
-    background-color: #fff;
-    font-size: 14px;
+    font-family: 'Robotomedium';
+    font-size: 0.875em;
     border-radius: 4px;
+    border: 2px solid $color-br-primary;
     color: $color-text-primary;
+    background-color: $color-text-light;
+    text-transform: capitalize;
 }
 
 .button-secondary {
@@ -20,8 +22,8 @@ button {
     padding: 5px 10px;
     border: none;
     border-radius: $br-lg;
-    text-transform: capitalize;
     color: $color-text-light;
+    text-transform: capitalize;
 }
 
 .button-tertiary {
@@ -32,7 +34,7 @@ button {
     padding: 20px 5px;
     border: none;
     border-radius: $br-default;
-    text-transform: capitalize;
     color: $color-text-light;
     background-color: $color-bg-btn-3;
+    text-transform: capitalize;
 }

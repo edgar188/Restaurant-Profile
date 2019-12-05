@@ -45,8 +45,8 @@ function onInfoBtnClick(target, blockName) {
     var infoButtons = document.getElementsByClassName("button-primary info");
     for(var btn of infoButtons) {
         btn.className = "button-primary info";
-        if(target.className.indexOf("active-state") === -1 && target.innerText === btn.innerText) {
-            target.className += " active-state";
+        if(target.className.indexOf("active") === -1 && target.innerText === btn.innerText) {
+            target.className += " active";
         }
     }
 
