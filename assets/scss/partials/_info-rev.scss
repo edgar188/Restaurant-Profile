@@ -12,6 +12,7 @@
     width: 66%;
     max-width: 750px;
     margin-right: 2%;
+    line-height: 21px;
 }
 
 .info-rev-right-wrapper {
@@ -53,6 +54,12 @@
     }
 }
 
+.diners-photos-item {
+    display: inline;
+    max-width: 33%;
+    max-height: 125px;
+}
+
 .diners-photos-link {
     &:hover {
         opacity: 0.5;
@@ -60,9 +67,9 @@
 }
 
 .diners-photo {
-        max-width: 33%;
-        max-height: 125px;
-    }
+    max-width: 33%;
+    max-height: 125px;
+}
 
 .diners-photos-load {
     display: block;
@@ -274,6 +281,4 @@
 .rev-item-right-stars {
     font-size: 18px;
 }
-
-
 

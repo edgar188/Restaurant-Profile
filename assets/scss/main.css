@@ -697,6 +697,7 @@ header i {
   width: 66%;
   max-width: 750px;
   margin-right: 2%;
+  line-height: 21px;
 }
 
 .info-rev-right-wrapper {
@@ -735,6 +736,12 @@ header i {
   padding-right: 10px;
   padding-top: 0px;
   float: left;
+}
+
+.diners-photos-item {
+  display: inline;
+  max-width: 33%;
+  max-height: 125px;
 }
 
 .diners-photos-link:hover {
