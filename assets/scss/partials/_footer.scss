@@ -7,3 +7,53 @@
     background-color: #43484d;
     padding: 70px 0 20px 0;
 }
+
+.footer-top-list {
+    display: flex;
+}
+
+.footer-top-item {
+    width: 23%;
+    margin-left: 3%;
+    &:first-of-type {
+        width: 48%;
+        margin-left: 0;
+    }
+}
+
+.footer-head {
+    font-size: 18px;
+    font-family: "Robotomedium";
+    line-height: 35px;
+    color: #43484d;
+}
+
+.footer-parag {
+    line-height: 20px;
+}
+
+.footer-text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #86939e;
+}
+
+// .primary-field.footer {
+    
+// }
+
+.footer-mid {
+    padding: 20px 0;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img {
+        margin-right: 20px;
+    }
+}
+
+
