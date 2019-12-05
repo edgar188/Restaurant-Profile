@@ -502,7 +502,6 @@ header i {
 }
 
 .mention-stars-wrapper {
-  color: #afa072;
   font-size: 1.2em;
 }
 
@@ -953,10 +952,6 @@ header i {
 
 .rev-item-right-stars {
   font-size: 18px;
-}
-
-.icon-star.active {
-  color: #afa072;
 }
 
 @media (min-width: 360px) {
@@ -2580,6 +2575,10 @@ button:hover {
   bottom: auto;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.icon-star.active {
+  color: #afa072;
 }
 
 .test-grid [class^=col], .test-grid > [class*=" col"] {
