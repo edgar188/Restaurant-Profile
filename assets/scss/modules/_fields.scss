@@ -2,11 +2,12 @@
     padding: 10px;
     border: 2px solid $color-br-primary;
     border-radius: $br-default;
-
+    font-size: 0.875em;
+    font-size: 14px;
+    color: $color-text-primary;
     &::placeholder {
-        font-size: 0.875em;
-        color: $color-text-primary;
         @extend .text-capitalize;
+        color: $color-text-primary;
     }
 }
 

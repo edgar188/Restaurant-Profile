@@ -1023,6 +1023,41 @@ header i {
   color: #86939e;
 }
 
+.footer-item-head {
+  padding-bottom: 20px;
+}
+
+.footer-form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.footer-soc-link {
+  margin-right: 25px;
+  color: #dee2e7;
+  font-size: 18px;
+}
+
+.primary-field.footer {
+  width: 100%;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.footer-btn {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  transform: translateY(50%);
+  padding: 10px;
+  color: #fff;
+  border: 0px solid #e1e8ee;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #7dc855;
+}
+
 .footer-mid {
   padding: 20px 0;
 }
@@ -2086,9 +2121,11 @@ button:hover {
   padding: 10px;
   border: 2px solid #e1e8ee;
   border-radius: 4px;
+  font-size: 0.875em;
+  font-size: 14px;
+  color: #86939e;
 }
 .primary-field::placeholder {
-  font-size: 0.875em;
   color: #86939e;
 }
 
