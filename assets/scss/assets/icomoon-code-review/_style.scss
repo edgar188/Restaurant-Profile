@@ -105,6 +105,10 @@
     }
 }
 
-
+.icon-arrow-up {
+    &::before {
+        content: $icon-arrow-up;
+    }
+}
 
   
