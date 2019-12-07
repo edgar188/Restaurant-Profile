@@ -49,7 +49,7 @@ header {
 
 .header-mark {
     @include position();
-    font-family: 'Robotomedium';
+    font-family: $font-tertiary;
     font-size: 0.75em;
     color: $color-text-tertiary;
     &.calendar {

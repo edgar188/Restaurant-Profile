@@ -121,7 +121,7 @@
 }
 
 .popup-head {
-    font-family: 'Robotomedium';
+    font-family: $font-tertiary;
     margin-bottom: 10px;
     font-size: 1.125em;
 }
@@ -133,7 +133,7 @@
 .popup-bottom-content {
     @include position(auto, auto, auto, auto, relative);
     padding: 15px 20px;
-    font-family: 'Robotomedium';
+    font-family: $font-tertiary;
     span {
         margin-left: 5px;
     }

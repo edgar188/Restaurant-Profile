@@ -1,7 +1,8 @@
 .footer-text {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 24px;
-    color: #86939e;
+    color: $color-text-primary;
+    text-transform: capitalize;
 }
 
 .footer-block {
@@ -10,7 +11,7 @@
     padding: 70px 0 20px 0;
 }
 
-.footer-top-list {
+.footer-list {
     display: flex;
     align-items: baseline;
 }
@@ -25,10 +26,10 @@
 }
 
 .footer-head {
-    font-size: 18px;
-    font-family: "Robotomedium";
+    font-size: 1.125em;
+    font-family: $font-tertiary;
     line-height: 35px;
-    color: #43484d;
+    color: $color-text-dark;
 }
 
 .footer-parag {
@@ -47,8 +48,13 @@
 
 .footer-soc-link {
     margin-right: 25px;
-    color: #dee2e7;
-    font-size: 18px;
+    color: $color-text-soc;
+    font-size: 1.125em;
+
+    &:hover {
+        color: $color-text-tertiary;
+        opacity: 1;
+    }
 }
 
 .primary-field.footer {
@@ -58,44 +64,42 @@
 }
 
 .footer-btn {
-    position: absolute;
-    right: 1px;
-    top: 1px;
+    @include position(1px, 1px);
     transform: translateY(50%);
     padding: 12px;
-    color: #fff;
-    border: 0px solid #e1e8ee;
+    color: $color-text-light;
+    background-color: $color-bg-highlight;
+    border: 0 solid $color-br-primary;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: #7dc855;
 }
 
 .footer-mid {
     padding: 20px 0;
 
-    ul {
+    .footer-mid-list {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+}
 
-    img {
-        margin-right: 20px;
-    }
+.app-img {
+    margin-right: 20px;
 }
 
 .footer-block.bot {
-    background-color: #43484d;
+    background-color: $color-bg-dark;
 }
 
-.footer-top-list.bot {
+.footer-list.bot {
     align-items: flex-end;
     padding-bottom: 70px;
-    border-bottom: 1px solid #565b5f;
+    border-bottom: 1px solid $color-br-tertiary;
 } 
 
 .footer-head.bot {
-    color: #fff;
+    color: $color-text-light;
 }
 
 .footer-bot-item {
@@ -107,7 +111,7 @@
     }
 }
 
-.footer-top-list.bot-down {
+.footer-list.bot-down {
     align-items: center;
 } 
 
@@ -126,24 +130,24 @@
     margin-right: 0;
     text-align: right;
     font-size: 16px;
-    color: #fff;
+    color: $color-text-light;
 }
 
 .arrow-up-wrapper {
     margin-left: 15px;
     width: 25px;
     height: 25px;
-    border: 2px solid #565b5f;
+    border: 2px solid $color-br-tertiary;
     padding: 10px;
     border-radius: 50%;
-    color: #fff;
+    color: $color-text-light;
 
     &:hover {
         opacity: 0.7;
         cursor: pointer;
-        background-color: #fff;
-        border-color: #fff;
-        color: #333;
+        background-color: $color-bg-light;
+        border-color: $color-br-primary;
+        color: $color-bg-dark;
     }
 }
 
