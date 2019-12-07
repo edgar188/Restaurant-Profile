@@ -1,3 +1,4 @@
+// Intro Slider
 $(document).ready(function () {
     $("#owl-demo").owlCarousel({
         nav: true,
@@ -12,14 +13,25 @@ $(document).ready(function () {
     });
 });
 
-// function headerHiddenNav() {
-//     var hiddenNode = document.getElementById('header-hidden');
-//     if(hiddenNode.style.display === 'none') {
-//         hiddenNode.style.display = 'block';
-//     } else {
-//         hiddenNode.style.display = 'none';
-//     }
-// }
+// Magnific-popup
+$(document).ready(function () {
+    $('.popup-with-form').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#name',
+        // When elemened is focused, some mobile browsers in some cases zoom in
+        // It looks not nice, so we disable it:
+        callbacks: {
+            beforeOpen: function () {
+                if ($(window).width() < 700) {
+                    this.st.focus = false;
+                } else {
+                    this.st.focus = '#name';
+                }
+            }
+        }
+    });
+});
 
 function onTableSlide(direction) {
     var table = document.getElementById("table-book");
@@ -41,7 +53,7 @@ function onTableSlide(direction) {
     }
 }
 
-function onInfoBtnClick(target, blockName) {
+function onInfoMenuBtnClick(target, blockName) {
     var infoButtons = document.getElementsByClassName("button-primary info");
     for(var btn of infoButtons) {
         btn.className = "button-primary info";
