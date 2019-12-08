@@ -1030,24 +1030,115 @@ header i {
   justify-content: center;
 }
 
-.data-wrapper {
-  padding: 35px;
+.data-list {
+  padding: 30px;
   background-color: #358ed7;
   color: #fff;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  width: 25%;
-  height: 260px;
 }
 
 .form-wrapper {
-  padding: 35px;
+  position: relative;
   background-color: #fff;
   color: silver;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  width: 25%;
-  height: 260px;
+}
+.form-wrapper .primary-field {
+  width: 100%;
+}
+.form-wrapper h3 {
+  padding: 40px 0 30px 30px;
+  font-size: 18px;
+  font-family: "Robotomedium";
+  color: #616976;
+  border-bottom: 1px solid #e1e8ee;
+}
+.form-wrapper input[type=checkbox] {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: none;
+  margin-right: 10px;
+}
+.form-wrapper .button-primary {
+  padding: 12px 45px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-family: "Robotomedium";
+  background-color: #7dc855;
+  border-color: #7dc855;
+  color: #fff;
+}
+
+.form-list {
+  padding: 30px;
+}
+.form-list li:last-of-type {
+  margin-top: 15px;
+}
+
+.data-item-label {
+  display: block;
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.data-item-desc {
+  font-size: 32px;
+  font-family: "Robotolight";
+}
+
+.data-item-label:last-of-type {
+  display: inline-block;
+}
+.data-item-label:last-of-type a {
+  display: block;
+}
+
+i.icon-star.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.radio-toolbar {
+  margin: 10px 0;
+  user-select: none;
+}
+
+.radio-toolbar input[type=radio] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.primary-field.radio {
+  display: inline-block;
+  padding: 12px 50px;
+  font-family: "Robotomedium";
+  font-size: 16px;
+  border-color: #5da5df;
+  color: #fff;
+  cursor: pointer;
+}
+.primary-field.radio:first-of-type {
+  margin-right: 10px;
+}
+.primary-field.radio:hover {
+  background-color: #7dc855;
+  border-color: #7dc855;
+}
+
+.radio-toolbar input[type=radio]:checked + label {
+  background-color: #fff;
+  border-color: #fff;
+  color: #358ed7;
+  cursor: default;
 }
 
 .intro {
@@ -2921,7 +3012,6 @@ button:hover {
   border: 2px solid #e1e8ee;
   border-radius: 4px;
   font-size: 0.875em;
-  font-size: 14px;
   color: #86939e;
 }
 .primary-field::placeholder {

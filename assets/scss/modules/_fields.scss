@@ -3,7 +3,6 @@
     border: 2px solid $color-br-primary;
     border-radius: $br-default;
     font-size: 0.875em;
-    font-size: 14px;
     color: $color-text-primary;
     &::placeholder {
         @extend .text-capitalize;

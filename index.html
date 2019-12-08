@@ -20,45 +20,60 @@
                 <a class="popup-with-form" href="#test-form">
                     <i class="icon-nav"></i>
                 </a>
-                <div id="test-form" class="white-popup-block mfp-hide">
-                    <div class="data-wrapper">
-                        <p>Location</p>
-                        <h3>Level One at Electra House</h3>
-                        <p>Date</p>
-                        <h3>Saturday 24th August 2016</h3>
-                        <p>Dining time</p>
-                        <h3>7:30pm</h3>
-                        <p>Select party Size</p>
-                        <div class="radio-toolbar">
-                                <input type="radio" id="radioApple" name="radioFruit" value="apple" checked>
-                                <label for="radioApple">3 People</label>
-                            
-                                <input type="radio" id="radioBanana" name="radioFruit" value="banana">
-                                <label for="radioBanana">4 People</label>                            
+                <form id="test-form" class="white-popup-block mfp-hide">
+                    <ul class="data-list">
+                        <li class="data-item">
+                            <label class="data-item-label">Location</label>
+                            <h3 class="data-item-desc">Level One at Electra <br /> House</h3>
+                        </li>
+
+                        <li class="data-item">
+                            <label class="data-item-label">Date</label>
+                            <h3 class="data-item-desc">Saturday<br /> 24th August 2016</h3>
+                        </li>
+
+                        <li class="data-item">
+                            <label class="data-item-label">Dining time</label>
+                            <h3 class="data-item-desc">7: 30</h3>
+                        </li>
+                        <li class="data-item">
+                            <label class="data-item-label">Select Party Size</label>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="three-people" name="people-number" value="3" checked>
+                                <label for="three-people" class="primary-field radio">3 People</label>
+                                <input type="radio" id="four-people" name="people-number" value="4">
+                                <label for="four-people" class="primary-field radio">4 People</label>
                             </div>
-                    </div>
+                        </li>
+                    </ul>
                     <div class="form-wrapper">
-                        <form>
-                            <fieldset style="border:0;">
-                                <ol>
-                                    <li>
-                                        <label for="name">Name</label>
-                                        <input id="name" name="name" type="text" placeholder="Name" required="">
-                                    </li>
-                                    <li>
-                                        <label for="email">Email</label>
-                                        <input id="email" name="email" type="email" placeholder="example@domain.com"
-                                            required="">
-                                    </li>
-                                    <li>
-                                        <label for="phone">Phone</label>
-                                        <input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000"
-                                            required="">
-                                    </li>
-                                </ol>
-                            </fieldset>
-                        </form>
+                        <i id="close" class="icon-star close"></i>
+                        <h3>Booking for confirmation</h3>
+                        <ul class="form-list">
+                            <li>
+                                <label for="name" class="data-item-label">First Name</label>
+                                <input id="name" name="name" class="primary-field" placeholder="Burt" required>
+                            </li>
+                            <li>
+                                <label for="name" class="data-item-label">Last Name</label>
+                                <input id="name" name="name" class="primary-field" placeholder="Admiraal" required>
+                            </li>
+                            <li>
+                                <label for="phone" class="data-item-label">Mobile</label>
+                                <input id="phone" name="mobile" class="primary-field" type="tel"
+                                    placeholder="0413 333 333" required>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agreeWithTerms" />
+                                <label class="data-item-label">
+                                    <span>I agree with</span>
+                                    <a href="#">Terms & Conditions</a>
+                                </label>
+                                <button type="submit" class="button-primary">Book</button>
+                            </li>
+                        </ul>
                     </div>
+                </form>
                 </div>
             </nav>
 

@@ -31,6 +31,10 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('#close').click(function() {
+        $.magnificPopup.close();
+    });
 });
 
 function onTableSlide(direction) {
