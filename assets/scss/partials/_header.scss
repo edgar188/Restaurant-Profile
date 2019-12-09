@@ -89,29 +89,21 @@ header {
 
 .data-list {
     padding: 30px;
-    background-color: #358ed7;
-    color: #fff;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    background-color: $color-text-highlight;
+    color: $color-text-light;
+    border-top-left-radius: $br-default;
+    border-bottom-left-radius: $br-default;
 }
 
 .form-wrapper {
     position: relative;
-    background-color: #fff;
-    color: silver;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    background-color: $color-text-light;
+    color: $color-text-primary;
+    border-top-right-radius: $br-default;
+    border-bottom-right-radius: $br-default;
 
     .primary-field {
         width: 100%;
-    }
-
-    h3 {
-        padding: 40px 0 30px 30px;
-        font-size: 18px;
-        font-family: "Robotomedium";
-        color: #616976;
-        border-bottom: 1px solid $color-br-primary;
     }
 
     input[type="checkbox"] {
@@ -125,56 +117,63 @@ header {
     .button-primary {
         padding: 12px 45px;
         margin-left: 20px;
-        font-size: 16px;
-        font-family: "Robotomedium";
+        font-size: 1em;
+        font-family: $font-tertiary;
         background-color: $color-bg-highlight;
         border-color: $color-bg-highlight;
-        color: #fff;
+        color: $color-text-light;
     }
+}
+
+.form-head {
+    padding: 40px 0 30px 30px;
+    font-size: 1.125em;
+    font-family: $font-tertiary;
+    color: $color-text-secondary;
+    border-bottom: 1px solid $color-br-primary;
 }
 
 .form-list {
     padding: 30px;
-    li:last-of-type {
+}
+
+.form-item:last-of-type {
+    &:last-of-type {
         margin-top: 15px;
     }
 }
 
 .data-item-label {
     display: block;
-    font-size: 14px;
+    font-size: 0.875em;
     padding-bottom: 10px;
     padding-top: 10px;
-}
-
-.data-item-desc {
-    font-size: 32px;
-    font-family: "Robotolight";
-}
-
-.data-item-label:last-of-type {
-    display: inline-block;
-    a {
-        display: block;
+    &:last-of-type {
+        display: inline-block;
     }
 }
 
-i.icon-star.close {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    font-size: 28px;
-    cursor: pointer;
+.data-item-desc {
+    font-size: 2em;
+    font-family: $font-secondary;
 }
 
+.data-item-block-link {
+    display: block;
+}
 
+.icon-close {
+    @include position(40px, 30px);
+    font-size: 1.125em;
+    cursor: pointer;
+}
 
 .radio-toolbar {
     margin: 10px 0;
     user-select: none;
   }
-  
-.radio-toolbar input[type="radio"] {
+
+.radio-field {
     opacity: 0;
     position: fixed;
     width: 0;
@@ -183,10 +182,10 @@ i.icon-star.close {
 .primary-field.radio {
     display: inline-block;
     padding: 12px 50px;
-    font-family: "Robotomedium";
-    font-size: 16px;
-    border-color: #5da5df;
-    color: #fff;
+    font-family: $font-tertiary;
+    font-size: 1em;
+    border-color: $color-br-custom;
+    color: $color-text-light;
     cursor: pointer;
     &:first-of-type {
         margin-right: 10px;
@@ -197,13 +196,10 @@ i.icon-star.close {
     }
 }
 
-
-.radio-toolbar input[type="radio"]:checked + label {
-    background-color: #fff;
-    border-color: #fff;
-    color: #358ed7;
+.radio-field:checked + .primary-field.radio {
+    background-color: $color-bg-light;
+    border-color: $color-bg-light;
+    color: $color-text-highlight;
     cursor: default;
 }
-  
-
   

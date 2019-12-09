@@ -111,4 +111,9 @@
     }
 }
 
+.icon-close {
+    &::before {
+        content: $icon-close;
+    }
+}
   

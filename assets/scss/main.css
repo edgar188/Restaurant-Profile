@@ -911,6 +911,10 @@ a:hover {
   content: "🌘";
 }
 
+.icon-close::before {
+  content: "";
+}
+
 header {
   padding: 25px;
   max-width: 1440px;
@@ -1041,19 +1045,12 @@ header i {
 .form-wrapper {
   position: relative;
   background-color: #fff;
-  color: silver;
+  color: #86939e;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 .form-wrapper .primary-field {
   width: 100%;
-}
-.form-wrapper h3 {
-  padding: 40px 0 30px 30px;
-  font-size: 18px;
-  font-family: "Robotomedium";
-  color: #616976;
-  border-bottom: 1px solid #e1e8ee;
 }
 .form-wrapper input[type=checkbox] {
   display: inline-block;
@@ -1065,44 +1062,53 @@ header i {
 .form-wrapper .button-primary {
   padding: 12px 45px;
   margin-left: 20px;
-  font-size: 16px;
-  font-family: "Robotomedium";
+  font-size: 1em;
+  font-family: "Robotomedium", serif;
   background-color: #7dc855;
   border-color: #7dc855;
   color: #fff;
 }
 
+.form-head {
+  padding: 40px 0 30px 30px;
+  font-size: 1.125em;
+  font-family: "Robotomedium", serif;
+  color: #5e6977;
+  border-bottom: 1px solid #e1e8ee;
+}
+
 .form-list {
   padding: 30px;
 }
-.form-list li:last-of-type {
+
+.form-item:last-of-type:last-of-type {
   margin-top: 15px;
 }
 
 .data-item-label {
   display: block;
-  font-size: 14px;
+  font-size: 0.875em;
   padding-bottom: 10px;
   padding-top: 10px;
 }
-
-.data-item-desc {
-  font-size: 32px;
-  font-family: "Robotolight";
-}
-
 .data-item-label:last-of-type {
   display: inline-block;
 }
-.data-item-label:last-of-type a {
+
+.data-item-desc {
+  font-size: 2em;
+  font-family: "Robotolight", serif;
+}
+
+.data-item-block-link {
   display: block;
 }
 
-i.icon-star.close {
+.icon-close {
   position: absolute;
-  top: 30px;
+  top: 40px;
   right: 30px;
-  font-size: 28px;
+  font-size: 1.125em;
   cursor: pointer;
 }
 
@@ -1111,7 +1117,7 @@ i.icon-star.close {
   user-select: none;
 }
 
-.radio-toolbar input[type=radio] {
+.radio-field {
   opacity: 0;
   position: fixed;
   width: 0;
@@ -1120,8 +1126,8 @@ i.icon-star.close {
 .primary-field.radio {
   display: inline-block;
   padding: 12px 50px;
-  font-family: "Robotomedium";
-  font-size: 16px;
+  font-family: "Robotomedium", serif;
+  font-size: 1em;
   border-color: #5da5df;
   color: #fff;
   cursor: pointer;
@@ -1134,7 +1140,7 @@ i.icon-star.close {
   border-color: #7dc855;
 }
 
-.radio-toolbar input[type=radio]:checked + label {
+.radio-field:checked + .primary-field.radio {
   background-color: #fff;
   border-color: #fff;
   color: #358ed7;

@@ -39,35 +39,35 @@
                         <li class="data-item">
                             <label class="data-item-label">Select Party Size</label>
                             <div class="radio-toolbar">
-                                <input type="radio" id="three-people" name="people-number" value="3" checked>
+                                <input type="radio" class="radio-field" id="three-people" name="people-number" value="3" checked>
                                 <label for="three-people" class="primary-field radio">3 People</label>
-                                <input type="radio" id="four-people" name="people-number" value="4">
+                                <input type="radio" class="radio-field" id="four-people" name="people-number" value="4">
                                 <label for="four-people" class="primary-field radio">4 People</label>
                             </div>
                         </li>
                     </ul>
                     <div class="form-wrapper">
-                        <i id="close" class="icon-star close"></i>
-                        <h3>Booking for confirmation</h3>
+                        <i id="close" class="icon-close close"></i>
+                        <h3 class="form-head">Booking for confirmation</h3>
                         <ul class="form-list">
-                            <li>
+                            <li class="form-item">
                                 <label for="name" class="data-item-label">First Name</label>
                                 <input id="name" name="name" class="primary-field" placeholder="Burt" required>
                             </li>
-                            <li>
+                            <li class="form-item">
                                 <label for="name" class="data-item-label">Last Name</label>
                                 <input id="name" name="name" class="primary-field" placeholder="Admiraal" required>
                             </li>
-                            <li>
+                            <li class="form-item">
                                 <label for="phone" class="data-item-label">Mobile</label>
                                 <input id="phone" name="mobile" class="primary-field" type="tel"
                                     placeholder="0413 333 333" required>
                             </li>
-                            <li>
+                            <li class="form-item">
                                 <input type="checkbox" name="agreeWithTerms" />
                                 <label class="data-item-label">
                                     <span>I agree with</span>
-                                    <a href="#">Terms & Conditions</a>
+                                    <a href="#" class="data-item-block-link">Terms & Conditions</a>
                                 </label>
                                 <button type="submit" class="button-primary">Book</button>
                             </li>
