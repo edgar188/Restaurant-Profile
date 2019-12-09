@@ -35,12 +35,12 @@ a {
 
 .section-head {
   font-size: 1.625em;
-  font-family: "Robotolight";
-  color: $color-text-dark;
+  font-family: $font-secondary;
+  color: $color-dark;
 }
 
 .block-wrapper {
-  background-color: $color-bg-light;
+  background-color: $color-light;
   border-radius: $br-md;
   box-shadow: $box-shadow-primary;
 }

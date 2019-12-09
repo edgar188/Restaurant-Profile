@@ -7,7 +7,7 @@
 
 .footer-block {
     @extend .footer-text;
-    background-color: $color-bg-light;
+    background-color: $color-light;
     padding: 70px 0 20px 0;
 }
 
@@ -29,7 +29,7 @@
     font-size: 1.125em;
     font-family: $font-tertiary;
     line-height: 35px;
-    color: $color-text-dark;
+    color: $color-dark;
 }
 
 .footer-parag {
@@ -41,18 +41,17 @@
 }
 
 .footer-form {
+    position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
-    position: relative;
 }
 
 .footer-soc-link {
     margin-right: 25px;
-    color: $color-text-soc;
     font-size: 1.125em;
-
+    color: $color-text-soc;
     &:hover {
-        color: $color-text-tertiary;
+        color: $color-tertiary;
         opacity: 1;
     }
 }
@@ -67,8 +66,8 @@
     @include position(1px, 1px);
     transform: translateY(50%);
     padding: 12px;
-    color: $color-text-light;
-    background-color: $color-bg-highlight;
+    color: $color-light;
+    background-color: $color-tertiary;
     border: 0 solid $color-br-primary;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -89,17 +88,17 @@
 }
 
 .footer-block.bot {
-    background-color: $color-bg-dark;
+    background-color: $color-dark;
 }
 
 .footer-list.bot {
     align-items: flex-end;
     padding-bottom: 70px;
-    border-bottom: 1px solid $color-br-tertiary;
+    border-bottom: 1px solid $color-primary;
 } 
 
 .footer-head.bot {
-    color: $color-text-light;
+    color: $color-light;
 }
 
 .footer-bot-item {
@@ -129,25 +128,25 @@
     width: 45%;
     margin-right: 0;
     text-align: right;
-    font-size: 16px;
-    color: $color-text-light;
+    font-size: 1em;
+    color: $color-light;
 }
 
 .arrow-up-wrapper {
     margin-left: 15px;
     width: 25px;
     height: 25px;
-    border: 2px solid $color-br-tertiary;
+    border: 2px solid $color-primary;
     padding: 10px;
     border-radius: 50%;
-    color: $color-text-light;
+    color: $color-light;
 
     &:hover {
         opacity: 0.7;
         cursor: pointer;
-        background-color: $color-bg-light;
+        background-color: $color-light;
         border-color: $color-br-primary;
-        color: $color-bg-dark;
+        color: $color-dark;
     }
 }
 

@@ -18,7 +18,7 @@
 }
 
 .intro-pagination-link:hover {
-    color: $color-text-highlight;
+    color: $color-secondary;
 }
 
 .link-divider {
@@ -45,7 +45,7 @@
     width: 100%;
     height: 100%;
     opacity: 0.8;
-    background: $color-bg-slider;
+    background: $color-primary;
 }
 
 .slider-item .owl-nav button.owl-prev.disabled {
@@ -57,7 +57,7 @@
 .owl-carousel .owl-nav button.owl-prev {
     @include position(45%, 0);
     transform: translateY(-45%);
-    color: $color-text-light;
+    color: $color-light;
     opacity: 1;
 }
 
@@ -67,7 +67,7 @@
 
 .owl-theme .owl-nav [class*=owl-]:hover {
     background: none;
-    color: $color-text-tertiary;
+    color: $color-tertiary;
 }
 
 .owl-carousel .owl-nav button.owl-prev span,
@@ -92,19 +92,19 @@
 
 .slider-bottom-text {
     font-size: 1.125em;
-    color: $color-text-light;
+    color: $color-light;
     margin-top: 40px;
 }
 
 .slider-central-text {
     font-size: 4.5em;
-    color: $color-text-light;
+    color: $color-light;
 }
 
 .popup {
     @include position(362px, 0);
     background: $color-bg-popup;
-    color: $color-text-light;
+    color: $color-light;
     z-index: 10;
     border-radius: $br-md;
     min-width: 262px;
@@ -131,7 +131,7 @@
 }
 
 .popup-bottom-content {
-    @include position(auto, auto, auto, auto, relative);
+    position: relative;
     padding: 15px 20px;
     font-family: $font-tertiary;
     span {
@@ -162,7 +162,7 @@
 
 .mention-bottom-details-title,
 .mention-bottom-desc-title {
-    color: $color-text-secondary;
+    color: $color-primary;
     margin-bottom: 25px;
 }
 

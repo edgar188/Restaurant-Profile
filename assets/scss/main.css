@@ -820,7 +820,7 @@ a:hover {
 
 .section-head {
   font-size: 1.625em;
-  font-family: "Robotolight";
+  font-family: "Robotolight", serif;
   color: #43484d;
 }
 
@@ -930,10 +930,6 @@ header i {
 
 .header-content-wrapper {
   position: relative;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
 }
 .header-content-wrapper.calendar {
   margin-left: 125px;
@@ -952,19 +948,15 @@ header i {
 }
 .header-content-wrapper .icon-star {
   position: relative;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
   cursor: pointer;
 }
 .header-content-wrapper .last-star::after {
-  content: url("../../assets/img/header/ellipse.png");
   position: absolute;
   top: auto;
   right: auto;
   bottom: 10px;
   left: 10px;
+  content: url("../../assets/img/header/ellipse.png");
 }
 
 .icon-nav {
@@ -973,19 +965,15 @@ header i {
 
 .icon-calendar {
   position: relative;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
 }
 
 .icon-calendar::after {
-  content: url("../../assets/img/header/ellipse.png");
   position: absolute;
   top: auto;
   right: auto;
   bottom: 10px;
   left: 13px;
+  content: url("../../assets/img/header/ellipse.png");
 }
 
 .header-mark {
@@ -1026,6 +1014,9 @@ header i {
 
 .header-avatar {
   position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
   left: 185px;
 }
 
@@ -1110,6 +1101,9 @@ header i {
   right: 30px;
   font-size: 1.125em;
   cursor: pointer;
+}
+.icon-close:hover {
+  opacity: 0.5;
 }
 
 .radio-toolbar {
@@ -1322,10 +1316,6 @@ header i {
 
 .popup-bottom-content {
   position: relative;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
   padding: 15px 20px;
   font-family: "Robotomedium", serif;
 }
@@ -1467,11 +1457,11 @@ header i {
 }
 
 .people-item-text {
-  padding-left: 30px;
-  color: #43484d;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-left: 30px;
+  color: #43484d;
 }
 
 .arrow-data-slider {
@@ -1513,10 +1503,9 @@ header i {
 }
 
 .table-data {
-  padding: 4px;
   position: relative;
+  padding: 4px;
 }
-
 .table-data:last-of-type {
   padding-right: 0;
 }
@@ -1558,7 +1547,7 @@ header i {
   width: 66%;
   max-width: 750px;
   margin-right: 2%;
-  line-height: 1.3125em;
+  line-height: 21px;
 }
 
 .info-rev-right-wrapper {
@@ -1646,7 +1635,6 @@ header i {
 .sample-item-top {
   margin-left: 45px;
 }
-
 .sample-item-top:first-of-type {
   margin-left: 0;
 }
@@ -1659,7 +1647,6 @@ header i {
 .sample-item-link {
   color: #86939e;
 }
-
 .sample-item-link.active {
   padding: 0 20px 20px 20px;
   border-bottom: 2px solid #5e6977;
@@ -1775,7 +1762,6 @@ header i {
   display: inline-block;
   width: 88%;
 }
-
 .rev-item-right.active {
   padding: 20px;
   margin-top: 20px;
@@ -1787,20 +1773,19 @@ header i {
 .rev-item-right-info {
   padding-bottom: 5px;
 }
-.rev-item-right-info .info-date {
+.rev-item-right-info.info-date {
   margin-left: 20px;
+}
+.rev-item-right-info.user {
+  font-family: "Robotomedium", serif;
+  color: #5e6977;
+}
+.rev-item-right-info.date {
+  margin-left: 10px;
 }
 
 .rev-item-right-comment {
   padding-top: 5px;
-}
-
-.rev-item-right-info .user {
-  font-family: "Robotomedium", serif;
-  color: #5e6977;
-}
-.rev-item-right-info .date {
-  margin-left: 10px;
 }
 
 .button-primary i {
@@ -1853,15 +1838,15 @@ header i {
 }
 
 .footer-form {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
-  position: relative;
 }
 
 .footer-soc-link {
   margin-right: 25px;
-  color: #dee2e7;
   font-size: 1.125em;
+  color: #dee2e7;
 }
 .footer-soc-link:hover {
   color: #7dc855;
@@ -1940,7 +1925,7 @@ header i {
   width: 45%;
   margin-right: 0;
   text-align: right;
-  font-size: 16px;
+  font-size: 1em;
   color: #fff;
 }
 
@@ -2979,7 +2964,7 @@ button:hover {
 
 .button-primary {
   padding: 11px 18px;
-  font-family: "Robotomedium";
+  font-family: "Robotomedium", serif;
   font-size: 0.875em;
   border-radius: 4px;
   border: 2px solid #e1e8ee;
@@ -2990,7 +2975,7 @@ button:hover {
 
 .button-secondary {
   font-size: 0.75em;
-  font-family: "Robotomedium";
+  font-family: "Robotomedium", serif;
   padding: 5px 10px;
   border: none;
   border-radius: 30px;
@@ -3003,7 +2988,7 @@ button:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 0.875em;
-  font-family: "Robotomedium";
+  font-family: "Robotomedium", serif;
   width: 90px;
   padding: 20px 5px;
   border: none;

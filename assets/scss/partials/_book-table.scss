@@ -73,9 +73,9 @@
 }
 
 .people-item-text {
-    padding-left: 30px;
-    color: $color-text-dark;
     @include ofl-ellipsis;
+    padding-left: 30px;
+    color: $color-dark;
 }
 
 
@@ -90,7 +90,7 @@
 
     &:hover {
         background-color: $color-bg-btn-3;
-        color: $color-text-light;
+        color: $color-light;
         transition: all $trns-delay;
     }
 
@@ -113,7 +113,7 @@
 
 .table-clock {
     padding: 30px 20px;
-    color: $color-text-dark;
+    color: $color-dark;
 }
 
 .table-row {
@@ -125,12 +125,11 @@
 }
 
 .table-data {
-    padding: 4px;
     position: relative;
-}
-
-.table-data:last-of-type {
-    padding-right: 0;
+    padding: 4px;
+    &:last-of-type {
+        padding-right: 0;
+    }
 }
 
 .button-tertiary.disabled {
@@ -143,14 +142,13 @@
 
 .sale-text {
     @include position(3px, 4px);
-    color: $color-text-light;
+    color: $color-light;
     background: $color-bg-btn-2;
     padding: 4px 8px 7px 8px;
     font-size: 0.625em;
     border: none;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-
+    border-bottom-left-radius: $br-rounded;
+    border-bottom-right-radius: $br-rounded;
 }

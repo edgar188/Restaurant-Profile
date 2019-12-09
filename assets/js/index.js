@@ -19,8 +19,6 @@ $(document).ready(function () {
         type: 'inline',
         preloader: false,
         focus: '#name',
-        // When elemened is focused, some mobile browsers in some cases zoom in
-        // It looks not nice, so we disable it:
         callbacks: {
             beforeOpen: function () {
                 if ($(window).width() < 700) {
@@ -37,6 +35,7 @@ $(document).ready(function () {
     });
 });
 
+// Table slide
 function onTableSlide(direction) {
     var table = document.getElementById("table-book");
     if(direction.dataset.direction === "right") {
@@ -57,6 +56,7 @@ function onTableSlide(direction) {
     }
 }
 
+// Menu bar button click
 function onInfoMenuBtnClick(target, blockName) {
     var infoButtons = document.getElementsByClassName("button-primary info");
     for(var btn of infoButtons) {
@@ -76,7 +76,8 @@ function onInfoMenuBtnClick(target, blockName) {
     }
 }
 
-function scrollWindow(to) {
+
+function onScrollWindow(to) {
     to ==="top" 
         ? window.scrollTo({top: 0, behavior: "smooth"}) 
         : window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"});

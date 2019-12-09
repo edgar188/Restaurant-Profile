@@ -12,7 +12,7 @@
     width: 66%;
     max-width: 750px;
     margin-right: 2%;
-    line-height: 1.3125em;
+    line-height: 21px;
 }
 
 .info-rev-right-wrapper {
@@ -33,7 +33,7 @@
 
 .block-wrapper.diners {
     margin-top: 34px;
-    background-color: $color-bg-light;
+    background-color: $color-light;
     padding: 20px 0;
     border-radius: $br-md;
     box-shadow: $box-shadow-primary;
@@ -43,7 +43,7 @@
     @extend .clear-after;
     text-align: left;
     padding: 0 0 20px 20px;
-    color: $color-text-secondary;
+    color: $color-primary;
     font-size: 1.125em;
     .icon-picture-shape {
         float: left;
@@ -74,7 +74,7 @@
     display: block;
     padding-top: 15px;
     text-align: center;
-    color: $color-text-highlight;
+    color: $color-secondary;
     font-family: $font-tertiary;
     &:hover {
         opacity: 0.8;
@@ -104,25 +104,23 @@
 
 .sample-item-top {
     margin-left: 45px;
-}
-
-.sample-item-top:first-of-type {
-    margin-left: 0;
+    &:first-of-type {
+        margin-left: 0;
+    }
 }
 
 .button-primary.active {
-    color: $color-text-highlight;
-    border-color: $color-br-highlight;
+    color: $color-secondary;
+    border-color: $color-secondary;
 }
 
 .sample-item-link {
     color: $color-text-primary;
-}
-
-.sample-item-link.active {
-    padding: 0 20px 20px 20px;
-    border-bottom: 2px solid $color-br-tertiary;
-    color: $color-text-secondary;
+    &.active {
+        padding: 0 20px 20px 20px;
+        border-bottom: 2px solid $color-primary;
+        color: $color-primary;
+    }
 }
 
 .sample-item-bot-item {
@@ -132,7 +130,7 @@
 
 .sample-item-bot-title {
     @include ofl-ellipsis;
-    color: $color-text-dark;
+    color: $color-dark;
     span {
         float: right;
     }
@@ -152,7 +150,7 @@
 .info-open-times-item {
     padding: 20px;
     font-size: 1.125em;
-    color: $color-text-dark;
+    color: $color-dark;
 }
 
 .info-open-times-day {
@@ -179,7 +177,7 @@
 .info-more-details-item {
     padding: 20px;
     font-size: 1.125em;
-    color: $color-text-dark;
+    color: $color-dark;
     &:last-of-type .info-more-details-desc {
         width: 70%;
     }
@@ -229,36 +227,33 @@
 .rev-item-right {
     display: inline-block;
     width: 88%;
+    &.active {
+        padding: 20px;
+        margin-top: 20px;
+        width: 100%;
+        background-color: $color-bg-primary;
+        border-radius: $br-md;
+    }
 }
 
-.rev-item-right.active {
-    padding: 20px;
-    margin-top: 20px;
-    width: 100%;
-    background-color: $color-bg-primary;
-    border-radius: $br-md;
-}
 
 .rev-item-right-info  {
     padding-bottom: 5px;
-    & .info-date {
+    &.info-date {
         margin-left: 20px;
+    }
+    &.user {
+        font-family: $font-tertiary;
+        color: $color-primary;
+    }
+
+    &.date {
+        margin-left: 10px;
     }
 }
 
 .rev-item-right-comment {
     padding-top: 5px;
-}
-
-.rev-item-right-info {
-    .user {
-        font-family: $font-tertiary;
-        color: $color-text-secondary;
-    }
-
-    .date {
-        margin-left: 10px;
-    }
 }
 
 .button-primary {
