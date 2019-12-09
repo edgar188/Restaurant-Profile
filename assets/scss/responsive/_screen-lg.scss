@@ -1,0 +1,126 @@
+@media (max-width: $screen-lg) {
+    .primary-field {
+        padding: 8px;
+    }
+
+    .primary-select {
+        padding: 12px 20px 12px 15px;
+    }
+
+    .button-tertiary {
+        width: round(90px * $mlp-value-lg);
+    }
+    
+    .button-primary {
+        padding: 10px 16px;
+    }
+
+    .avatar {
+        max-width: round(50px * $mlp-value-lg);
+        max-height: round(50px * $mlp-value-lg);
+    }
+
+    // --------------------- Header ----------------------------
+
+    .header-content-wrapper {
+        &.calendar {
+            margin-left: 80px;
+        }
+
+        &.search {
+            margin-left: 35px;
+        }
+        &.logo {
+            margin-left: 45px;
+        }
+        &.select {
+            right: 100px;
+        }
+    }
+
+    .header-mark.calendar {
+        top: -5px;
+        right: -3px;
+    }
+
+    .header-mark.stars {
+        top: -5px;
+        right: 0px;
+    }
+
+    .icon-search {
+        padding: 7px;
+    }
+
+    .logo {
+        max-width: round(192px * $mlp-value-lg);
+        max-height: round(57px * $mlp-value-lg);
+    }
+
+    .header-avatar {
+        width: round(42px * $mlp-value-lg);
+        height: round(42px * $mlp-value-lg);
+    }
+
+    // --------------------- Intro ----------------------------
+
+    .slider-item {
+        max-height: round(450px * $mlp-value-lg);
+    }
+
+    .popup {
+        top: 320px;
+    }
+
+    .popup-avatar {
+        max-width: round(50px * $mlp-value-lg);
+        max-height: round(50px * $mlp-value-lg);
+        right: 20px;
+        top: 25px;
+    }
+
+    // ---------------------- Book-table -------------------------
+
+    .people-item {
+        padding-bottom: 22px;
+    }
+
+    .sale-text {
+        top: 4px;
+        right: 6px;
+    }
+
+    // ------------------- Information-Reviews -------------------
+
+    .diners-photo {
+        max-width: 32%;
+    }
+
+    .rev-item {
+        padding: 15px 20px;
+    }
+
+    // ------------------------------ Footer ---------------------
+
+    .footer-block {
+        padding: 55px 0 0px 0;
+    }
+
+    .footer-btn {
+        top: 5px;
+        padding: 8px;
+    }
+
+    .footer-bot-md {
+        width: 40%;
+    }
+
+    .footer-bot-lg {
+        width: 34%;
+    }
+
+    .form-head {
+        padding-bottom: 35px;
+    }
+
+}

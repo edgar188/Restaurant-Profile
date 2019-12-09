@@ -68,10 +68,9 @@ function onInfoMenuBtnClick(target, blockName) {
 
     var blocks = document.getElementById("info-block-wrapper").children;
     for(var block of blocks) {
-        block.style.display = "none"
+        block.style.display = "none";
         if(block.dataset.block === blockName) {
-            
-            block.style.display = "block"
+            block.style.display = "block";
         }
     }
 }

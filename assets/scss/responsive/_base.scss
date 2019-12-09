@@ -1,5 +1,5 @@
-@media (max-width: $screen-sm) {
+@media (max-width: $screen-lg) {
   body {
-    font-size: round($base-font-size / 1.1);
+    font-size: 15px; // round($base-font-size * $mlp-value-lg);
   }
 }

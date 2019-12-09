@@ -915,6 +915,10 @@ a:hover {
   content: "";
 }
 
+.icon-check::before {
+  content: "";
+}
+
 header {
   padding: 25px;
   max-width: 1440px;
@@ -940,6 +944,18 @@ header i {
   right: auto;
   bottom: auto;
   left: 25px;
+}
+.header-content-wrapper.stars {
+  margin-left: 25px;
+}
+.header-content-wrapper.fav {
+  margin-left: 25px;
+}
+.header-content-wrapper.search {
+  margin-left: 40px;
+}
+.header-content-wrapper.logo {
+  margin-left: 50px;
 }
 .header-content-wrapper.select {
   position: absolute;
@@ -1004,12 +1020,18 @@ header i {
   top: 0;
   right: 0;
   bottom: 0;
-  padding: 7px;
+  font-size: 1.375em;
+  padding: 8px;
   border-left: 1px solid #e1e8ee;
 }
 
-.header-content-wrapper.logo {
-  margin-left: 50px;
+.logo-link:hover {
+  opacity: 1;
+}
+
+.logo {
+  max-width: 192px;
+  max-height: 57px;
 }
 
 .header-avatar {
@@ -1170,24 +1192,17 @@ header i {
 
 .slider {
   position: relative;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
   box-shadow: 0 0 8px rgba(1, 1, 1, 0.2);
 }
 
 .slider-item {
-  position: relative;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
   background-color: #f2f2f2;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  position: relative;
   height: 450px;
+  max-height: 450px;
   border: none;
   border-radius: 4px;
   text-align: center;
@@ -1254,10 +1269,9 @@ header i {
 
 .slider-content {
   position: absolute;
-  top: 30%;
-  right: auto;
-  bottom: auto;
-  left: 12%;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
   text-align: center;
 }
 
@@ -1312,6 +1326,7 @@ header i {
   position: absolute;
   top: 30px;
   right: 10px;
+  width: 100%;
 }
 
 .popup-bottom-content {
@@ -1861,10 +1876,10 @@ header i {
 
 .footer-btn {
   position: absolute;
-  top: 1px;
+  top: 2px;
   right: 1px;
   transform: translateY(50%);
-  padding: 12px;
+  padding: 11px;
   color: #fff;
   background-color: #7dc855;
   border: 0 solid #e1e8ee;
@@ -3593,13 +3608,130 @@ button:hover {
   color: #afa072;
 }
 
+.avatar {
+  max-width: 50px;
+  max-height: 50px;
+}
+
 .test-grid [class^=col], .test-grid > [class*=" col"] {
   min-height: 200px;
   border: 2px solid gray;
   padding: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  .primary-field {
+    padding: 8px;
+  }
+
+  .primary-select {
+    padding: 12px 20px 12px 15px;
+  }
+
+  .button-tertiary {
+    width: 81px;
+  }
+
+  .button-primary {
+    padding: 10px 16px;
+  }
+
+  .avatar {
+    max-width: 45px;
+    max-height: 45px;
+  }
+
+  .header-content-wrapper.calendar {
+    margin-left: 80px;
+  }
+  .header-content-wrapper.search {
+    margin-left: 35px;
+  }
+  .header-content-wrapper.logo {
+    margin-left: 45px;
+  }
+  .header-content-wrapper.select {
+    right: 100px;
+  }
+
+  .header-mark.calendar {
+    top: -5px;
+    right: -3px;
+  }
+
+  .header-mark.stars {
+    top: -5px;
+    right: 0px;
+  }
+
+  .icon-search {
+    padding: 7px;
+  }
+
+  .logo {
+    max-width: 173px;
+    max-height: 51px;
+  }
+
+  .header-avatar {
+    width: 38px;
+    height: 38px;
+  }
+
+  .slider-item {
+    max-height: 405px;
+  }
+
+  .popup {
+    top: 320px;
+  }
+
+  .popup-avatar {
+    max-width: 45px;
+    max-height: 45px;
+    right: 20px;
+    top: 25px;
+  }
+
+  .people-item {
+    padding-bottom: 22px;
+  }
+
+  .sale-text {
+    top: 4px;
+    right: 6px;
+  }
+
+  .diners-photo {
+    max-width: 32%;
+  }
+
+  .rev-item {
+    padding: 15px 20px;
+  }
+
+  .footer-block {
+    padding: 55px 0 0px 0;
+  }
+
+  .footer-btn {
+    top: 5px;
+    padding: 8px;
+  }
+
+  .footer-bot-md {
+    width: 40%;
+  }
+
+  .footer-bot-lg {
+    width: 34%;
+  }
+
+  .form-head {
+    padding-bottom: 35px;
+  }
+}
+@media (max-width: 1280px) {
   body {
     font-size: 15px;
   }

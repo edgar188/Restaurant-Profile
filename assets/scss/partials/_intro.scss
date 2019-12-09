@@ -26,14 +26,15 @@
 }
 
 .slider {
-    @include position(auto, auto, auto, auto, relative);
+    position: relative;
     box-shadow: $box-shadow-primary;
 }
 
 .slider-item {
-    @include position(auto, auto, auto, auto, relative);
     @include bg-img(null, no-repeat, cover, $color-bg-primary, top);
+    position: relative;
     height: 450px;
+    max-height: 450px;
     border: none;
     border-radius: $br-default;
     text-align: center;
@@ -81,7 +82,9 @@
 }
 
 .slider-content {
-    @include position(30%, auto, auto, 12%);
+    @include position(50%);
+    width: 100%;
+    transform: translateY(-50%);
     text-align: center;
 }
 
@@ -128,6 +131,7 @@
 
 .popup-avatar {
     @include position(30px, 10px);
+    width: 100%;
 }
 
 .popup-bottom-content {

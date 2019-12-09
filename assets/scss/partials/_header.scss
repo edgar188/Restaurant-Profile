@@ -16,9 +16,27 @@ header {
     &.calendar {
         margin-left: 125px;
     }
+
     &.nav {
         @include position(auto, auto, auto, 25px);
     }
+
+    &.stars {
+        margin-left: 25px;
+    }
+
+    &.fav {
+        margin-left: 25px;
+    }
+
+    &.search {
+        margin-left: 40px;
+    }
+
+    &.logo {
+        margin-left: 50px;
+    }
+
     &.select {
         @include position(auto, 120px);
     }
@@ -68,12 +86,20 @@ header {
 
 .icon-search {
     @include position(0, 0, 0);
-    padding: 7px;
+    font-size: 1.375em;
+    padding: 8px;
     border-left: 1px solid $color-br-primary;
 }
 
-.header-content-wrapper.logo {
-    margin-left: 50px;
+.logo-link {
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.logo {
+    max-width: 192px;
+    max-height: 57px;
 }
 
 .header-avatar {
