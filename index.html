@@ -17,64 +17,7 @@
         <!---------------------------- Header ----------------------------------->
         <header>
             <nav class="header-content-wrapper nav">
-                <a class="popup-with-form" href="#test-form">
-                    <i class="icon-nav"></i>
-                </a>
-                <form id="test-form" class="white-popup-block mfp-hide">
-                    <ul class="data-list">
-                        <li class="data-item">
-                            <label class="data-item-label">Location</label>
-                            <h3 class="data-item-desc">Level One at Electra <br /> House</h3>
-                        </li>
-
-                        <li class="data-item">
-                            <label class="data-item-label">Date</label>
-                            <h3 class="data-item-desc">Saturday<br /> 24th August 2016</h3>
-                        </li>
-
-                        <li class="data-item">
-                            <label class="data-item-label">Dining time</label>
-                            <h3 class="data-item-desc">7: 30</h3>
-                        </li>
-                        <li class="data-item">
-                            <label class="data-item-label">Select Party Size</label>
-                            <div class="radio-toolbar">
-                                <input type="radio" class="radio-field" id="three-people" name="people-number" value="3" checked>
-                                <label for="three-people" class="primary-field radio">3 People</label>
-                                <input type="radio" class="radio-field" id="four-people" name="people-number" value="4">
-                                <label for="four-people" class="primary-field radio">4 People</label>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="form-wrapper">
-                        <i id="close" class="icon-close close"></i>
-                        <h3 class="form-head">Booking for confirmation</h3>
-                        <ul class="form-list">
-                            <li class="form-item">
-                                <label for="name" class="data-item-label">First Name</label>
-                                <input id="name" name="name" class="primary-field" placeholder="Burt" required>
-                            </li>
-                            <li class="form-item">
-                                <label for="name" class="data-item-label">Last Name</label>
-                                <input id="name" name="name" class="primary-field" placeholder="Admiraal" required>
-                            </li>
-                            <li class="form-item">
-                                <label for="phone" class="data-item-label">Mobile</label>
-                                <input id="phone" name="mobile" class="primary-field" type="tel"
-                                    placeholder="0413 333 333" required>
-                            </li>
-                            <li class="form-item">
-                                <input type="checkbox" name="agreeWithTerms" />
-                                <label class="data-item-label">
-                                    <span>I agree with</span>
-                                    <a href="#" class="data-item-block-link">Terms & Conditions</a>
-                                </label>
-                                <button type="submit" class="button-primary">Book</button>
-                            </li>
-                        </ul>
-                    </div>
-                </form>
-                </div>
+                <i class="icon-nav"></i>
             </nav>
 
             <div class="header-content-wrapper calendar">
@@ -334,178 +277,239 @@
                                 </tr>
                                 <tr class="table-row">
                                     <td class="table-data">
-                                        <button class="button-tertiary">Book</button>
+                                        <button class="button-tertiary popup-with-form" href="#test-form">Book</button>
+                                        <span class="sale-text popup-with-form">-30%</span>
+                                    </td>
+                                    <td class="table-data">
+                                        <button class="button-tertiary popup-with-form" href="#test-form">Book</button>
+                                        <span class="sale-text">-20%</span>
+                                    </td>
+                                    <td class="table-data">
+                                        <button class="button-tertiary popup-with-form" href="#test-form">Book</button>
+                                        <span class="sale-text">-20%</span>
+                                    </td>
+                                    <td class="table-data">
+                                        <button class="button-tertiary disabled popup-with-form" disabled href="#test-form">No tables</button>
+                                    </td>
+                                    <td class="table-data">
+                                        <button class="button-tertiary popup-with-form popup-with-form" href="#test-form">Book</button>
+                                        <span class="sale-text">-20%</span>
+                                    </td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
+                                            tables</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
+                                            tables</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
+                                            tables</button></td>
+                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
+                                            tables</button></td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="table-data"><button class="button-tertiary disabled popup-with-form"
+                                            disabled href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary disabled popup-with-form" disabled href="#test-form">No
+                                            tables</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
+                                            tables</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
+                                            tables</button></td>
+                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
+                                            tables</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        <button class="button-tertiary popup-with-form" href="#test-form">Book</button>
                                         <span class="sale-text">-30%</span>
                                     </td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
+                                            tables</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                     <td class="table-data">
-                                        <button class="button-tertiary">Book</button>
+                                        <button class="button-tertiary popup-with-form" href="#test-form">Book</button>
                                         <span class="sale-text">-20%</span>
                                     </td>
+                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
+                                            tables</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                     <td class="table-data">
-                                        <button class="button-tertiary">Book</button>
-                                        <span class="sale-text">-20%</span>
-                                    </td>
-                                    <td class="table-data">
-                                        <button class="button-tertiary disabled" disabled>No tables</button>
-                                    </td>
-                                    <td class="table-data">
-                                        <button class="button-tertiary">Book</button>
-                                        <span class="sale-text">-20%</span>
-                                    </td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
-                                            tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
-                                            tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
-                                            tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
-                                            tables</button></td>
-                                </tr>
-                                <tr class="table-row">
-                                    <td class="table-data"><button class="button-tertiary disabled"
-                                            disabled>Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
-                                            tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
-                                            tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
-                                            tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
-                                            tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                </tr>
-                                <tr class="table-row">
-                                    <td class="table-data">
-                                        <button class="button-tertiary">Book</button>
+                                        <button class="button-tertiary popup-with-form">Book</button>
                                         <span class="sale-text">-30%</span>
                                     </td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
-                                            tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data">
-                                        <button class="button-tertiary">Book</button>
-                                        <span class="sale-text">-20%</span>
-                                    </td>
-                                    <td class="table-data"><button class="button-tertiary disabled" disabled>No
-                                            tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data">
-                                        <button class="button-tertiary">Book</button>
-                                        <span class="sale-text">-30%</span>
-                                    </td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                 <tr class="table-row">
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                     <td class="table-data"><button class="button-tertiary disabled" disabled>No
                                             tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data">
+                                        <button class="button-tertiary popup-with-form" href="#test-form">Book</button>
+                                        <span class="sale-text">-20%</span>
+                                    </td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                     <td class="table-data">
                                         <button class="button-tertiary">Book</button>
                                         <span class="sale-text">-20%</span>
                                     </td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data">
-                                        <button class="button-tertiary">Book</button>
-                                        <span class="sale-text">-20%</span>
-                                    </td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                 </tr>
                                 <tr class="table-row">
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                     <td class="table-data"><button class="button-tertiary disabled" disabled>No
                                             tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary disabled"
-                                            disabled>Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary disabled popup-with-form"
+                                            disabled href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                     <td class="table-data">
-                                        <button class="button-tertiary">Book</button>
+                                        <button class="button-tertiary popup-with-form" href="#test-form">Book</button>
                                         <span class="sale-text">-20%</span>
                                     </td>
                                     <td class="table-data">
-                                        <button class="button-tertiary">Book</button>
+                                        <button class="button-tertiary popup-with-form" href="#test-form">Book</button>
                                         <span class="sale-text">-20%</span>
                                     </td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                     <td class="table-data">
-                                        <button class="button-tertiary">Book</button>
+                                        <button class="button-tertiary popup-with-form" href="#test-form">Book</button>
                                         <span class="sale-text">-20%</span>
                                     </td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                 </tr>
                                 <tr class="table-row">
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                     <td class="table-data"><button class="button-tertiary disabled" disabled>No
                                             tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                     <td class="table-data"><button class="button-tertiary disabled" disabled>No
                                             tables</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
-                                    <td class="table-data"><button class="button-tertiary">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
+                                    <td class="table-data"><button class="button-tertiary popup-with-form" href="#test-form">Book</button></td>
                                 </tr>
-
                             </table>
                         </div>
                         <div class="arrow-data-slider" data-direction="right" onclick="onTableSlide(this)">
                             <i class="icon-arrow-right centered-axis-xy"></i>
                         </div>
                     </div>
+                    <form id="test-form" class="white-popup-block mfp-hide">
+                            <ul class="data-list">
+                                <li class="data-item">
+                                    <label class="data-item-label">Location</label>
+                                    <h3 class="data-item-desc">Level One at Electra <br /> House</h3>
+                                </li>
+        
+                                <li class="data-item">
+                                    <label class="data-item-label">Date</label>
+                                    <h3 class="data-item-desc">Saturday<br /> 24th August 2016</h3>
+                                </li>
+        
+                                <li class="data-item">
+                                    <label class="data-item-label">Dining time</label>
+                                    <h3 class="data-item-desc">7: 30</h3>
+                                </li>
+                                <li class="data-item">
+                                    <label class="data-item-label">Select Party Size</label>
+                                    <div class="radio-toolbar">
+                                        <input type="radio" class="radio-field" id="three-people" name="people-number" value="3" checked>
+                                        <label for="three-people" class="primary-field radio">3 People</label>
+                                        <input type="radio" class="radio-field" id="four-people" name="people-number" value="4">
+                                        <label for="four-people" class="primary-field radio">4 People</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="form-wrapper">
+                                <i id="close" class="icon-close close"></i>
+                                <h3 class="form-head">Booking for confirmation</h3>
+                                <ul class="form-list">
+                                    <li class="form-item">
+                                        <label for="name" class="data-item-label">First Name</label>
+                                        <input id="name" name="name" class="primary-field" placeholder="Burt" required>
+                                    </li>
+                                    <li class="form-item">
+                                        <label for="name" class="data-item-label">Last Name</label>
+                                        <input id="name" name="name" class="primary-field" placeholder="Admiraal" required>
+                                    </li>
+                                    <li class="form-item">
+                                        <label for="phone" class="data-item-label">Mobile</label>
+                                        <input id="phone" name="mobile" class="primary-field" type="tel"
+                                            placeholder="0413 333 333" required>
+                                    </li>
+                                    <li class="form-item">
+                                        <label class="checkbox-container">
+                                            <input class="checkbox-field" type="checkbox" />
+                                            <i class="icon-check"></i>
+                                        </label>
+                                        <span class="checkbox-text">I agree width<a href="#" class="data-item-block-link">Terms & Conditions</a></span>
+                                        <button type="submit" class="button-primary">Book</button>
+                                    </li>
+                                    <!-- <li class="form-item">
+                                        <input type="checkbox" name="agreeWithTerms" />
+                                        <label class="data-item-label">
+                                            <span>I agree with</span>
+                                            <a href="#" class="data-item-block-link">Terms & Conditions</a>
+                                        </label>
+                                        <button type="submit" class="button-primary">Book</button>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </form>
                 </div>
             </div>
         </section>

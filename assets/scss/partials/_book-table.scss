@@ -152,3 +152,209 @@
     border-bottom-left-radius: $br-rounded;
     border-bottom-right-radius: $br-rounded;
 }
+
+// -------------------------------------- Booking Confirmation  -----------------------------------
+
+.white-popup-block {
+    display: flex;
+    justify-content: center;
+}
+
+.data-list {
+    padding: 30px;
+    background-color: $color-secondary;
+    color: $color-light;
+    border-top-left-radius: $br-default;
+    border-bottom-left-radius: $br-default;
+}
+
+.form-wrapper {
+    position: relative;
+    background-color: $color-light;
+    color: $color-text-primary;
+    border-top-right-radius: $br-default;
+    border-bottom-right-radius: $br-default;
+
+    .primary-field {
+        width: 100%;
+    }
+
+    // input[type="checkbox"] {
+    //     display: inline-block;
+    //     width: 25px;
+    //     height: 25px;
+    //     border: none;
+    //     margin-right: 10px;
+    // }
+
+    .button-primary {
+        padding: 12px 45px;
+        margin-left: 20px;
+        font-size: 1em;
+        font-family: $font-tertiary;
+        background-color: $color-tertiary;
+        border-color: $color-tertiary;
+        color: $color-light;
+    }
+}
+
+.form-head {
+    padding: 40px 0 30px 30px;
+    font-size: 1.125em;
+    font-family: $font-tertiary;
+    color: $color-primary;
+    border-bottom: 1px solid $color-br-primary;
+}
+
+.form-list {
+    padding: 30px;
+}
+
+.form-item:last-of-type {
+    &:last-of-type {
+        margin-top: 25px;
+    }
+}
+
+.data-item-label {
+    display: block;
+    font-size: 0.875em;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    &:last-of-type {
+        display: inline-block;
+    }
+}
+
+.data-item-desc {
+    font-size: 2em;
+    font-family: $font-secondary;
+}
+
+.data-item-block-link {
+    display: block;
+}
+
+.icon-close {
+    @include position(40px, 30px);
+    font-size: 1.125em;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.radio-toolbar {
+    margin: 10px 0;
+    user-select: none;
+  }
+
+.radio-field {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.primary-field.radio {
+    display: inline-block;
+    padding: 12px 50px;
+    font-family: $font-tertiary;
+    font-size: 1em;
+    border-color: $color-br-tertiary;
+    color: $color-light;
+    cursor: pointer;
+    &:first-of-type {
+        margin-right: 10px;
+    }
+    &:hover {
+        background-color: $color-tertiary;
+        border-color: $color-tertiary;
+    }
+}
+
+.radio-field:checked + .primary-field.radio {
+    background-color: $color-light;
+    border-color: $color-light;
+    color: $color-secondary;
+    cursor: default;
+}
+
+
+// ---------------------- Customize checkbox -------------------------
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    // font-size: 22px;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-field {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .icon-check {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: $color-br-primary;
+    border-radius: $br-default;
+    font-size: 0;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkbox-container:hover .checkbox-field ~ .icon-check {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-container .checkbox-field:checked ~ .icon-check {
+    // background-color: #2196F3;
+    font-size: 20px;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+//   .icon-check:after {
+//     content: "";
+//     position: absolute;
+//     left: 5px;
+//     top: 5px;
+//     display: none;
+//   }
+  
+  /* Show the checkmark when checked */
+//   .checkbox-container .checkbox-field:checked ~ .icon-check:after {
+//     display: block;
+//   }
+  
+  /* Style the checkmark/indicator */
+//   .checkbox-container .icon-check:after {
+//     left: 9px;
+//     top: 5px;
+//     width: 5px;
+//     height: 10px;
+//     border: solid white;
+//     border-width: 0 3px 3px 0;
+//     transform: rotate(45deg);
+//   }
+
+.checkbox-text {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 40px;
+
+    .data-item-block-link {
+        color: $color-secondary;
+    }
+}
