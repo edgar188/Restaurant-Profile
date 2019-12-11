@@ -1,0 +1,129 @@
+@media (max-width: $screen-md) {
+
+    .avatar {
+        max-width: round(50px * $mlp-val-md);
+        max-height: round(50px * $mlp-val-md);
+    }
+
+    // ------------------ Header ------------------------
+
+    .header {
+        justify-content: flex-start;
+    }
+
+    .header-content-wrapper {
+        &.select {
+            display: none;
+        }
+
+        &.logo {
+            margin-left: auto;
+        }
+    }
+
+    .header-mark.calendar {
+        right: -4px;
+    }
+
+    .header-mark.stars {
+        right: -1px;
+    }
+
+    .logo {
+        max-width: round(192px * $mlp-val-md);
+        max-height: round(57px * $mlp-val-md);
+    }
+
+    // ------------------ Intro ------------------------
+
+    .intro-pagination {
+        padding: 15px 0;
+    }
+
+    .intro-pagination-item {
+        margin-right: 5px;
+    }
+
+    .slider-item {
+        max-height: round(450px * $mlp-val-md);
+    }
+
+    .mention-stars-wrapper {
+        display: none;
+    }
+
+    .popup {
+        width: 245px;
+        top: 300px;
+    }
+
+    .popup-top-content {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .popup-bottom-content {
+        padding: 10px 10px;
+    }
+
+    .popup-avatar {
+        right: 15px;
+        top: 15px;
+    }
+
+    .mention-bottom-details {
+        width: 32%;
+    }
+
+    .mention-bottom-desc {
+        width: 64%;
+    }
+    
+    // ------------------ Book table ------------------------
+
+    .book-table-top {
+        justify-content: space-around;
+    }
+
+    .book-top-head-wrapper,
+    .book-top-select-wrapper {
+        width: auto;
+    }
+
+    .section-head.book-table-head {
+        padding-left: 0;
+    }
+
+    .primary-select.book-select-left {
+        padding-left: 25px;
+        padding-right: 45px;
+        background-position-x: 150px;
+    }
+
+    .primary-select.book-select-right {
+        padding-left: 25px;
+        padding-right: 40px;
+        background-position-x: 90px;
+    }
+
+    // ------------------- Information-Reviews -------------------
+
+    button.button-primary.rev {
+        padding: 10px;
+    }
+
+    .rev-item-right.active {
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    // ----------------------- Footer ----------------------------
+
+    .footer-block {
+        padding-top: 35px;
+    }
+
+    .footer-list.bot {
+        padding-bottom: 45px;
+    }
+
+}

@@ -1,0 +1,247 @@
+@media (max-width: $screen-sm) {
+
+    .primary-field {
+        padding: 5px;
+    }
+
+    .icon-search {
+        padding: 5px;
+    }
+
+    .avatar {
+        max-width: round(50px * $mlp-val-sm);
+        max-height: round(50px * $mlp-val-sm);
+    }
+
+    // ------------------ Header ------------------------
+
+    header {
+        padding: 15px;
+    }
+
+    .header-content-wrapper {
+       &.calendar {
+           display: none;
+       }
+       &.stars {
+           display: none;
+       }
+       &.fav {
+           display: none;
+       }
+       &.search {
+           margin-left: 50px;
+       }
+       &.nav {
+           left: 15px;
+       }
+    }
+
+    .logo {
+        max-width: round(192px * $mlp-val-sm);
+        max-height: round(57px * $mlp-val-sm);
+    }
+
+    // ------------------ Intro ------------------------
+
+    .intro-pagination {
+        padding: 10px 0;
+    }
+
+    .intro-pagination-list {
+        justify-content: center;
+        flex-wrap: wrap;
+        line-height: 1.6em;
+    }
+
+    .slider-item {
+        max-height: round(450px * $mlp-val-sm);
+    }
+
+    .slider-top-text {
+        margin-bottom: 5px;
+    }
+
+    .slider-bottom-text {
+        margin-top: 10px;
+    }
+
+    .slider-central-text {
+        font-size: 2em;
+    }
+
+    .popup {
+        width: 185px;
+        top: 266px;
+    }
+
+    .popup-avatar {
+        top: 2px;
+        right: 0;
+    }
+
+    .popup-top-content {
+        padding: 5px 10px;
+        .number {
+            margin-right: 2px;
+        }
+    }
+
+    .intro-mention {
+        margin-top: 40px;
+    }
+
+    .mention-top-wrapper {
+        padding: 10px 0;
+        justify-content: left;
+    }
+
+    .mention-bottom-details,
+    .mention-bottom-desc {
+        width: 48%;
+    }
+
+    .mention-bottom-details-title, 
+    .mention-bottom-desc-title {
+        margin-bottom: 15px;
+    }
+
+    // ------------------ Book-table ------------------------
+
+    .book-table-top {
+        padding: 10px 0;
+        flex-wrap: wrap;
+        align-items: normal;
+    }
+
+    .book-top-head-wrapper {
+        width: auto;
+        .book-table-head {
+            padding-left: 10px;
+        }
+    }
+
+    .book-top-select-wrapper {
+        width: 100%;
+        text-align: right;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .book-top-select-wrapper.res-sm {
+        width: 58%;
+        margin-left: auto;
+    }
+
+    .primary-select.book-select-left {
+        background-position-x: 137px;
+    }
+
+    .people-list {
+        width: 100px;
+    }
+
+    .people-item-text {
+        padding-left: 10px;
+    }
+
+    .arrow-data-slider {
+        width: 36px;
+    }
+
+    .sale-text {
+        right: 4px;
+    }
+
+    // ----------------- Book Confirmation -------------------------
+    .data-list {
+        width: 75%;
+    }
+
+    .primary-field.radio {
+        padding: 10px 15px;
+    }
+
+    .form-wrapper .button-primary {
+        padding: 10px 35px;
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+
+    .icon-close {
+        top: 10px;
+        right: 10px;
+    }
+
+    // ------------------- Information-Reviews -------------------
+
+    .info-rev-cont {
+        flex-wrap: wrap;
+    }
+
+    .info-rev-left-wrapper,
+    .info-rev-right-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .block-wrapper.map {
+        margin-top: 35px;
+    }
+
+    .block-wrapper.diners {
+        text-align: center;
+    }
+
+    .diners-head {
+        text-align: center;
+        .icon-picture-shape {
+            float: none;
+        }
+    }
+
+    // -------------------------- Footer -----------------------------------
+
+    .footer-top-item {
+        width: 27%;
+        margin-left: 3%;
+        &:first-of-type {
+            width: 40%;
+        }
+    }
+
+    .footer-btn {
+        top: 10px;
+        padding: 4px 7px;
+    }
+
+    .icon-send {
+        font-size: 0.7em;
+    }
+
+    .footer-soc-link {
+        margin-right: 7px;
+    }
+
+    .app-img {
+        width: round(132px * $mlp-val-sm);
+    }
+
+    .footer-block,
+    .footer-list.bot {
+        padding-top: 25px;
+    }
+
+    .footer-bot-sm {
+        width: 20%;
+        margin-right: 5%;
+    }
+
+    .footer-bot-small {
+        width: 22%;
+    }
+
+    .footer-head.bot {
+        line-height: 22px;
+    }
+}

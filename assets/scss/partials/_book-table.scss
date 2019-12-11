@@ -235,6 +235,10 @@
     display: block;
 }
 
+button.mfp-close{
+    display: none;
+}
+
 .icon-close {
     @include position(40px, 30px);
     font-size: 1.125em;

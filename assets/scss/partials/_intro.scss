@@ -78,7 +78,8 @@
 }
 
 .owl-theme .owl-dots {
-    @include position(90%, auto, auto, 48%);
+    @include position(90%, auto, auto, 50%);
+    transform: translateX(-50%);
 }
 
 .slider-content {
@@ -110,7 +111,7 @@
     color: $color-light;
     z-index: 10;
     border-radius: $br-md;
-    min-width: 262px;
+    width: 262px;
     font-size: 0.875em;
 }
 

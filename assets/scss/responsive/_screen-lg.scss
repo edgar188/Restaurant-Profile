@@ -8,7 +8,7 @@
     }
 
     .button-tertiary {
-        width: round(90px * $mlp-value-lg);
+        width: round(90px * $mlp-val-lg);
     }
     
     .button-primary {
@@ -16,8 +16,8 @@
     }
 
     .avatar {
-        max-width: round(50px * $mlp-value-lg);
-        max-height: round(50px * $mlp-value-lg);
+        max-width: round(50px * $mlp-val-lg);
+        max-height: round(50px * $mlp-val-lg);
     }
 
     // --------------------- Header ----------------------------
@@ -53,19 +53,19 @@
     }
 
     .logo {
-        max-width: round(192px * $mlp-value-lg);
-        max-height: round(57px * $mlp-value-lg);
+        max-width: round(192px * $mlp-val-lg);
+        max-height: round(57px * $mlp-val-lg);
     }
 
     .header-avatar {
-        width: round(42px * $mlp-value-lg);
-        height: round(42px * $mlp-value-lg);
+        width: round(42px * $mlp-val-lg);
+        height: round(42px * $mlp-val-lg);
     }
 
     // --------------------- Intro ----------------------------
 
     .slider-item {
-        max-height: round(450px * $mlp-value-lg);
+        max-height: round(450px * $mlp-val-lg);
     }
 
     .popup {
@@ -73,8 +73,8 @@
     }
 
     .popup-avatar {
-        max-width: round(50px * $mlp-value-lg);
-        max-height: round(50px * $mlp-value-lg);
+        max-width: round(50px * $mlp-val-lg);
+        max-height: round(50px * $mlp-val-lg);
         right: 20px;
         top: 25px;
     }
@@ -103,7 +103,7 @@
     // ------------------------------ Footer ---------------------
 
     .footer-block {
-        padding: 55px 0 0px 0;
+        padding-top: 55px;
     }
 
     .footer-btn {
@@ -121,6 +121,10 @@
 
     .form-head {
         padding-bottom: 35px;
+    }
+
+    .footer-soc-link {
+        margin-right: 15px;
     }
 
 }
