@@ -154,24 +154,51 @@
     }
 
     // ----------------- Book Confirmation -------------------------
-    .data-list {
-        width: 75%;
+    .data-list,
+    .form-wrapper {
+        flex: 1;
+        max-width: 50%;
+        min-width: 50%;
     }
 
-    .primary-field.radio {
-        padding: 10px 15px;
+    .data-item-desc {
+        font-size: 1.5em;
     }
 
-    .form-wrapper .button-primary {
-        padding: 10px 35px;
-        margin-left: 40px;
-        margin-top: 15px;
+    .form-head {
+        padding-bottom: 15px;
+    }
+    
+    .primary-field {
+        &.radio {
+            padding: 10px 35px;
+            @media (max-width: 658px) {
+                    padding: 10px 25px;
+            }
+            @media (max-width: 578px) {
+                padding: 10px 12px;
+            }
+        }
+    }
+
+    .form-wrapper {
+        .button-primary {
+            padding: 10px 35px;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
     }
 
     .icon-close {
         top: 10px;
         right: 10px;
     }
+
+    .icon-check {
+        top: 0;
+    }
+
+   
 
     // ------------------- Information-Reviews -------------------
 
