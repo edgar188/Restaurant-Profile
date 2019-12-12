@@ -1,0 +1,256 @@
+@media (max-width: $screen-xs) {
+
+    .avatar {
+        max-width: round(50px * $mlp-val-xs);
+        max-height: round(50px * $mlp-val-xs);
+    }
+
+    .primary-field {
+        padding: 3px;
+    }
+
+    .button-tertiary {
+        width: 60px;
+        padding: 15px 5px;
+    }
+
+    .button-primary {
+        padding: 10px;
+    }
+    
+    .menu-top {
+        padding: 15px 0;
+        max-width: 90%;
+        margin: 0 auto;
+        .menu-item {
+            margin-right: 10px;
+        }   
+    }
+
+    // ---------------------- Header ------------------------------
+    .logo {
+        max-width: 90px;
+        max-height: 30px;
+    }
+
+    .header-content-wrapper {
+        &.search {
+           margin-left: 40px;
+           .primary-field {
+               width: 80%;
+           }
+           .icon-search {
+                top: 2px;
+                right: 30px;
+                padding: 5px;
+                font-size: 0.8em;
+           }
+        }
+
+    }
+
+    // ---------------------- Intro ------------------------------
+
+    .intro-pagination {
+        padding: 5px 0;
+    }
+
+    .intro-pagination-list {
+        line-height: 1.5em;
+    }
+
+    .slider-item {
+        max-height: round(450px * $mlp-val-xs);
+    }
+
+    .popup {
+        top: 0;
+        border-radius: unset;
+        width: 160px;
+    }
+
+    .slider-central-text {
+        font-size: 1.8em;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev span,
+    .owl-carousel .owl-nav button.owl-next span {
+        font-size: 2em;
+        padding: 0;
+    }
+
+    //  intro-mention
+
+    .intro-mention {
+        margin-top: 10px;
+    }
+
+    .mention-top-wrapper {
+        display: block;
+        text-align: left;
+
+        .button-secondary {
+            margin-top: 10px;
+            margin-left: 0;
+        }
+    }
+
+    // ----------------------- book-table ---------------------
+
+    .book-table-top {
+        align-items: baseline;
+    }
+
+    .book-top-select-wrapper {
+        .primary-select {
+            padding: 5px 30px 5px 15px;
+            &.book-select-left {
+                background-position-x: 120px;
+            }
+
+            &.book-select-right {
+                background-position-x: 79px;
+            }
+        }
+
+        .book-top-label {
+            margin-right: 0;
+            display: block;
+            padding-bottom: 5px;
+        }
+    }
+
+    .people-list {
+        width: 85px;
+        font-size: 0.8em;
+    }
+
+    .people-item {
+        padding: 20px 0 19px 0;
+        &:first-of-type {
+            padding: 19px 0;
+        }
+    }
+
+    .table-clock {
+        padding: 15px 15px;
+    }
+
+    .arrow-data-slider {
+        width: 32px;
+        font-size: 0.8em;
+    }
+
+    .sale-text {
+        right: 10px;
+        padding: 2px 4px 5px 4px;
+    }
+
+    // Booking confirmation
+    .primary-field {
+            &.radio:first-of-type{
+            margin-bottom: 10px;
+        }
+    }
+
+    .icon-check {
+        width: 15px;
+        height: 15px;
+    }
+
+    .data-item-desc {
+        font-size: 1.4em;
+    }
+
+    .checkbox-text, .form-wrapper .button-primary {
+        margin-left: 30px;
+    }
+
+    .form-wrapper {
+        .button-primary {
+            padding: 8px 25px;
+        }
+    }
+
+    .primary-field.radio {
+        padding: 8px 10px;
+    }
+
+    // ------------------- Information-Reviews -------------------
+
+    .sample-item-top {
+        margin-left: 25px;
+    }
+
+    .sample-list-top {
+        padding: 8px 0;
+    }
+
+    .sample-item-link.active {
+        padding: 0 15px 12px 15px;
+    }
+
+    .sample-item-bot-item {
+        padding: 10px;
+    }
+
+    .button-primary.rev {
+        padding: 5px;
+    }
+
+    .rev-item {
+        padding: 15px 10px;
+    }
+
+    .rev-item-right.active {
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    .rev-item-right-info {
+        padding-bottom: 0;
+    }
+
+    .info-more-details-item:last-of-type .info-more-details-desc {
+        width: 60%;
+    }
+
+    .map-img {
+        max-height: 280px;
+    }
+
+    // ----------------------- Footer -------------------------
+
+    .footer-btn {
+        top: 9px;
+        padding: 4px 5px 5px;
+    }
+
+    .primary-field.footer {
+        padding: 5px;
+        &::placeholder {
+            font-size: 0.8em;
+        }
+    }
+
+    .icon-send {
+        font-size: 0.6em;
+    }
+
+    .footer-item-head {
+        padding-bottom: 5px;
+    }
+
+    .footer-mid .footer-mid-list {
+        align-items: normal;
+    }
+
+    .footer-bot-small {
+        width: 32%;
+    }
+
+    .footer-block.bot {
+        line-height: 1.7em;
+    }
+
+}

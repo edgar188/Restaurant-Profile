@@ -1,0 +1,31 @@
+@media (max-width: $screen-xxs) {
+
+    // ------------------- Header ---------------------
+
+    .logo {
+        max-width: 75px;
+        max-height: 25px;
+    }
+
+    .header-content-wrapper {
+        .search {
+            margin-left: 35px;
+            .primary-field {
+                width: 70%;
+                &::placeholder {
+                    font-size: 0.75em;
+                }
+            }
+    
+            .icon-search {
+                right: 30px;
+                top: 1px;
+                font-size: 0.8em;
+            }
+        }
+        .icon-nav {
+            font-size: 1.2em;
+        }
+    }
+
+}
