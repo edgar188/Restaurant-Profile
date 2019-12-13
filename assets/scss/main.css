@@ -1270,6 +1270,9 @@ header i {
 }
 
 .text-left {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 28%;
   margin-right: 4%;
 }
@@ -4237,7 +4240,20 @@ button:hover {
   .popup {
     top: 0;
     border-radius: unset;
-    width: 160px;
+    width: 170px;
+  }
+
+  .popup-head {
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
+
+  .popup-avatar {
+    top: 1px;
+  }
+
+  .popup-bottom-content {
+    padding: 5px 10px;
   }
 
   .slider-central-text {
@@ -4428,6 +4444,18 @@ button:hover {
   }
   .header-content-wrapper .icon-nav {
     font-size: 1.2em;
+  }
+
+  .form-wrapper .button-primary {
+    padding: 8px 20px;
+  }
+
+  .footer-bot-md {
+    width: 27%;
+  }
+
+  .footer-top-item {
+    width: 37%;
   }
 }
 @media (max-width: 1280px) {

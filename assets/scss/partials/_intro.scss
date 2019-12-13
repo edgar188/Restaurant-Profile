@@ -199,6 +199,7 @@
 }
 
 .text-left {
+    @include ofl-ellipsis;
     width: 28%;
     margin-right: 4%;
 }

@@ -66,7 +66,20 @@
     .popup {
         top: 0;
         border-radius: unset;
-        width: 160px;
+        width: 170px;
+    }
+
+    .popup-head {
+        margin-bottom: 5px;
+        font-size: 1em;
+    }
+
+    .popup-avatar {
+        top: 1px;
+    }
+
+    .popup-bottom-content {
+        padding: 5px 10px;
     }
 
     .slider-central-text {
