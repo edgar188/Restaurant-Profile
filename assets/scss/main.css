@@ -994,18 +994,19 @@ header i {
 
 .header-mark {
   position: absolute;
-  font-family: "Robotomedium", serif;
-  font-size: 0.75em;
+  z-index: 10;
+  font-family: "Roboto", serif;
+  font-size: 0.55em;
   color: #7dc855;
 }
 .header-mark.calendar {
   position: absolute;
-  top: -4px;
+  top: -3px;
   right: -2px;
 }
 .header-mark.stars {
   position: absolute;
-  top: -4px;
+  top: -3px;
   right: 2px;
 }
 
@@ -4448,6 +4449,14 @@ button:hover {
 
   .form-wrapper .button-primary {
     padding: 8px 20px;
+  }
+
+  .slider-item {
+    max-height: 250px;
+  }
+
+  .slider-central-text {
+    font-size: 1.6em;
   }
 
   .footer-bot-md {
