@@ -6,9 +6,6 @@ $(document).ready(function () {
         slideSpeed: 100,
         paginationSpeed: 200,
         singleItem: true,
-        // autoplay: true,
-        // autoPlaySpeed: 1000,
-        // autoPlayTimeout: 1000,
         items : 1
     });
 });
@@ -35,7 +32,19 @@ $(document).ready(function () {
     });
 });
 
-// Table slide
+
+// Navigation-bar
+function headerNav() {
+    var navBar = document.getElementById("nav-bar");
+
+    if(navBar.className === "nav-bar nav-open") {
+        navBar.className = "nav-bar nav-close";
+    } else {
+        navBar.className = "nav-bar nav-open";
+    }
+}
+
+// Table slider
 function onTableSlide(direction) {
     var table = document.getElementById("table-book");
     if(direction.dataset.direction === "right") {
@@ -56,9 +65,10 @@ function onTableSlide(direction) {
     }
 }
 
-// Menu bar button click
+// Menu bar button click (Info & Rev section)
 function onInfoMenuBtnClick(target, blockName) {
     var infoButtons = document.getElementsByClassName("button-primary info");
+
     for(var btn of infoButtons) {
         btn.className = "button-primary info";
         if(target.className.indexOf("active") === -1 && target.innerText === btn.innerText) {
@@ -67,6 +77,7 @@ function onInfoMenuBtnClick(target, blockName) {
     }
 
     var blocks = document.getElementById("info-block-wrapper").children;
+
     for(var block of blocks) {
         block.style.display = "none";
         if(block.dataset.block === blockName) {
@@ -77,7 +88,10 @@ function onInfoMenuBtnClick(target, blockName) {
 
 
 function onScrollWindow(to) {
-    to ==="top" 
-        ? window.scrollTo({top: 0, behavior: "smooth"}) 
-        : window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"});
+    if(to === "top") {
+        window.scrollTo({top: 0, behavior: "smooth"}) 
+    } else {
+        window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"});
+    }
 }
+

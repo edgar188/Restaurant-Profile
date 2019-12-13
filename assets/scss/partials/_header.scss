@@ -111,3 +111,49 @@ header {
     @include position(auto, auto, auto, 185px);
 }
 
+// ----------------------------- Nav-bar ------------------------------------
+
+.nav-bar {
+    @include position(0, null, null, 0, fixed);
+    z-index: 999;
+    height: 100%;
+    width: 0;
+    padding-top: 60px;
+    overflow-x: hidden;
+    transition: $trns-duration-lg;
+    font-family: $font-quadratic;
+    font-size: 1.8em;
+    text-align: center;
+    background-color: $color-secondary;
+    color: $color-light;
+
+    .icon-close {
+        @include position(5%, 5%);
+        display: block;
+        font-size: 1.5em;
+        opacity: unset;
+        color: $color-bg-btn-2;
+    }
+}
+
+.nav-bar-item {
+    margin-bottom: 20px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.nav-bar-link {
+    padding: 8px 8px 8px 32px;
+    display: inline-block;
+}
+
+.nav-open {
+    width: 100%;
+}
+
+.nav-close {
+    width: 0;
+}
+
+

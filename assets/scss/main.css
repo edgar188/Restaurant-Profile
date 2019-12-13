@@ -1043,6 +1043,52 @@ header i {
   left: 185px;
 }
 
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100%;
+  width: 0;
+  padding-top: 60px;
+  overflow-x: hidden;
+  transition: 1s;
+  font-family: "Robotoblack", serif;
+  font-size: 1.8em;
+  text-align: center;
+  background-color: #358ed7;
+  color: #fff;
+}
+.nav-bar .icon-close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  display: block;
+  font-size: 1.5em;
+  opacity: unset;
+  color: #e74a4a;
+}
+
+.nav-bar-item {
+  margin-bottom: 20px;
+}
+.nav-bar-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.nav-bar-link {
+  padding: 8px 8px 8px 32px;
+  display: inline-block;
+}
+
+.nav-open {
+  width: 100%;
+}
+
+.nav-close {
+  width: 0;
+}
+
 .intro {
   background-color: #f2f2f2;
   padding-bottom: 45px;
@@ -3809,11 +3855,11 @@ button:hover {
   }
 
   .header-mark.calendar {
-    right: -4px;
+    right: -6px;
   }
 
   .header-mark.stars {
-    right: -1px;
+    right: -3px;
   }
 
   .logo {
