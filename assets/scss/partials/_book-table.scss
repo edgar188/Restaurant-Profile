@@ -179,14 +179,6 @@
         width: 100%;
     }
 
-    // input[type="checkbox"] {
-    //     display: inline-block;
-    //     width: 25px;
-    //     height: 25px;
-    //     border: none;
-    //     margin-right: 10px;
-    // }
-
     .button-primary {
         padding: 12px 45px;
         margin-left: 20px;
@@ -283,7 +275,6 @@ button.mfp-close{
     cursor: default;
 }
 
-
 // ---------------------- Customize checkbox -------------------------
 
 .checkbox-container {
@@ -292,11 +283,9 @@ button.mfp-close{
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    // font-size: 22px;
     user-select: none;
   }
   
-  /* Hide the browser's default checkbox */
   .checkbox-field {
     position: absolute;
     opacity: 0;
@@ -304,8 +293,7 @@ button.mfp-close{
     height: 0;
     width: 0;
   }
-  
-  /* Create a custom checkbox */
+
   .icon-check {
     position: absolute;
     top: 5px;
@@ -317,42 +305,14 @@ button.mfp-close{
     font-size: 0;
   }
   
-  /* On mouse-over, add a grey background color */
   .checkbox-container:hover .checkbox-field ~ .icon-check {
     background-color: #ccc;
   }
-  
-  /* When the checkbox is checked, add a blue background */
+
   .checkbox-container .checkbox-field:checked ~ .icon-check {
-    // background-color: #2196F3;
     font-size: 20px;
   }
   
-  /* Create the checkmark/indicator (hidden when not checked) */
-//   .icon-check:after {
-//     content: "";
-//     position: absolute;
-//     left: 5px;
-//     top: 5px;
-//     display: none;
-//   }
-  
-  /* Show the checkmark when checked */
-//   .checkbox-container .checkbox-field:checked ~ .icon-check:after {
-//     display: block;
-//   }
-  
-  /* Style the checkmark/indicator */
-//   .checkbox-container .icon-check:after {
-//     left: 9px;
-//     top: 5px;
-//     width: 5px;
-//     height: 10px;
-//     border: solid white;
-//     border-width: 0 3px 3px 0;
-//     transform: rotate(45deg);
-//   }
-
 .checkbox-text {
     font-size: 12px;
     display: inline-block;
