@@ -1,4 +1,222 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "icomoon-restaurant";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/icomoon-restaurant/icomoon-restaurant.eot");
+  src: url("../fonts/icomoon-restaurant/icomoon-restaurant.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon-restaurant/icomoon-restaurant.woff") format("woff"), url("../fonts/icomoon-restaurant/icomoon-restaurant.ttf") format("truetype"), url("../fonts/icomoon-restaurant/icomoon-restaurant.svg") format("svg");
+}
+@font-face {
+  font-family: "Robotolight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto/roboto_light/Robotolight.eot");
+  src: url("../fonts/roboto/roboto_light/Robotolight.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto_light/Robotolight.woff") format("woff"), url("../fonts/roboto/roboto_light/Robotolight.ttf") format("truetype"), url("../fonts/roboto/roboto_light/Robotolight.svg") format("svg");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto/roboto_regular/Roboto.eot");
+  src: url("../fonts/roboto/roboto_regular/Roboto.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto_regular/Roboto.woff") format("woff"), url("../fonts/roboto/roboto_regular/Roboto.ttf") format("truetype"), url("../fonts/roboto/roboto_regular/Roboto.svg") format("svg");
+}
+@font-face {
+  font-family: "Robotomedium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto/roboto_medium/Robotomedium.eot");
+  src: url("../fonts/roboto/roboto_medium/Robotomedium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto_medium/Robotomedium.woff") format("woff"), url("../fonts/roboto/roboto_medium/Robotomedium.ttf") format("truetype"), url("../fonts/roboto/roboto_medium/Robotomedium.svg") format("svg");
+}
+@font-face {
+  font-family: "Robotoblack";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto/roboto_black/Robotoblack.eot");
+  src: url("../fonts/roboto/roboto_black/Robotoblack.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto_black/Robotoblack.woff") format("woff"), url("../fonts/roboto/roboto_black/Robotoblack.ttf") format("truetype"), url("../fonts/roboto/roboto_black/Robotoblack.svg") format("svg");
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article, aside, details, figcaption, figure, dialog,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 100%;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  color: #86939e;
+  font-size: 16px;
+  font-family: "Roboto", serif;
+  outline: none;
+  word-wrap: break-word;
+  font-weight: 400;
+}
+
+*, *:before, *:after {
+  outline: none;
+  box-sizing: inherit;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1138px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-head {
+  font-size: 1.625em;
+  font-family: "Robotolight", serif;
+  color: #43484d;
+}
+
+.block-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(1, 1, 1, 0.2);
+}
+
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon-restaurant" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "";
+}
+
+.icon-search:before {
+  content: "";
+}
+
+.icon-calendar:before {
+  content: "";
+}
+
+.icon-add-to-fav:before {
+  content: "";
+}
+
+.icon-arrow-down:before {
+  content: "🌗";
+}
+
+.icon-nav:before {
+  content: "";
+}
+
+.icon-comment:before {
+  content: "";
+}
+
+.icon-arrow-left:before {
+  content: "";
+}
+
+.icon-arrow-right:before {
+  content: "";
+}
+
+.icon-picture-shape:before {
+  content: "";
+}
+
+.icon-send:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-google-plus:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-rss:before {
+  content: "";
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-arrow-up::before {
+  content: "🌘";
+}
+
+.icon-close::before {
+  content: "";
+}
+
+.icon-check::before {
+  content: "";
+}
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -224,9 +442,6 @@
   width: 100%;
 }
 
-/*
- * 	Owl Carousel - Video Plugin
- */
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -701,224 +916,6 @@ img.mfp-img {
     padding-right: 6px;
   }
 }
-@font-face {
-  font-family: "icomoon-restaurant";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/icomoon-restaurant/icomoon-restaurant.eot");
-  src: url("../fonts/icomoon-restaurant/icomoon-restaurant.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon-restaurant/icomoon-restaurant.woff") format("woff"), url("../fonts/icomoon-restaurant/icomoon-restaurant.ttf") format("truetype"), url("../fonts/icomoon-restaurant/icomoon-restaurant.svg") format("svg");
-}
-@font-face {
-  font-family: "Robotolight";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/roboto/roboto_light/Robotolight.eot");
-  src: url("../fonts/roboto/roboto_light/Robotolight.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto_light/Robotolight.woff") format("woff"), url("../fonts/roboto/roboto_light/Robotolight.ttf") format("truetype"), url("../fonts/roboto/roboto_light/Robotolight.svg") format("svg");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/roboto/roboto_regular/Roboto.eot");
-  src: url("../fonts/roboto/roboto_regular/Roboto.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto_regular/Roboto.woff") format("woff"), url("../fonts/roboto/roboto_regular/Roboto.ttf") format("truetype"), url("../fonts/roboto/roboto_regular/Roboto.svg") format("svg");
-}
-@font-face {
-  font-family: "Robotomedium";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/roboto/roboto_medium/Robotomedium.eot");
-  src: url("../fonts/roboto/roboto_medium/Robotomedium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto_medium/Robotomedium.woff") format("woff"), url("../fonts/roboto/roboto_medium/Robotomedium.ttf") format("truetype"), url("../fonts/roboto/roboto_medium/Robotomedium.svg") format("svg");
-}
-@font-face {
-  font-family: "Robotoblack";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/roboto/roboto_black/Robotoblack.eot");
-  src: url("../fonts/roboto/roboto_black/Robotoblack.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto_black/Robotoblack.woff") format("woff"), url("../fonts/roboto/roboto_black/Robotoblack.ttf") format("truetype"), url("../fonts/roboto/roboto_black/Robotoblack.svg") format("svg");
-}
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-article, aside, details, figcaption, figure, dialog,
-footer, header, hgroup, menu, nav, section, main {
-  display: block;
-}
-
-ul, li {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-  content: none;
-}
-
-a {
-  text-decoration: none;
-  font-size: 100%;
-  color: inherit;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-  box-sizing: border-box;
-}
-
-body {
-  color: #86939e;
-  font-size: 16px;
-  font-family: "Roboto", serif;
-  outline: none;
-  word-wrap: break-word;
-  font-weight: 400;
-}
-
-*, *:before, *:after {
-  outline: none;
-  box-sizing: inherit;
-}
-
-a:hover {
-  opacity: 0.7;
-}
-
-.container {
-  width: 90%;
-  max-width: 1138px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section-head {
-  font-size: 1.625em;
-  font-family: "Robotolight", serif;
-  color: #43484d;
-}
-
-.block-wrapper {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(1, 1, 1, 0.2);
-}
-
-[class^=icon-], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon-restaurant" !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-star:before {
-  content: "";
-}
-
-.icon-search:before {
-  content: "";
-}
-
-.icon-calendar:before {
-  content: "";
-}
-
-.icon-add-to-fav:before {
-  content: "";
-}
-
-.icon-arrow-down:before {
-  content: "🌗";
-}
-
-.icon-nav:before {
-  content: "";
-}
-
-.icon-comment:before {
-  content: "";
-}
-
-.icon-arrow-left:before {
-  content: "";
-}
-
-.icon-arrow-right:before {
-  content: "";
-}
-
-.icon-picture-shape:before {
-  content: "";
-}
-
-.icon-send:before {
-  content: "";
-}
-
-.icon-facebook:before {
-  content: "";
-}
-
-.icon-google-plus:before {
-  content: "";
-}
-
-.icon-instagram:before {
-  content: "";
-}
-
-.icon-rss:before {
-  content: "";
-}
-
-.icon-twitter:before {
-  content: "";
-}
-
-.icon-arrow-up::before {
-  content: "🌘";
-}
-
-.icon-close::before {
-  content: "";
-}
-
-.icon-check::before {
-  content: "";
-}
-
 header {
   padding: 25px;
   max-width: 1440px;
@@ -1605,7 +1602,6 @@ button.mfp-close {
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
 .checkbox-field {
   position: absolute;
   opacity: 0;
@@ -1614,7 +1610,6 @@ button.mfp-close {
   width: 0;
 }
 
-/* Create a custom checkbox */
 .icon-check {
   position: absolute;
   top: 5px;
@@ -1626,21 +1621,16 @@ button.mfp-close {
   font-size: 0;
 }
 
-/* On mouse-over, add a grey background color */
+.checkbox-container .checkbox-field:checked ~ .icon-check {
+  font-size: 1.25em;
+}
+
 .checkbox-container:hover .checkbox-field ~ .icon-check {
   background-color: #ccc;
 }
 
-/* When the checkbox is checked, add a blue background */
-.checkbox-container .checkbox-field:checked ~ .icon-check {
-  font-size: 20px;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-/* Show the checkmark when checked */
-/* Style the checkmark/indicator */
 .checkbox-text {
-  font-size: 12px;
+  font-size: 0.75em;
   display: inline-block;
   margin-left: 40px;
 }
@@ -3129,7 +3119,7 @@ button:hover {
   padding: 15px 30px 15px 5px;
   border: none;
   border-radius: 4px;
-  background: url("../../assets/img/header/arrow-down.png") no-repeat right;
+  background: url("../img/header/arrow-down.png") no-repeat right;
   -webkit-appearance: none;
   color: #5e6977;
   font-size: 0.875em;
@@ -3679,7 +3669,7 @@ button:hover {
   }
 }
 .clear-after::after, .diners-head::after {
-  content: " ";
+  content: "";
   clear: both;
   display: block;
 }

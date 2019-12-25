@@ -14,7 +14,7 @@
     padding: 15px 30px 15px 5px;
     border: none;
     border-radius: $br-default;
-    background: url("../../assets/img/header/arrow-down.png") no-repeat right;
+    background: url($images-folder + "header/arrow-down.png") no-repeat right;
     -webkit-appearance: none;
     color: $color-primary;
     font-size: 0.875em;

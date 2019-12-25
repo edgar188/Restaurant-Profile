@@ -32,7 +32,7 @@
 
 @mixin clear-after {
   &::after {
-    content: " ";
+    content: "";
     clear: both;
     display: block;
   }
