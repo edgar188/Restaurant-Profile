@@ -5,7 +5,7 @@ header {
     margin-right: auto;
     display: flex;
     align-items: center;
-    & i {
+    & [class^="icon-"] {
         color: $color-icon-primary;
         font-size: 1.5em;
     }
@@ -49,7 +49,7 @@ header {
     .last-star {
         &::after {
             @include position(auto, auto, 10px, 10px);
-            content: url('../../assets/img/header/ellipse.png');
+            content: url($images-folder + 'header/ellipse.png');
         }
     }
 }
@@ -65,7 +65,7 @@ header {
 .icon-calendar {
     &::after {
         @include position(auto, auto, 10px, 13px);
-        content: url('../../assets/img/header/ellipse.png');
+        content: url($images-folder + 'header/ellipse.png');
     }
 }
 

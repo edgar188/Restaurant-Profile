@@ -9,32 +9,32 @@ button {
     padding: 11px 18px;
     font-family: $font-tertiary;
     font-size: 0.875em;
+    text-transform: capitalize;
     border-radius: 4px;
     border: 2px solid $color-br-primary;
     color: $color-text-primary;
     background-color: $color-light;
-    text-transform: capitalize;
 }
 
 .button-secondary {
     font-size: 0.75em;
     font-family: $font-tertiary;
+    text-transform: capitalize;
     padding: 5px 10px;
     border: none;
     border-radius: $br-lg;
     color: $color-light;
-    text-transform: capitalize;
 }
 
 .button-tertiary {
     @include ofl-ellipsis;
     font-size: 0.875em;
     font-family: $font-tertiary;
+    text-transform: capitalize;
     width: 90px;
     padding: 20px 5px;
     border: none;
     border-radius: $br-default;
     color: $color-light;
     background-color: $color-bg-btn-3;
-    text-transform: capitalize;
 }

@@ -17,8 +17,10 @@
     margin-right: 10px;
 }
 
-.intro-pagination-link:hover {
-    color: $color-secondary;
+.intro-pagination-link {
+    &:hover {
+        color: $color-secondary;
+    }
 }
 
 .link-divider {
@@ -33,25 +35,19 @@
 .slider-item {
     @include bg-img(null, no-repeat, cover, $color-bg-primary, top);
     position: relative;
+    text-align: center;
     height: 450px;
     max-height: 450px;
     border: none;
     border-radius: $br-default;
-    text-align: center;
-}
-
-.slider-item::before {
-    content: "";
-    @include position(0, auto, auto, 0);
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    background: $color-primary;
-}
-
-.slider-item .owl-nav button.owl-prev.disabled {
-    @include position(50%, auto, auto, 0);
-    transform: translateY(-50%);
+    &::before {
+        content: "";
+        @include position(0, auto, auto, 0);
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        background: $color-primary;
+    }
 }
 
 .owl-carousel .owl-nav button.owl-next,
@@ -116,7 +112,7 @@
 }
 
 .popup-top-content {
-    @include position(auto, auto, auto, auto, relative);
+    position: relative;
     padding: 25px 20px 17px 20px;
     border-bottom: 1px solid $color-br-secondary;
     .number {

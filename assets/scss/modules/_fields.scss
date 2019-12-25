@@ -12,11 +12,11 @@
 
 .primary-select {
     padding: 15px 30px 15px 5px;
+    font-size: 0.875em;
     border: none;
     border-radius: $br-default;
-    background: url($images-folder + "header/arrow-down.png") no-repeat right;
-    -webkit-appearance: none;
     color: $color-primary;
-    font-size: 0.875em;
+    -webkit-appearance: none;
+    @include bg-img($images-folder + "header/arrow-down.png", no-repeat, null, null, right);
     cursor: pointer;
 }

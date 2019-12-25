@@ -924,7 +924,7 @@ header {
   display: flex;
   align-items: center;
 }
-header i {
+header [class^=icon-] {
   color: #bdc6cf;
   font-size: 1.5em;
 }
@@ -969,7 +969,7 @@ header i {
   right: auto;
   bottom: 10px;
   left: 10px;
-  content: url("../../assets/img/header/ellipse.png");
+  content: url("../img/header/ellipse.png");
 }
 
 .icon-nav {
@@ -986,7 +986,7 @@ header i {
   right: auto;
   bottom: 10px;
   left: 13px;
-  content: url("../../assets/img/header/ellipse.png");
+  content: url("../img/header/ellipse.png");
 }
 
 .header-mark {
@@ -1124,13 +1124,12 @@ header i {
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
+  text-align: center;
   height: 450px;
   max-height: 450px;
   border: none;
   border-radius: 4px;
-  text-align: center;
 }
-
 .slider-item::before {
   content: "";
   position: absolute;
@@ -1142,15 +1141,6 @@ header i {
   height: 100%;
   opacity: 0.8;
   background: #5e6977;
-}
-
-.slider-item .owl-nav button.owl-prev.disabled {
-  position: absolute;
-  top: 50%;
-  right: auto;
-  bottom: auto;
-  left: 0;
-  transform: translateY(-50%);
 }
 
 .owl-carousel .owl-nav button.owl-next,
@@ -1229,10 +1219,6 @@ header i {
 
 .popup-top-content {
   position: relative;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
   padding: 25px 20px 17px 20px;
   border-bottom: 1px solid #9ca3d2;
 }
@@ -3072,21 +3058,21 @@ button:hover {
   padding: 11px 18px;
   font-family: "Robotomedium", serif;
   font-size: 0.875em;
+  text-transform: capitalize;
   border-radius: 4px;
   border: 2px solid #e1e8ee;
   color: #86939e;
   background-color: #fff;
-  text-transform: capitalize;
 }
 
 .button-secondary {
   font-size: 0.75em;
   font-family: "Robotomedium", serif;
+  text-transform: capitalize;
   padding: 5px 10px;
   border: none;
   border-radius: 30px;
   color: #fff;
-  text-transform: capitalize;
 }
 
 .button-tertiary {
@@ -3095,13 +3081,13 @@ button:hover {
   text-overflow: ellipsis;
   font-size: 0.875em;
   font-family: "Robotomedium", serif;
+  text-transform: capitalize;
   width: 90px;
   padding: 20px 5px;
   border: none;
   border-radius: 4px;
   color: #fff;
   background-color: #2F8CDA;
-  text-transform: capitalize;
 }
 
 .primary-field {
@@ -3117,12 +3103,14 @@ button:hover {
 
 .primary-select {
   padding: 15px 30px 15px 5px;
+  font-size: 0.875em;
   border: none;
   border-radius: 4px;
-  background: url("../img/header/arrow-down.png") no-repeat right;
-  -webkit-appearance: none;
   color: #5e6977;
-  font-size: 0.875em;
+  -webkit-appearance: none;
+  background-image: url("../img/../img/header/arrow-down.png");
+  background-repeat: no-repeat;
+  background-position: right;
   cursor: pointer;
 }
 
