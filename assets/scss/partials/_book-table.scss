@@ -14,8 +14,10 @@
     width: 33%;
 }
 
-.section-head.book-table-head {
-    padding-left: 30px;
+.section-head {
+    .book-table-head {
+        padding-left: 30px;
+    }
 }
 
 .book-top-select-wrapper {
@@ -24,24 +26,27 @@
 }
 
 .book-top-label {
-     margin-right: 10px;
+    margin-right: 10px;
 }
 
-.primary-select.book-select-left {
-    background-color: $color-bg-primary;
-    padding-left: 30px;
-    padding-right: 60px;
-    background-position-x: 170px;
-}
+.primary-select {
+    &.book-select-left {
+        background-color: $color-bg-primary;
+        padding-left: 30px;
+        padding-right: 60px;
+        background-position-x: 170px;
+    }
 
-.primary-select.book-select-right {
-    background-color: $color-bg-primary;
-    padding-left: 30px;
-    padding-right: 60px;
-    background-position-x: 120px;
+    &.book-select-right {
+        background-color: $color-bg-primary;
+        padding-left: 30px;
+        padding-right: 60px;
+        background-position-x: 120px;
+    }
 }
 
 // ---------------------------------- Table-main-----------------------------------
+
 .people-list {
     width: 160px;
     white-space: nowrap;
@@ -78,22 +83,19 @@
     color: $color-dark;
 }
 
-
 .arrow-data-slider {
+    position: relative;
     width: 44px;
     background-color: $color-bg-secondary;
-    position: relative;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: $br-md;
     cursor: pointer;
-
     &:hover {
         background-color: $color-bg-btn-3;
         color: $color-light;
         transition: all $trns-delay;
     }
-
     .icon-arrow-left,
     .icon-arrow-right {
         @extend .centered-axis-xy;
@@ -118,10 +120,9 @@
 
 .table-row {
     border-bottom: 1px solid $color-br-primary;
-}
-
-.table-row:last-of-type {
-    border-bottom: none;
+    &:last-of-type {
+        border-bottom: none;
+    }
 }
 
 .table-data {
@@ -132,16 +133,18 @@
     }
 }
 
-.button-tertiary.disabled {
-    background-color: $color-bg-btn-disabled;
-    cursor: default;
-    &:hover {
-        opacity: 1;
+.button-tertiary {
+    &.disabled {
+        background-color: $color-bg-btn-disabled;
+        cursor: default;
+        &:hover {
+            opacity: 1;
+        } 
     }
 }
 
 .sale-text {
-    @include position(3px, 4px);
+    @include position(4px, 4px);
     color: $color-light;
     background: $color-bg-btn-2;
     padding: 4px 8px 7px 8px;

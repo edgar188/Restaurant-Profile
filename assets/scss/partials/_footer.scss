@@ -76,12 +76,12 @@
 .footer-mid {
     padding: 20px 0;
     border-top: 1px solid $color-br-primary;
+}
 
-    .footer-mid-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.footer-mid-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .app-img {
@@ -92,10 +92,16 @@
     background-color: $color-dark;
 }
 
-.footer-list.bot {
-    align-items: flex-end;
-    padding-bottom: 70px;
-    border-bottom: 1px solid $color-primary;
+.footer-list {
+    &.bot {
+        align-items: flex-end;
+        padding-bottom: 70px;
+        border-bottom: 1px solid $color-primary;
+    } 
+
+    &.bot-down {
+        align-items: center;
+    }
 } 
 
 .footer-head.bot {
@@ -110,10 +116,6 @@
         margin-right: 0;
     }
 }
-
-.footer-list.bot-down {
-    align-items: center;
-} 
 
 .footer-bot-sm {
     width: 10%;

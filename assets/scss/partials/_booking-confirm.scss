@@ -45,9 +45,11 @@
     padding: 30px;
 }
 
-.form-item:last-of-type {
+.form-item {
     &:last-of-type {
-        margin-top: 25px;
+        &:last-of-type {
+            margin-top: 25px;
+        }
     }
 }
 
@@ -70,9 +72,9 @@
     display: block;
 }
 
-button.mfp-close{
-    display: none;
-}
+// button.mfp-close {
+//     display: none;
+// }
 
 .icon-close {
     @include position(40px, 30px);
@@ -92,30 +94,37 @@ button.mfp-close{
     opacity: 0;
     position: fixed;
     width: 0;
-}
-
-.primary-field.radio {
-    display: inline-block;
-    padding: 12px 50px;
-    font-family: $font-tertiary;
-    font-size: 1em;
-    border-color: $color-br-tertiary;
-    color: $color-light;
-    cursor: pointer;
-    &:first-of-type {
-        margin-right: 10px;
-    }
-    &:hover {
-        background-color: $color-tertiary;
-        border-color: $color-tertiary;
+    &:checked {
+        & + {
+            .primary-field {
+                &.radio {
+                    background-color: $color-light;
+                    border-color: $color-light;
+                    color: $color-secondary;
+                    cursor: default;
+                }
+            }
+        }
     }
 }
 
-.radio-field:checked + .primary-field.radio {
-    background-color: $color-light;
-    border-color: $color-light;
-    color: $color-secondary;
-    cursor: default;
+.primary-field {
+    &.radio {
+        display: inline-block;
+        padding: 12px 50px;
+        font-family: $font-tertiary;
+        font-size: 1em;
+        border-color: $color-br-tertiary;
+        color: $color-light;
+        cursor: pointer;
+        &:first-of-type {
+            margin-right: 10px;
+        }
+        &:hover {
+            background-color: $color-tertiary;
+            border-color: $color-tertiary;
+        }
+    }
 }
 
 // ---------------------- Customize checkbox -------------------------
@@ -138,9 +147,7 @@ button.mfp-close{
 }
 
 .icon-check {
-    position: absolute;
-    top: 5px;
-    left: 0;
+    @include position(5px, auto, auto, 0);
     height: 25px;
     width: 25px;
     background-color: $color-br-primary;
@@ -148,15 +155,14 @@ button.mfp-close{
     font-size: 0;
 }
   
-
-.checkbox-container .checkbox-field:checked ~ .icon-check {
-    font-size: 1.25em;
+.checkbox-container {
+    .checkbox-field {
+        &:checked ~ .icon-check {
+            font-size: 1.25em;
+        }
+    }
 }
   
-.checkbox-container:hover .checkbox-field ~ .icon-check {
-    background-color: #ccc;
-}
-
 .checkbox-text {
     font-size: 0.75em;
     display: inline-block;
