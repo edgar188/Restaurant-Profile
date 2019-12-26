@@ -1232,6 +1232,10 @@ header [class^=icon-] {
   margin-right: 10px;
 }
 
+.book-table-head {
+  padding-left: 20px;
+}
+
 .primary-select.book-select-left {
   background-color: #f2f2f2;
   padding-left: 30px;
