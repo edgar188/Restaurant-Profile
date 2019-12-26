@@ -1,6 +1,6 @@
 header {
-    padding: 25px;
     max-width: 1440px;
+    padding: 25px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -13,7 +13,7 @@ header {
 .header-content-wrapper {
     position: relative;
     &.calendar {
-        margin-left: 125px;
+        margin-left: 120px;
     }
 
     &.nav {
@@ -40,6 +40,38 @@ header {
 
     &.select {
         @include position(auto, 120px);
+    }
+
+    &.avatar {
+        @include position(auto, 50px);
+    }
+}
+
+.sel-list {
+    &:hover {
+        @include position(-18px, 100%);
+        z-index: 10;
+        .sel-item {
+            display: block;
+            padding: 15px 10px;
+            background-color: $color-tertiary;
+            border: 1px solid $color-light;
+            border-radius: $br-default;
+            color: $color-light
+        }
+    }
+    .sel-item {
+        display: none;
+        margin-right: 25px;
+        max-width: 250px;
+        @include ofl-ellipsis;
+        &:first-of-type {
+            display: block;
+            a::after {
+                content: url($images-folder + "header/arrow-down.png");
+                @include position(-3px, 0);
+            }
+        }
     }
 }
 

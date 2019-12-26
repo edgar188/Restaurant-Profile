@@ -12,7 +12,7 @@
     }
 
     .header-content-wrapper {
-        &.select {
+        &.selection, &.avatar {
             display: none;
         }
 
