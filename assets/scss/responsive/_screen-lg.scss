@@ -38,14 +38,31 @@
         }
     }
 
-    .header-mark.calendar {
-        top: -5px;
-        right: -3px;
+    .header-mark {
+        &.calendar {
+            top: -2px;
+            right: 0px;
+        }
+        &.stars {
+            top: -2px;
+            right: 1px;
+        }
     }
 
-    .header-mark.stars {
-        top: -5px;
-        right: 0px;
+    .icon-calendar {
+        &::after {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .icon-star {        
+        &.last-star {
+            &::after {
+                width: 18px;
+                height: 18px;
+            }
+        }
     }
 
     .icon-search {

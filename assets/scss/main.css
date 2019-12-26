@@ -792,7 +792,6 @@ header {
 }
 header [class^=icon-] {
   color: #bdc6cf;
-  font-size: 1.5em;
 }
 
 .header-content-wrapper {
@@ -807,12 +806,14 @@ header [class^=icon-] {
   right: auto;
   bottom: auto;
   left: 25px;
+  font-size: 1.5em;
 }
 .header-content-wrapper.stars {
   margin-left: 25px;
 }
 .header-content-wrapper.fav {
   margin-left: 25px;
+  font-size: 1.5em;
 }
 .header-content-wrapper.search {
   margin-left: 40px;
@@ -825,17 +826,24 @@ header [class^=icon-] {
   top: auto;
   right: 120px;
 }
-.header-content-wrapper .icon-star {
+
+.icon-star {
   position: relative;
+  font-size: 1.5em;
   cursor: pointer;
 }
-.header-content-wrapper .last-star::after {
+.icon-star.last-star::after {
+  content: "";
   position: absolute;
   top: auto;
   right: auto;
   bottom: 10px;
   left: 10px;
-  content: url("../img/header/ellipse.png");
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #7dc855;
 }
 
 .icon-nav {
@@ -844,33 +852,38 @@ header [class^=icon-] {
 
 .icon-calendar {
   position: relative;
+  font-size: 1.5em;
 }
-
 .icon-calendar::after {
+  content: "";
   position: absolute;
   top: auto;
   right: auto;
   bottom: 10px;
-  left: 13px;
-  content: url("../img/header/ellipse.png");
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #7dc855;
 }
 
 .header-mark {
   position: absolute;
   z-index: 10;
   font-family: "Roboto", serif;
-  font-size: 0.55em;
+  font-size: 0.5em;
   color: #7dc855;
 }
 .header-mark.calendar {
   position: absolute;
-  top: -3px;
-  right: -2px;
+  top: -1px;
+  right: 0px;
 }
 .header-mark.stars {
   position: absolute;
-  top: -3px;
-  right: 2px;
+  top: -1px;
+  right: 1px;
 }
 
 .header-search {
@@ -881,9 +894,10 @@ header [class^=icon-] {
 
 .icon-search {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
-  bottom: 0;
+  bottom: auto;
+  transform: translateY(-50%);
   font-size: 1.375em;
   padding: 8px;
   border-left: 1px solid #e1e8ee;
@@ -3567,13 +3581,22 @@ button:hover {
   }
 
   .header-mark.calendar {
-    top: -5px;
-    right: -3px;
+    top: -2px;
+    right: 0px;
+  }
+  .header-mark.stars {
+    top: -2px;
+    right: 1px;
   }
 
-  .header-mark.stars {
-    top: -5px;
-    right: 0px;
+  .icon-calendar::after {
+    width: 18px;
+    height: 18px;
+  }
+
+  .icon-star.last-star::after {
+    width: 18px;
+    height: 18px;
   }
 
   .icon-search {
@@ -3665,11 +3688,26 @@ button:hover {
   }
 
   .header-mark.calendar {
-    right: -6px;
+    top: -3px;
+    right: -1px;
+  }
+  .header-mark.stars {
+    top: -3px;
+    right: -1px;
   }
 
-  .header-mark.stars {
-    right: -3px;
+  .icon-calendar::after {
+    width: 16px;
+    height: 16px;
+  }
+
+  .icon-star.last-star::after {
+    width: 16px;
+    height: 16px;
+  }
+
+  .nav-bar {
+    font-size: 1.2em;
   }
 
   .logo {
@@ -3694,7 +3732,7 @@ button:hover {
   }
 
   .popup {
-    width: 245px;
+    width: 220px;
     top: 300px;
   }
 
@@ -3793,6 +3831,10 @@ button:hover {
   }
   .header-content-wrapper.nav {
     left: 15px;
+  }
+
+  .icon-search, .nav-bar {
+    font-size: 1em;
   }
 
   .logo {
@@ -4043,7 +4085,11 @@ button:hover {
   }
 
   .primary-field {
-    padding: 3px;
+    padding: 2px;
+    padding-bottom: 3px;
+  }
+  .primary-field::placeholder {
+    font-size: 0.8em;
   }
 
   .button-tertiary {
@@ -4076,9 +4122,7 @@ button:hover {
     width: 80%;
   }
   .header-content-wrapper.search .icon-search {
-    top: 2px;
     right: 30px;
-    padding: 5px;
     font-size: 0.8em;
   }
 

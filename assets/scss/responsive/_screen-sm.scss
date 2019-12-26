@@ -37,6 +37,10 @@
        }
     }
 
+    .icon-search, .nav-bar {     
+        font-size: 1em;
+    }
+
     .logo {
         max-width: round(192px * $mlp-val-sm);
         max-height: round(57px * $mlp-val-sm);

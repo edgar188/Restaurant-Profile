@@ -7,7 +7,6 @@ header {
     align-items: center;
     & [class^="icon-"] {
         color: $color-icon-primary;
-        font-size: 1.5em;
     }
 }
 
@@ -19,6 +18,7 @@ header {
 
     &.nav {
         @include position(auto, auto, auto, 25px);
+        font-size: 1.5em;
     }
 
     &.stars {
@@ -27,6 +27,7 @@ header {
 
     &.fav {
         margin-left: 25px;
+        font-size: 1.5em;
     }
 
     &.search {
@@ -40,16 +41,22 @@ header {
     &.select {
         @include position(auto, 120px);
     }
+}
 
-    .icon-star {
-        position: relative;
-        cursor: pointer;
-    }
+.icon-star {
+    position: relative;
+    font-size: 1.5em;
+    cursor: pointer;
 
-    .last-star {
+    &.last-star {
         &::after {
+            content: "";
             @include position(auto, auto, 10px, 10px);
-            content: url($images-folder + 'header/ellipse.png');
+            width: 20px;
+            height: 20px;
+            background-color: $color-light;
+            border-radius: $br-rounded;
+            border: 2px solid $color-tertiary;
         }
     }
 }
@@ -60,26 +67,29 @@ header {
 
 .icon-calendar {
     position: relative;
-}
-
-.icon-calendar {
+    font-size: 1.5em;
     &::after {
-        @include position(auto, auto, 10px, 13px);
-        content: url($images-folder + 'header/ellipse.png');
+        content: "";
+        @include position(auto, auto, 10px, 10px);
+        width: 20px;
+        height: 20px;
+        background-color: $color-light;
+        border-radius: $br-rounded;
+        border: 2px solid $color-tertiary;
     }
 }
 
 .header-mark {
-    @include position();
+    position: absolute;
     z-index: 10;
     font-family: $font-primary;
-    font-size: 0.55em;
+    font-size: 0.50em;
     color: $color-tertiary;
     &.calendar {
-        @include position(-3px, -2px);
+        @include position(-1px, 0px);
     }
     &.stars {
-        @include position(-3px, 2px);
+        @include position(-1px, 1px);
     }
 }
 
@@ -90,7 +100,8 @@ header {
 }
 
 .icon-search {
-    @include position(0, 0, 0);
+    @include position(50%, 0, auto);
+    transform: translateY(-50%);
     font-size: 1.375em;
     padding: 8px;
     border-left: 1px solid $color-br-primary;

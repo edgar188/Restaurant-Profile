@@ -6,7 +6,11 @@
     }
 
     .primary-field {
-        padding: 3px;
+        padding: 2px;
+        padding-bottom: 3px;
+        &::placeholder {
+            font-size: 0.8em;
+        }
     }
 
     .button-tertiary {
@@ -40,13 +44,10 @@
                width: 80%;
            }
            .icon-search {
-                top: 2px;
                 right: 30px;
-                padding: 5px;
                 font-size: 0.8em;
            }
         }
-
     }
 
     // ---------------------- Intro ------------------------------
