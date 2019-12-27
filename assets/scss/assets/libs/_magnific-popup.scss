@@ -6,7 +6,6 @@
     z-index: 1042;
     overflow: hidden;
     position: fixed;
-    background: #0b0b0b;
     opacity: 0.8;
   }
   
@@ -18,7 +17,6 @@
     z-index: 1043;
     position: fixed;
     outline: none !important;
-    -webkit-backface-visibility: hidden;
   }
   
   .mfp-container {
@@ -39,8 +37,12 @@
     }
   }
   
-  .mfp-align-top .mfp-container:before {
-    display: none;
+  .mfp-align-top {
+    .mfp-container {
+      &::before {
+        display: none;
+      }
+    }
   }
   
   .mfp-content {
@@ -52,7 +54,8 @@
     z-index: 1045;
   }
   
-  .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
+  .mfp-inline-holder .mfp-content, 
+  .mfp-ajax-holder .mfp-content {
     width: 100%;
     cursor: auto;
   }
@@ -62,22 +65,15 @@
   }
   
   .mfp-zoom-out-cur {
-    cursor: -moz-zoom-out;
-    cursor: -webkit-zoom-out;
     cursor: zoom-out;
   
-    .mfp-image-holder .mfp-close {
-      cursor: -moz-zoom-out;
-      cursor: -webkit-zoom-out;
+    .mfp-image-holder .mfp-close {    
       cursor: zoom-out;
     }
   }
   
   .mfp-zoom {
     cursor: pointer;
-    cursor: -webkit-zoom-in;
-    cursor: -moz-zoom-in;
-    cursor: zoom-in;
   }
   
   .mfp-auto-cursor .mfp-content {
@@ -85,8 +81,6 @@
   }
   
   .mfp-close, .mfp-arrow, .mfp-preloader, .mfp-counter {
-    -webkit-user-select: none;
-    -moz-user-select: none;
     user-select: none;
   }
   
@@ -99,7 +93,6 @@
   }
   
   .mfp-preloader {
-    color: #CCC;
     position: absolute;
     top: 50%;
     width: auto;
@@ -108,14 +101,6 @@
     left: 8px;
     right: 8px;
     z-index: 1044;
-  
-    a {
-      color: #CCC;
-  
-      &:hover {
-        color: #FFF;
-      }
-    }
   }
   
   .mfp-s-ready .mfp-preloader, .mfp-s-error .mfp-content {
@@ -124,17 +109,7 @@
   
   button {
     &.mfp-close, &.mfp-arrow {
-      overflow: visible;
-      cursor: pointer;
-      background: transparent;
-      border: 0;
-      -webkit-appearance: none;
-      display: block;
-      outline: none;
-      padding: 0;
-      z-index: 1046;
-      box-shadow: none;
-      touch-action: manipulation;
+      display: none;
     }
   
     &::-moz-focus-inner {
@@ -143,48 +118,10 @@
     }
   }
   
-  .mfp-close {
-    width: 44px;
-    height: 44px;
-    line-height: 44px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-decoration: none;
-    text-align: center;
-    opacity: 0.65;
-    padding: 0 0 18px 10px;
-    color: #FFF;
-    font-style: normal;
-    font-size: 28px;
-    font-family: Arial, Baskerville, monospace;
-  
-    &:hover, &:focus {
-      opacity: 1;
-    }
-  
-    &:active {
-      top: 1px;
-    }
-  }
-  
-  .mfp-close-btn-in .mfp-close {
-    color: #333;
-  }
-  
-  .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
-    color: #FFF;
-    right: -6px;
-    text-align: right;
-    padding-right: 6px;
-    width: 100%;
-  }
-  
   .mfp-counter {
     position: absolute;
     top: 0;
     right: 0;
-    color: #CCC;
     font-size: 12px;
     line-height: 18px;
     white-space: nowrap;
@@ -199,7 +136,6 @@
     padding: 0;
     width: 90px;
     height: 110px;
-    -webkit-tap-highlight-color: transparent;
   
     &:active {
       margin-top: -54px;
@@ -245,32 +181,6 @@
     }
   }
   
-  .mfp-arrow-left {
-    left: 0;
-  
-    &:after {
-      border-right: 17px solid #FFF;
-      margin-left: 31px;
-    }
-  
-    &:before {
-      margin-left: 25px;
-      border-right: 27px solid #3F3F3F;
-    }
-  }
-  
-  .mfp-arrow-right {
-    right: 0;
-  
-    &:after {
-      border-left: 17px solid #FFF;
-      margin-left: 39px;
-    }
-  
-    &:before {
-      border-left: 27px solid #3F3F3F;
-    }
-  }
   
   .mfp-iframe-holder {
     padding-top: 40px;
@@ -300,86 +210,10 @@
       left: 0;
       width: 100%;
       height: 100%;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-      background: #000;
     }
   }
-  
-  /* Main image in popup */
-  
-  img.mfp-img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    line-height: 0;
-    box-sizing: border-box;
-    padding: 40px 0 40px;
-    margin: 0 auto;
-  }
-  
-  /* The shadow behind the image */
-  
-  .mfp-figure {
-    line-height: 0;
-  
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 40px;
-      bottom: 40px;
-      display: block;
-      right: 0;
-      width: auto;
-      height: auto;
-      z-index: -1;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-      background: #444;
-    }
-  
-    small {
-      color: #BDBDBD;
-      display: block;
-      font-size: 12px;
-      line-height: 14px;
-    }
-  
-    figure {
-      margin: 0;
-    }
-  }
-  
-  .mfp-bottom-bar {
-    margin-top: -36px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    cursor: auto;
-  }
-  
-  .mfp-title {
-    text-align: left;
-    line-height: 18px;
-    color: #F3F3F3;
-    word-wrap: break-word;
-    padding-right: 36px;
-  }
-  
-  .mfp-image-holder .mfp-content {
-    max-width: 100%;
-  }
-  
-  .mfp-gallery .mfp-image-holder .mfp-figure {
-    cursor: pointer;
-  }
-  
-  @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
-    /**
-         * Remove all paddings around the image on small screen
-         */
-  
+    
+  @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {  
     .mfp-img-mobile {
       .mfp-image-holder {
         padding-left: 0;
@@ -403,7 +237,6 @@
       }
   
       .mfp-bottom-bar {
-        background: rgba(0, 0, 0, 0.6);
         bottom: 0;
         margin: 0;
         top: auto;
@@ -427,7 +260,6 @@
         width: 35px;
         height: 35px;
         line-height: 35px;
-        background: rgba(0, 0, 0, 0.6);
         position: fixed;
         text-align: center;
         padding: 0;

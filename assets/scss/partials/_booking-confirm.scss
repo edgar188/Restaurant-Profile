@@ -87,18 +87,16 @@
   }
 
 .radio-field {
-    opacity: 0;
     position: fixed;
+    opacity: 0;
     width: 0;
     &:checked {
-        & + {
-            .primary-field {
-                &.radio {
-                    background-color: $color-light;
-                    border-color: $color-light;
-                    color: $color-secondary;
-                    cursor: default;
-                }
+        & + .primary-field {
+            &.radio {
+                background-color: $color-light;
+                border-color: $color-light;
+                color: $color-secondary;
+                cursor: default;
             }
         }
     }
@@ -163,7 +161,6 @@
     font-size: 0.75em;
     display: inline-block;
     margin-left: 40px;
-
     .data-item-block-link {
         color: $color-secondary;
     }
